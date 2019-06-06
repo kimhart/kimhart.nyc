@@ -1,0 +1,39 @@
+.button {
+  font-family: @roboto;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  margin: 10px;
+  background: transparent;
+  white-space: nowrap;
+  border-radius: 500px;
+  box-sizing: border-box;
+  height: 55px;
+  cursor: pointer;
+  transition: all .2s ease;
+
+  &--primary {
+    border: 2px solid @button-yellow;
+    background: transparent;
+    color: @button-yellow;
+    padding: 5px 70px;
+
+    &:hover {
+      color: @sunrise-text;
+      background: @button-yellow;
+    }
+  }
+
+  &--secondary {
+    color: @white;
+    padding: 5px 20px;
+    &:hover {
+      background: @button-hover;
+    }
+  }
+
+  &:hover {
+    border-color: transparent;
+  }
+}

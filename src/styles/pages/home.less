@@ -1,0 +1,122 @@
+.home {
+  margin: 0;
+  padding: 0;
+  font-family: @roboto;
+
+  &__hero {
+    min-height: 100vh;
+    background-color: @sunrise-peach;
+    background: linear-gradient(to bottom right, @sunrise-peach, @sunrise-yellow);
+    position: relative;
+  }
+
+  &__diagonal-overlay {
+    background: fade(@sunrise-overlay, 40%);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  &__location {
+    position: absolute;
+    top: 140px;
+    left: -20px;
+
+    h2 {
+      transform: rotate(270deg);
+      color: @white;
+      font-weight: 900;
+      font-size: 30px;
+      margin-bottom: 0;
+
+      .flex(center, center);
+
+      > div {
+        display: inline-block;
+        width: 3px;
+        margin: 0 12px;
+        height: .65em;
+        background: @white;
+      }
+    }
+
+    .icon {
+      transform: rotate(90deg);
+      margin-left: 2px;
+    }
+  }
+
+  &__intro {
+    .flex(center, center, column);
+    height: 100vh;
+  }
+
+  &__name-wrap {
+    position: relative;
+    
+    h1 {
+      margin-bottom: 0;
+      z-index: 5;
+      position: relative;
+      color: @white;
+    }
+
+    h1,
+    .home__shadow {
+      font-weight: 900;
+      font-size: 125px;
+      text-transform: uppercase;
+      font-family: @roboto;
+      line-height: 1.5;
+    }
+    
+    .home__shadow {
+      color: @sunrise-header-shadow;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      transform: translate(-9px, 9px);
+    }
+  }
+
+  &__theme-toggles {
+    .flex(center, center);
+    margin-bottom: 20px;
+    .icon {
+      margin: 25px;
+      cursor: pointer;
+    }
+  }
+  
+  &__code {
+    font-family: @code;
+    font-weight: 600;
+    font-size: 22px;
+    color: @white;
+    position: relative;
+    z-index: 10;
+    margin: 0 0 60px;
+  }
+
+  &__ctas {
+    .flex(center, center);
+    position: relative;
+    z-index: 10;
+    margin: 20px 0;
+  }
+
+  &__one-liner {
+    position: absolute;
+    z-index: 10;
+    bottom: 60px;
+    right: 60px;
+    font-weight: 500;
+    font-size: 16px;
+    color: @white;
+  }
+
+}
