@@ -4,12 +4,24 @@
   font-family: @roboto;
   background: @sunrise-bg;
 
-  &__work {
+  &__projects {
     margin: 0 auto;
+    max-width: 1220px;
     padding: 60px;
-    max-width: 1000px;
-    .flex();
-    flex-wrap: wrap;
+    columns: 2;
+  }
+
+  &__project {
+    margin-bottom: 12px;
+    &:nth-of-type(3) {
+      border: 1px solid @border-gray;
+    }
+  }
+
+  &__tools {
+    width: 70%;
+    padding-bottom: 50px;
+    margin: 0 auto;
     text-align: center;
 
     h4 {
@@ -18,7 +30,6 @@
       text-transform: uppercase;
       color: @sunrise-highlight;
     }
-
     p {
       font-family: @roboto;
       font-size: 20px;
@@ -26,7 +37,6 @@
       color: @sunrise-text;
     }
   }
-
 
   &__underline {
     width: 80px;

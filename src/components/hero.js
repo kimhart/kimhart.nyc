@@ -22,11 +22,11 @@ const Hero = () => (
         <span className="hero__shadow">Kim Hart</span>
       </div>
       <h2 className="hero__headline">
-        Front-end engineer building UIs & design systems @ JW Player
+        Front-end engineer building UIs & design system methodology @ JW Player
       </h2>
       <div className="hero__ctas">
         <Button type="secondary" text="About" link="about" />
-        <Button type="primary" text="See My Work" link="#work" />
+        <Button type="primary" text="See My Work" link="#projects" />
         <Button type="secondary" text="Resume" link="resume" />
       </div>
     </div>

@@ -12,10 +12,12 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="page home">
       <Hero />
-      <div id="work" className="home__work">
-        <h4>Tools I use regularly:</h4>
-        <p>React (Javascript/Typescript), Less/Sass, Storybook, Webpack, Grunt, Docker, JIRA, Jenkins, Sketch, Zeplin, Prismic.io</p>
-        <div className="home__underline" />
+      <div id="projects" className="home__projects">
+        <div className="home__tools">
+          <h4>Tools I use regularly:</h4>
+          <p>React (Javascript/Typescript), Less/Sass, Storybook, Webpack, Grunt, Docker, JIRA, Jenkins, Sketch, Zeplin, Prismic.io</p>
+          <div className="home__underline" />
+        </div>
         {renderProjects()}
       </div>
     </div>
@@ -39,9 +41,7 @@ const renderProjects = props => (
       }
     `}
     render={data =>
-      data.allProjectsJson.edges.map((project, i) => (
-        <FixedImage key={i} {...project.node} />
-      ))
+      data.allProjectsJson.edges.map((project, i) => <FixedImage className="home__project" key={i} {...project.node} />)
     }
   />
 )

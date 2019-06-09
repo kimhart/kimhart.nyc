@@ -14,7 +14,7 @@ const Nav = ({ currentPage, theme }) => (
         <Link className={currentPage === "about" && "-is-active"} to="/about">
           About
         </Link>
-        <a className={currentPage === "work" && "-is-active"} href="/#work">
+        <a className={currentPage === "projects" && "-is-active"} href="/#projects">
           Work
         </a>
         <Link className={currentPage === "resume" && "-is-active"} to="/resume">

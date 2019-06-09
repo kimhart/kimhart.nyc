@@ -5,9 +5,29 @@
     "title": "JW Player Dashboard Homepage"
   },
   {
+    "src": "support.png",
+    "alt": "JW Player Support site",
+    "title": "JW Player Support"
+  },
+  {
+    "src": "tally.png",
+    "alt": "Tally",
+    "title": "Tally"
+  },
+  {
     "src": "idc.png",
     "alt": "IDCWDYW App",
     "title": "I Don't Care, What Do You Want? (IDCWDYW)"
+  },
+  {
+    "src": "storybook.png",
+    "alt": "Storybook UI Components Library",
+    "title": "Storybook UI Components (React)"
+  },
+  {
+    "src": "recs.png",
+    "alt": "JW Player Recommendations Microsite",
+    "title": "JW Player Recommendations"
   },
   {
     "src": "metadata.png",
@@ -18,25 +38,5 @@
     "src": "metadata2.png",
     "alt": "Intelligent Metadata Viewer detail page",
     "title": "Intelligent Metadata Viewer"
-  },
-  {
-    "src": "recs.png",
-    "alt": "JW Player Recommendations Microsite",
-    "title": "JW Player Recommendations"
-  },
-  {
-    "src": "storybook.png",
-    "alt": "Storybook UI Components Library",
-    "title": "Storybook UI Components (React)"
-  },
-  {
-    "src": "support.png",
-    "alt": "JW Player Support site",
-    "title": "JW Player Support"
-  },
-  {
-    "src": "tally.png",
-    "alt": "Tally",
-    "title": "Tally"
   }
 ]
