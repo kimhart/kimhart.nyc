@@ -1,0 +1,49 @@
+.nav {
+  height: 60px;
+  background: fade(@sunrise-peach, 70%);
+  margin: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: @roboto;
+  padding: 0 60px;
+  .flex(@align: center);
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: .2s ease;
+  }
+
+  &__content {
+    width: 1000px;
+    margin: 0 auto;
+    .flex(center, space-between);
+  }
+
+  &__initials {
+    .flex(center);
+    a {
+      font-size: 40px;
+      color: @sunrise-nav;
+      &:hover {
+        color: @sunrise-yellow;
+      }
+    }
+  }
+
+  &__links {
+    .flex(center);
+    a {
+      color: @white;
+      font-size: 15px;
+      margin: 0 30px;
+      &.-is-active {
+        color: @sunrise-yellow;
+      }
+    }
+  }
+
+}

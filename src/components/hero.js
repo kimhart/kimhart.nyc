@@ -5,34 +5,32 @@ import Sunset from "../components/icons/sunset"
 import Button from "../components/button"
 
 const Hero = () => (
-  <div className="home__hero">
-    <div className="home__location">
-      <h2>
+  <div className="hero">
+    <div className="hero__location">
+      <h3>
         BK <div /> NYC <div />
         <IconLocation />
-      </h2>
+      </h3>
     </div>
-    <div className="home__intro">
-      <div className="home__theme-toggles">
+    <div className="hero__intro">
+      <div className="hero__theme-toggles">
         <Sunrise />
         <Sunset />
       </div>
-      <div className="home__name-wrap">
+      <div className="hero__name-wrap">
         <h1>Kim Hart</h1>
-        <span className="home__shadow">Kim Hart</span>
+        <span className="hero__shadow">Kim Hart</span>
       </div>
-      <div className="home__code">
-        {`<FrontEndEngineer location="Brooklyn" productDesign={true}`} />
-      </div>
-      <div className="home__ctas">
+      <h2 className="hero__headline">
+        Front-end engineer building UIs & design systems @ JW Player
+      </h2>
+      <div className="hero__ctas">
         <Button type="secondary" text="About" link="about" />
-        <Button type="primary" text="See My Work" link="portfolio" />
+        <Button type="primary" text="See My Work" link="#work" />
         <Button type="secondary" text="Resume" link="resume" />
       </div>
-      <div className="home__one-liner">
-        Currently building scalable, beautiful UIs @ JW Player
-      </div>
     </div>
+    <div className="hero__diagonal-overlay" />
   </div>
 )
 
