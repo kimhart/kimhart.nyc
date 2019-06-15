@@ -4,11 +4,11 @@
   font-family: @roboto;
   transition: all .5s ease-in-out;
 
-  &.theme-sunrise {
+  .light-mode & {
     background: linear-gradient(to bottom right, @sunrise-peach, @sunrise-yellow);
   }
 
-  &.theme-sunset {
+  .dark-mode & {
     background: linear-gradient(to bottom right, @sunset-purple, @sunset-blue);
   }
 
@@ -20,11 +20,11 @@
     right: 0;
     -webkit-clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
-    transition: all .5s ease-in-out;
-    .theme-sunrise & {
+    transition: background .5s ease-in-out;
+    .light-mode & {
       background: @sunrise-overlay;
     }
-    .theme-sunset & {
+    .dark-mode & {
       background: @sunset-overlay;
     }
   }
@@ -87,12 +87,13 @@
       position: absolute;
       top: 0;
       z-index: 2;
-      transition: all .5s ease;
-      .theme-sunrise & {
+      transition: all 1s ease;
+      .light-mode & {
         color: @sunrise-header-shadow;
         transform: translate(-9px, 9px);
+
       }
-      .theme-sunset & {
+      .dark-mode & {
         color: @sunset-header-shadow;
         transform: translate(9px, 9px);
       }
@@ -102,7 +103,7 @@
   &__theme-toggles {
     .flex(center, center);
     margin-bottom: 20px;
-    .icon {
+    .theme-toggle {
       margin: 20px;
       cursor: pointer;
     }
@@ -125,4 +126,3 @@
     margin: 20px 0;
   }
 }
-

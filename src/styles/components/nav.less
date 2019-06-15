@@ -1,14 +1,22 @@
 .nav {
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s ease-in;
   height: 60px;
-  background: fade(@sunrise-peach, 70%);
+  background: @sunrise-nav;
   margin: 0;
   position: sticky;
+  z-index: 1000;
   top: 0;
   left: 0;
   right: 0;
   font-family: @roboto;
   padding: 0 60px;
   .flex(@align: center);
+
+  .dark-mode & {
+    background: @sunset-nav;
+  }
 
   a {
     text-decoration: none;
@@ -27,9 +35,9 @@
     .flex(center);
     a {
       font-size: 40px;
-      color: @sunrise-nav;
-      &:hover {
-        color: @sunrise-yellow;
+      color: @sunrise-nav-emphasis;
+      .dark-mode & {
+        color: @sunset-nav-emphasis;
       }
     }
   }
@@ -40,10 +48,27 @@
       color: @white;
       font-size: 15px;
       margin: 0 30px;
-      &.-is-active {
+      &:hover {
         color: @sunrise-yellow;
+        .dark-mode & {
+          color: @sunset-nav-emphasis;
+        }
       }
     }
+  }
+
+  &__themes {
+    margin-left: 20px;
+    width: 40px;
+  }
+
+  &.-is-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.-is-transparent {
+    background: transparent;
   }
 
 }
