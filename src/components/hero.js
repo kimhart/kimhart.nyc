@@ -4,34 +4,49 @@ import Sunrise from "../components/icons/sunrise"
 import Sunset from "../components/icons/sunset"
 import Button from "../components/button"
 
-const Hero = () => (
-  <div className="hero">
-    <div className="hero__location">
-      <h3>
-        BK <div /> NYC <div />
-        <IconLocation />
-      </h3>
-    </div>
-    <div className="hero__intro">
-      <div className="hero__theme-toggles">
-        <Sunrise />
-        <Sunset />
-      </div>
-      <div className="hero__name-wrap">
-        <h1>Kim Hart</h1>
-        <span className="hero__shadow">Kim Hart</span>
-      </div>
-      <h2 className="hero__headline">
-        Front-end engineer building UIs & design system methodology @ JW Player
-      </h2>
-      <div className="hero__ctas">
-        <Button type="secondary" text="About" link="about" />
-        <Button type="primary" text="See My Work" link="#projects" />
-        <Button type="secondary" text="Resume" link="resume" />
-      </div>
-    </div>
-    <div className="hero__diagonal-overlay" />
-  </div>
-)
+export default class Hero extends React.Component {
 
-export default Hero
+  state = { theme: 'sunrise' };
+
+  handleTheme = theme => {
+    this.setState({ theme });
+    this.props.themeChange && this.props.themeChange(theme);
+    console.log(theme);
+  }
+
+  render() {
+    const { theme } = this.state;
+
+    return (
+      <div className={`hero theme-${theme}`}>
+        <div className="hero__location">
+          <h3>
+            BK <div /> NYC <div />
+            <IconLocation />
+          </h3>
+        </div>
+        <div className="hero__intro">
+          <div className="hero__theme-toggles">
+            <Sunrise onClick={this.handleTheme} theme={theme} />
+            <Sunset onClick={this.handleTheme} theme={theme} />
+          </div>
+          <div className="hero__name-wrap">
+            <h1>Kim Hart</h1>
+            <span className="hero__shadow">Kim Hart</span>
+          </div>
+          <h2 className="hero__headline">
+            Front-end engineer building UIs & design system methodology @ JW
+            Player
+          </h2>
+          <div className="hero__ctas">
+            <Button type="secondary" text="About" link="about" />
+            <Button type="primary" text="See My Work" link="#projects"  />
+            <Button type="secondary" text="Resume" link="resume"  />
+          </div>
+        </div>
+        <div className="hero__diagonal-overlay" />
+      </div>
+    )
+  }
+}
+

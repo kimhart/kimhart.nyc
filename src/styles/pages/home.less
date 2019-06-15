@@ -2,26 +2,32 @@
   margin: 0;
   padding: 0;
   font-family: @roboto;
-  background: @sunrise-bg;
-
-  &__projects {
-    margin: 0 auto;
-    max-width: 1220px;
-    padding: 60px;
-    columns: 2;
+  &.theme-sunrise & {
+    background: @sunrise-bg;
+  }
+  &.theme-sunset & {
+    background: @sunset-bg;
   }
 
-  &__project {
-    margin-bottom: 12px;
-    &:nth-of-type(3) {
-      border: 1px solid @border-gray;
+  &__projects {
+    padding: 40px;
+    margin: 0 auto;
+    columns: 2;
+    column-gap: 16px;
+    max-width: 1240px;
+    @media screen and (max-width: 870px) {
+      columns: 1;
     }
   }
 
-  &__tools {
+  &__project {
+    break-inside: avoid-column;
+    margin-bottom: 16px;
+  }
+
+  .tools {
     width: 70%;
-    padding-bottom: 50px;
-    margin: 0 auto;
+    margin: 0 auto 80px auto;
     text-align: center;
 
     h4 {
