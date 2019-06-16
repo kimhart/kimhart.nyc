@@ -3,12 +3,22 @@
   padding: 0;
   font-family: @roboto;
 
+  .light-mode & {
+    background: @sunrise-bg;
+    color: @sunrise-text;
+  }
+  .dark-mode & {
+    background: @sunset-bg;
+    color: @sunset-text;
+  }
+  
   &__projects {
-    padding: 100px;
+    .page-center();
+    padding-top: 110px;
     margin: 0 auto;
     columns: 2;
     column-gap: 16px;
-    max-width: 1300px;
+    max-width: @page-max-width;
     @media screen and (max-width: 870px) {
       columns: 1;
     }

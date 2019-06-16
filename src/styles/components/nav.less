@@ -11,7 +11,7 @@
   left: 0;
   right: 0;
   font-family: @roboto;
-  padding: 0 60px;
+  padding: 0 70px;
   .flex(@align: center);
 
   .dark-mode & {
@@ -26,7 +26,7 @@
   }
 
   &__content {
-    width: 1000px;
+    width: @page-max-width;
     margin: 0 auto;
     .flex(center, space-between);
   }
@@ -69,6 +69,7 @@
 
   &.-is-transparent {
     background: transparent;
+    position: absolute;
   }
 
 }

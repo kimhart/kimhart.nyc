@@ -45,7 +45,7 @@ export default class IndexPage extends React.Component {
 
   handleScroll = () => {
     const hero = document.querySelector('.hero');
-    if (hero.getBoundingClientRect().bottom <= 50) {
+    if (hero.getBoundingClientRect().bottom <= 20) {
       this.setState({ isHidden: false });
     } else {
       this.setState({ isHidden: true });

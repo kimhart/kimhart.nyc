@@ -38,7 +38,6 @@ const Hero = () => {
           <Button type="secondary" text="Resume" link="resume"  />
         </div>
       </div>
-      <div className="hero__diagonal-overlay" />
     </div>
   )
 }
