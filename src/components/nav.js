@@ -27,7 +27,7 @@ const Nav = (props) => {
         </div>
         <div className="nav__links">
           <Link to="/about">About</Link>
-          <a href="/#projects">Work</a>
+          <Link to="/#projects">Work</Link>
           <Link to="/resume">Resume</Link>
           <div className="nav__themes">
             {!darkMode.value && <Sunrise size="s" onClick={handleTheme} />}
