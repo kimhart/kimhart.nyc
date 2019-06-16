@@ -2,6 +2,10 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -185,7 +189,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em 'Roboto', sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }

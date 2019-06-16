@@ -1,0 +1,42 @@
+[
+  {
+    "src": "projects/dashboard.png",
+    "alt": "JW Player Dashboard",
+    "title": "JW Player Dashboard Homepage"
+  },
+  {
+    "src": "projects/support.png",
+    "alt": "JW Player Support site",
+    "title": "JW Player Support"
+  },
+  {
+    "src": "projects/tally.png",
+    "alt": "Tally",
+    "title": "Tally"
+  },
+  {
+    "src": "projects/idc.png",
+    "alt": "IDCWDYW App",
+    "title": "I Don't Care, What Do You Want? (IDCWDYW)"
+  },
+  {
+    "src": "projects/storybook.png",
+    "alt": "Storybook UI Components Library",
+    "title": "Storybook UI Components (React)"
+  },
+  {
+    "src": "projects/recs.png",
+    "alt": "JW Player Recommendations Microsite",
+    "title": "JW Player Recommendations"
+  },
+  {
+    "src": "projects/metadata.png",
+    "alt": "Intelligent Metadata Viewer landing page",
+    "title": "Intelligent Metadata Viewer"
+  },
+  {
+    "src": "projects/metadata2.png",
+    "alt": "Intelligent Metadata Viewer detail page",
+    "title": "Intelligent Metadata Viewer"
+  }
+]

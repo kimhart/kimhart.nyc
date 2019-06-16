@@ -11,3 +11,33 @@
   justify-content: @justify;
   flex-direction: @direction;
 }
+
+.buildGradient(@height, @min-height) {
+  .light-mode & { background: linear-gradient(to bottom right, @sunrise-peach, @sunrise-yellow);}
+  .dark-mode & { background: linear-gradient(to bottom right, @sunset-purple, @sunset-blue);}
+  &::after {
+    content: '';
+    height: @height;
+    min-height: @min-height;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
+    transition: background .5s ease-in-out;
+    .light-mode & { background: @sunrise-overlay; }
+    .dark-mode & { background: @sunset-overlay; }
+  }
+}
+
+.page-center() {
+  max-width: @page-max-width;
+  padding: @page-padding 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media screen and (max-width: @page-max-width) {
+    padding: @page-padding;
+  }
+}

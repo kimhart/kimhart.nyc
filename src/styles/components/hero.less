@@ -1,0 +1,105 @@
+.hero {
+  height: 100vh;
+  position: relative;
+  font-family: @roboto;
+  transition: all .5s ease-in-out;
+
+  .buildGradient(100vh, 100vh);
+
+  &__location {
+    position: absolute;
+    top: 140px;
+    left: -20px;
+
+    h3 {
+      transform: rotate(270deg);
+      color: @white;
+      font-weight: 900;
+      font-size: 30px;
+      margin-bottom: 0;
+
+      .flex(center, center);
+
+      > div {
+        display: inline-block;
+        width: 3px;
+        margin: 0 12px;
+        background: @white;
+        height: .65em;
+      }
+    }
+
+    .icon {
+      transform: rotate(90deg);
+      margin-left: 2px;
+    }
+  }
+
+  &__intro {
+    .flex(center, center, column);
+    height: 100vh;
+  }
+
+  &__name-wrap {
+    position: relative;
+    
+    h1 {
+      margin-bottom: 0;
+      z-index: 5;
+      position: relative;
+      color: @white;
+      user-select: none;
+    }
+
+    h1,
+    .hero__shadow {
+      font-weight: 900;
+      font-size: 125px;
+      text-transform: uppercase;
+      font-family: @roboto;
+      line-height: 1.5;
+    }
+    
+    .hero__shadow {
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      transition: all 1s ease;
+      .light-mode & {
+        color: @sunrise-header-shadow;
+        transform: translate(-9px, 9px);
+
+      }
+      .dark-mode & {
+        color: @sunset-header-shadow;
+        transform: translate(9px, 9px);
+      }
+    }
+  }
+
+  &__theme-toggles {
+    .flex(center, center);
+    margin-bottom: 20px;
+    .theme-toggle {
+      margin: 20px;
+      cursor: pointer;
+    }
+  }
+  
+  &__headline {
+    font-weight: 300;
+    font-size: 20px;
+    color: @white;
+    position: relative;
+    z-index: 10;
+    font-family: @roboto;
+    margin: -10px 0 60px;
+  }
+
+  &__ctas {
+    .flex(center, center);
+    position: relative;
+    z-index: 10;
+    margin: 20px 0;
+  }
+}

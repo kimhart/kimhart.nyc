@@ -3,37 +3,43 @@ import IconLocation from "../components/icons/location"
 import Sunrise from "../components/icons/sunrise"
 import Sunset from "../components/icons/sunset"
 import Button from "../components/button"
+import useDarkMode from "use-dark-mode"
 
-const Hero = () => (
-  <div className="home__hero">
-    <div className="home__location">
-      <h2>
-        BK <div /> NYC <div />
-        <IconLocation />
-      </h2>
-    </div>
-    <div className="home__intro">
-      <div className="home__theme-toggles">
-        <Sunrise />
-        <Sunset />
-      </div>
-      <div className="home__name-wrap">
-        <h1>Kim Hart</h1>
-        <span className="home__shadow">Kim Hart</span>
-      </div>
-      <div className="home__code">
-        {`<FrontEndEngineer location="Brooklyn" productDesign={true}`} />
-      </div>
-      <div className="home__ctas">
-        <Button type="secondary" text="About" link="about" />
-        <Button type="primary" text="See My Work" link="portfolio" />
-        <Button type="secondary" text="Resume" link="resume" />
-      </div>
-      <div className="home__one-liner">
-        Currently building scalable, beautiful UIs @ JW Player
-      </div>
-    </div>
-  </div>
-)
+const Hero = () => {
+  
+  const darkMode = useDarkMode(false);
 
-export default Hero
+  const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
+
+  return (
+    <div className={`hero`}>
+      <div className="hero__location">
+        <h3>
+          BK <div /> NYC <div />
+          <IconLocation />
+        </h3>
+      </div>
+      <div className="hero__intro">
+        <div className="hero__theme-toggles">
+          <Sunrise onClick={handleTheme} size="l" />
+          <Sunset onClick={handleTheme} size="l" />
+        </div>
+        <div className="hero__name-wrap">
+          <h1>Kim Hart</h1>
+          <span className="hero__shadow">Kim Hart</span>
+        </div>
+        <h2 className="hero__headline">
+          Front-end engineer building UIs & design system methodology @ JW
+          Player
+        </h2>
+        <div className="hero__ctas">
+          <Button type="secondary" text="About" link="about" />
+          <Button type="primary" text="See My Work" link="#projects"  />
+          <Button type="secondary" text="Resume" link="resume"  />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Hero;
