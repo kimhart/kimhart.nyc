@@ -42,13 +42,6 @@
     "link": "https://idcwdyw.herokuapp.com/"
   },
   {
-    "src": "projects/support-2.png",
-    "alt": "JW Player Support site",
-    "title": "JW Player Support Site",
-    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
-    "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
-  },
-  {
     "src": "projects/dashboard.png",
     "alt": "JW Player Dashboard",
     "title": "JW Player Dashboard",
@@ -61,6 +54,13 @@
     "title": "Storybook UI Components",
     "description": "React & Angular component library for JW Player products",
     "link": null
+  },
+  {
+    "src": "projects/support-2.png",
+    "alt": "JW Player Support site",
+    "title": "JW Player Support Site",
+    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
+    "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
   },
   {
     "src": "projects/support.png",

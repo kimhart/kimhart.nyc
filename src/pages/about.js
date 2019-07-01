@@ -43,7 +43,7 @@ export default class About extends React.Component {
                 <h2>
                   While I'm down to learn pretty much anything, I'm happiest
                   working at the intersection of design and engineering, where I
-                  can focus on creative architecture and elegant UI.
+                  can focus on creative problem-solving and elegant UI.
                 </h2>
               </div>
               <div className="page--about__photo">
@@ -137,6 +137,7 @@ export default class About extends React.Component {
                   <h4>General Assembly</h4>
                   <span>WDI Alumni</span>
                 </div>
+                <div className="page--about__social"></div>
               </div>
             </div>
           </div>
