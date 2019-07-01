@@ -1,41 +1,63 @@
 .project {
   position: relative;
   break-inside: avoid-column;
+  border: 1px solid transparent;
   margin-bottom: 16px;
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-    background: transparent;
-    transition: all .4s ease;
-    border: 1px solid transparent;
-  }
-  &.-hover {
-    cursor: pointer;
-    &::after {
-      border: 1px solid @border-gray;
-      background: white;
-      .dark-mode & {
-        background: @sunset-highlight;
-      }
-    }
-  }
 
   &__info {
+    position: absolute;
+    visibility: hidden;
+    background: white;
+    opacity: 0;
     max-height: 100%;
     max-width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
     bottom: 0;
-    z-index: 15;
+    right: 0;
+    left: 0;
+    z-index: 10;
     text-align: left;
-    margin: 30px;
+    padding: 30px;
+    transition: all .3s ease-in-out;
     .flex(flex-start, center, column);
+
+    &::before,
+    &::after {
+      content: '';
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 0em;
+    }
+    &::before {
+      border-width: 0em;
+      transition: all .3s ease-in-out;
+      border-right-color: @sunrise-nav;
+      border-bottom-color: @sunrise-nav;
+    }
+    &::after {
+      width: 1.5em;
+      height: 1.5em;
+      bottom: 1.2em;
+      right: 1em;
+      z-index: 20;
+      opacity: 0;
+      transition: all .2s .2s ease-in-out;
+      background: url('../../images/chevron-right-white.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .dark-mode & {
+      background: black;
+
+      &::before {
+        border-right-color: @sunset-nav;
+        border-bottom-color: @sunset-nav;
+      }
+    }
   }
 
   &__title {
@@ -47,7 +69,33 @@
     color: @sunrise-highlight;
     margin-bottom: 20px;
     .dark-mode & {
-      color: @sunset-bg;
+      color: @sunset-nav;
     }
   }
+
+  &__description {
+    color: black;
+    .dark-mode & {
+      color: white;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    .project__info {
+      border: 1px solid @border-gray;
+      opacity: 1;
+      visibility: visible;
+      &::before {
+        border-width: 3em;
+      }
+      &::after {
+        opacity: 1;
+      }
+      .dark-mode & {
+        border: none;
+      }
+    }
+  }
+
 }

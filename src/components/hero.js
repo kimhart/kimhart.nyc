@@ -11,12 +11,6 @@ const Hero = () => {
 
   const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
 
-  const buildName = () => {
-    const name = "Kim Hart";
-    const split = name.split('');
-    return split.map((letter, i) => <span className={letter === " " ? "space" : ""} key={i}>{letter}</span>);
-  }
-
   return (
     <div className={`hero`}>
       <div className="hero__location">
@@ -33,8 +27,8 @@ const Hero = () => {
           <Sunset onClick={handleTheme} size="l" />
         </div>
         <div className="hero__name-wrap">
-          <h1 className="title-animate-in">{buildName()}</h1>
-          <span className="hero__shadow title-animate-in">{buildName()}</span>
+          <h1>Kim Hart</h1>
+          <span className="hero__shadow">Kim Hart</span>
         </div>
         <h2 className="hero__headline">
           Front-end engineer building UIs & design system methodology @ JW
