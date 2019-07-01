@@ -34,11 +34,6 @@
     height: .65em;
   }
 
-  &__pindrop {
-    opacity: 0;
-    animation: dropIn .5s .3s forwards;
-  }
-
   &__intro {
     .flex(center, center, column);
     height: 100vh;
@@ -106,22 +101,3 @@
   }
 }
 
-@keyframes dropIn {
-  from {
-    transform: translateX(1000px)
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes dropIn {
-  from {
-    transform: translateX(1000px)
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}

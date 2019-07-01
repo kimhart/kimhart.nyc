@@ -25,7 +25,14 @@
     "alt": "Tally",
     "title": "Tally",
     "description": "A React web app for keeping tracking US Senators and House reps",
-    "link": "https://tally-us.com"
+    "link": "https://tally.us.com"
+  },
+  {
+    "src": "projects/Bitmap.png",
+    "alt": "Tally",
+    "title": "Tally",
+    "description": "A React web app for keeping tracking US Senators and House reps",
+    "link": "https://tally.us.com"
   },
   {
     "src": "projects/idc.png",
