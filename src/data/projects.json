@@ -17,7 +17,7 @@
     "src": "projects/click-to-play.png",
     "alt": "Click-to-Play Video Wall",
     "title": "Click-to-Play Video Wall",
-    "description": "Video display that launches players on-click",
+    "description": "Video display proof of concept",
     "link": "https://developer.jwplayer.com/jw-player/demos/innovation/click-to-play/"
   },
   {
@@ -28,20 +28,6 @@
     "link": "https://tally-us.com"
   },
   {
-    "src": "projects/support-2.png",
-    "alt": "JW Player Support site",
-    "title": "JW Player Support Site",
-    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
-    "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
-  },
-  {
-    "src": "projects/support.png",
-    "alt": "JW Player Support site",
-    "title": "JW Player Support Site",
-    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
-    "link": "https://support.jwplayer.com"
-  },
-  {
     "src": "projects/idc.png",
     "alt": "IDCWDYW App",
     "title": "I Don't Care, What Do You Want? (IDCWDYW)",
@@ -49,10 +35,17 @@
     "link": "https://idcwdyw.herokuapp.com/"
   },
   {
+    "src": "projects/support-2.png",
+    "alt": "JW Player Support site",
+    "title": "JW Player Support Site",
+    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
+    "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
+  },
+  {
     "src": "projects/dashboard.png",
     "alt": "JW Player Dashboard",
-    "title": "JW Player Dashboard Homepage",
-    "description": "Content management dashboard for JW Player customers",
+    "title": "JW Player Dashboard",
+    "description": "Content & account management dashboard for customers",
     "link": "https://dashboard.jwplayer.com"
   },
   {
@@ -63,17 +56,17 @@
     "link": null
   },
   {
+    "src": "projects/support.png",
+    "alt": "JW Player Support site",
+    "title": "JW Player Support Site",
+    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
+    "link": "https://support.jwplayer.com"
+  },
+  {
     "src": "projects/recs.png",
     "alt": "JW Player Recommendations Microsite",
     "title": "JW Player Recommendations",
     "description": "Marketing site for the JW Player recommendations engine",
-    "link": null
-  },
-  {
-    "src": "projects/metadata.png",
-    "alt": "Intelligent Metadata Viewer landing page",
-    "title": "Intelligent Metadata Viewer",
-    "description": "Web app for a quick view of video metadata & transcriptions",
     "link": null
   },
   {
