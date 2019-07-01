@@ -1,0 +1,53 @@
+.project {
+  position: relative;
+  break-inside: avoid-column;
+  margin-bottom: 16px;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: transparent;
+    transition: all .4s ease;
+    border: 1px solid transparent;
+  }
+  &.-hover {
+    cursor: pointer;
+    &::after {
+      border: 1px solid @border-gray;
+      background: white;
+      .dark-mode & {
+        background: @sunset-highlight;
+      }
+    }
+  }
+
+  &__info {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 15;
+    text-align: left;
+    margin: 30px;
+    .flex(flex-start, center, column);
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 900;
+    font-family: @roboto;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: @sunrise-highlight;
+    margin-bottom: 20px;
+    .dark-mode & {
+      color: @sunset-bg;
+    }
+  }
+}

@@ -10,6 +10,8 @@
     position: absolute;
     top: 140px;
     left: -20px;
+    opacity: 0;
+    animation: fade .5s .8s forwards;
 
     h3 {
       transform: rotate(270deg);
@@ -17,22 +19,26 @@
       font-weight: 900;
       font-size: 30px;
       margin-bottom: 0;
-
       .flex(center, center);
-
-      > div {
-        display: inline-block;
-        width: 3px;
-        margin: 0 12px;
-        background: @white;
-        height: .65em;
-      }
     }
 
     .icon {
       transform: rotate(90deg);
-      margin-left: 2px;
+      margin-top: 5px;
     }
+  }
+
+  &__location-divider {
+    display: inline-block;
+    width: 3px;
+    margin: 0 12px;
+    background: @white;
+    height: .65em;
+  }
+
+  &__pindrop {
+    opacity: 0;
+    animation: dropIn .7s 1s forwards;
   }
 
   &__intro {
@@ -58,8 +64,27 @@
       text-transform: uppercase;
       font-family: @roboto;
       line-height: 1.5;
+      span {
+        opacity: 0;
+        display: inline-block;
+        animation: fadeInUp .4s forwards;
+          -webkit-animation: fadeInUp .4s forwards;
+
+        &.space {
+          width: 28px;
+        }
+
+        &:nth-child(2) { animation-delay: .1s; }
+        &:nth-child(3) { animation-delay: .2s; }
+        &:nth-child(4) { animation-delay: .3s; }
+        &:nth-child(5) { animation-delay: .4s; }
+        &:nth-child(6) { animation-delay: .5s; }
+        &:nth-child(7) { animation-delay: .6s; }
+        &:nth-child(8) { animation-delay: .7s; }
+        &:nth-child(9) { animation-delay: .8s; }
+      }
     }
-    
+
     .hero__shadow {
       position: absolute;
       top: 0;
@@ -68,7 +93,6 @@
       .light-mode & {
         color: @sunrise-header-shadow;
         transform: translate(-9px, 9px);
-
       }
       .dark-mode & {
         color: @sunset-header-shadow;
@@ -80,6 +104,9 @@
   &__theme-toggles {
     .flex(center, center);
     margin-bottom: 20px;
+    opacity: 0;
+    animation: fade .5s .8s forwards; 
+      -webkit-animation: fade .5s .8s forwards;
     .theme-toggle {
       margin: 20px;
       cursor: pointer;
@@ -94,6 +121,9 @@
     z-index: 10;
     font-family: @roboto;
     margin: -10px 0 60px;
+    opacity: 0;
+    animation: fade .5s .8s forwards; 
+      -webkit-animation: fade .5s .8s forwards;
   }
 
   &__ctas {
@@ -101,5 +131,70 @@
     position: relative;
     z-index: 10;
     margin: 20px 0;
+    opacity: 0;
+    animation: fade .5s .8s forwards; 
+      -webkit-animation: fade .5s .8s forwards;
   }
+
+}
+
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0,30px,0)
+  }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+    transform: translate3d(0,0,0);
+  }
+  to {
+    transform: translate3d(0,30px,0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0,30px,0)
+  }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+@keyframes dropIn {
+  from {
+    transform: translateX(1000px)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes dropIn {
+  from {
+    transform: translateX(1000px)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@-webkit-keyframes fade {
+  from { opacity: 0 }
+  to { opacity: 1 }
 }

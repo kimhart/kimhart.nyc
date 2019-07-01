@@ -1,10 +1,18 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Nav from "../components/nav"
 import Img from "gatsby-image"
 
 const AboutPage = ({data}) => {
+
+  useEffect(()=> {
+    window.addEventListener('scroll', handleScroll)
+  }, []);
+
+  const handleScroll = () => {
+    
+  };
 
   return (
     <Layout>
@@ -55,17 +63,18 @@ const AboutPage = ({data}) => {
             <br />
             <h4>General Assembly</h4> <strong>|</strong> <span>WDI Alumni</span>
           </div>
+          <div className="page--about__overlay" />
           <div className="page--about__bio">
             <p>
-              I currently spend my days at JW Player, where I'm building a design system and refactoring a legacy Angular codebase into a robust React component library.
+              I'm currently tackling design system architecture and refactoring a legacy Angular codebase into a React component library at JW Player.
             </p>
 
             <p>
-              I earned my BA in journalism and worked in the digital marketing space before learning to code. I'm a firm believer that some of the most creative engineers come from non-traditional backgrounds, and I'm always looking for ways to bring (and keep) diverse minds in tech through D&I initiatives.
+              I earned my BA in journalism and worked in the digital marketing space before learning to code. I'm a firm believer that some of the most creative engineers come from non-traditional backgrounds, and I'm always looking for ways to bring more diverse minds into tech through D&I initiatives.
             </p>
 
             <p>
-              When I'm not on a computer, you can probably find me at a concert or a music festival, traveling, or seeking out new craft breweries to try.
+              When I'm not on a computer, you can probably find me at a music festival, traveling, or seeking out new craft breweries to try.
             </p>
           </div>
         </div>

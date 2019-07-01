@@ -81,6 +81,7 @@
 
   &__main {
     .flex();
+    position: relative;
   }
 
   &__bio {
@@ -136,6 +137,25 @@
       h3 {
         color: @sunset-highlight;
       }
+    }
+  }
+
+  &__overlay {
+    height: 100vh;
+    transition: all .3s ease;
+    min-height: 100vw;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
+    transition: all .5s ease-in-out;
+    // .light-mode & { background: @sunrise-overlay; }
+    // .dark-mode & { background: @sunset-overlay; }
+
+    &.move {
+      transform: translateX(-100vw);
     }
   }
 }

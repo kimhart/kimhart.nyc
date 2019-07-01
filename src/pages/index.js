@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
-import Image from "../components/image"
 import Nav from "../components/nav"
+import Project from "../components/project"
 import { StaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
 
@@ -16,6 +16,7 @@ const renderProjects = props => (
               src
               alt
               title
+              description
             }
           }
         }
@@ -23,9 +24,7 @@ const renderProjects = props => (
     `}
     render={data =>
       data.allProjectsJson.edges.map((project, i) => (
-        <div className="home__project" key={i}>
-          <Image {...project.node} />
-        </div>
+        <Project key={i} {...project.node} />
       ))
     }
   />
@@ -72,5 +71,3 @@ export default class IndexPage extends React.Component {
     )
   }
 }
-
-// export default IndexPage;
