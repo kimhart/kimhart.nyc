@@ -1,0 +1,162 @@
+{
+  "jobs": [
+    {
+      "title": "Front End Engineer",
+      "company": "JW Player",
+      "link": "https://jwplayer.com",
+      "current": true,
+      "location": "New York, NY",
+      "duration": "April 2017 – Present",
+      "bullets": [
+        "Architecting a design system of color and typography variables, iconography, mixins, DOM structure guidelines and CSS naming conventions; inheritable across all products as a yarn or npm dependency",
+        "Creating a robust Typescript library of reusable React/Angular components with Storybook",
+        "Transitioning a monolithic legacy codebase (the JW dashboard) to the UI component system",
+        "Building a React simulated dashboard environment for fast user testing and visual QA",
+        "Created a repo of prototyping starter kits with baked-in JS and Less build tools (makes it quick + easy to spin up new feature POCs and sales demos)",
+        "Acted as lead engineer of the re-architecture and CMS migration of support.jwplayer.com (features include a Salesforce-authenticated case submission service, type-ahead search + article filtering, etc.)",
+        "Created custom settings within our headless CMS that allows non-technical contributors to write dynamic content that returns as JSON and renders as fully-styled UI elements",
+        "Maintain and update developer.jwplayer.com",
+        "Build data-driven product demos like Recommendations Preview Generator, Smart Thumbnails, Metadata Viewer, Click-to-Play Video Wall, etc.",
+        "Develop interactive data visualizations with D3",
+        "Mentor junior developers and interns"
+      ]
+    },
+    {
+      "title": "Co-Founder, Software Engineer",
+      "company": "Tally",
+      "link": "https://tally.us.com",
+      "current": false,
+      "location": "New York, NY",
+      "duration": "Oct 2016 – June 2018",
+      "bullets": [
+        "Built from the ground up, from the ideation & research phase, to design iteration & feature development, to data engineering, to coding the front end, to branding & product marketing",
+        "Work with data scientist/engineer to create API endpoints + data structure",
+        "Collaborate with product designer to develop a fully responsive mobile-first UI",
+        "Tools/stack: React, Sass/SCSS, Relay, GraphQL, Webpack, Node.js, Python, SQL, Heroku, JIRA"
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "company": "Pier 59 Studios",
+      "link": "https://www.pier59studios.com/",
+      "current": false,
+      "location": "New York, NY",
+      "duration": "May 2016 – Sept 2016",
+      "bullets": [
+        "Designed and built portfolio site for Industry Artist Management",
+        "Redesigned Art & Fashion Group site",
+        "Tools/stack: Sass, Angular, Node.js, MongoDB"
+      ]
+    },
+    {
+      "title": "Front End Developer",
+      "company": "TLC Marketing",
+      "link": "https: //www.tlcmarketing.com/",
+      "current": false,
+      "location": "New York, NY",
+      "duration": "Feb 2016 – May 2016",
+      "bullets": [
+        "Build front-end of promotional microsites for Pepperidge Farm, Banfi Vintners and Carrera Eyewear",
+        "Designed full-site UX wireframes and UI prototypes in Photoshop & Illustrator",
+        "Translated PSDs to responsive front end code for mobile & desktop",
+        "Tools/stack: HTML5, CSS, Javascript, Photoshop, Illustrator"
+      ]
+    },
+    {
+      "title": "Technology Marketing Associate",
+      "company": "Informa (Formerly Penton Media)",
+      "link": "https://informa.com/",
+      "current": false,
+      "location": "New York, NY",
+      "duration": "Feb 2014 – Oct 2015",
+      "bullets": [
+        "Managed email-driven lead generation for 20+ tech clients/month",
+        "Used A/B testing to determine best headlines, copy & layout styles",
+        "Drafted 10-15 weekly tech newsletters in Dreamweaver",
+        "Compiled and analyzed email testing data to find trends and best practices"
+      ]
+    },
+    {
+      "title": "Marketing Associate",
+      "company": "Evergent Group",
+      "link": "https://www.evergentgroup.com/",
+      "current": false,
+      "location": "Walnut Creek, CA",
+      "duration": "Dec 2012 – Dec 2013",
+      "bullets": [
+        "Managed marketing & social media initiatives for five unique brands, including a staffing agency and a fleet management company",
+        "Drafted copy for blogs, newsletters, articles, press releases, and ads",
+        "Contributed to weekly branding campaigns, sales presentations, RFPs",
+        "Drafted copy for blogs, newsletters, articles, press releases, and ads"
+      ]
+    },
+    {
+      "title": "Marketing Intern",
+      "company": "Broadway San Diego",
+      "link": "https://www.broadwaysd.com/",
+      "current": false,
+      "location": "San Diego, CA",
+      "duration": "Aug 2012 – Dec 2012",
+      "bullets": [
+        "Publicized shows to local news outlets and blogs", 
+        "Launched an original social media strategy and built brand profiles",
+        "Developed and distributed media kits for press night performances",
+        "Organized event details for premieres and cast parties"
+      ]
+    },
+    {
+      "title": "Events Intern",
+      "company": "Integrated Sports Marketing",
+      "link": "https://www.ismsports.net/",
+      "current": false,
+      "location": "San Diego, CA",
+      "duration": "May 2012 – Aug 2012",
+      "bullets": [
+        "Planned large-scale philanthropic events hosted by professional athletes",
+        "Used social media to encourage 1,000-15,000 people to attend four major events",
+        "Recruited 100+ volunteers for each event and acted as volunteer manager",
+        "Coordinated with 20-25 restaurants and vendors for each events"
+      ]
+    },
+    {
+      "title": "Level 6 Associate",
+      "company": "In-N-Out Burger",
+      "link": "http://www.in-n-out.com/",
+      "current": false,
+      "location": "San Diego, CA",
+      "duration": "Feb 2006 – June 2012",
+      "bullets": [
+        "Why is this still on my resume? Good question!",
+        "This job taught me everything I know about how to operate in a highly-systematized environment",
+        "It was excellent for honing a strong work ethic and communication skills",
+        "I learned how to handle tough situations with grace when the customer *definitely wasn't* always right",
+        "Their rigorous + formulated cooking patterns inadvertently prepped my brain to learn how to code",
+        "People seem to like this fact about me because I wore a silly uniform for many years",
+        "The food is dope (Shake Shack is good too, I'm not trying to start a burger culture war)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "program": "Bachelor of Arts — Journalism",
+      "school": "San Diego State University",
+      "link": "https://www.sdsu.edu/",
+      "location": "San Diego, CA",
+      "duration": "2008 - 2012",
+      "bullets": [
+        "Minor in Sociology",
+        "Member of Associated Students Cultural Arts & Special Events Board"
+      ]
+    },
+    {
+      "program": "Web Development Immersive",
+      "school": "General Assembly",
+      "link": "https://generalassemb.ly",
+      "location": "New York, NY",
+      "duration": "2015 - 2016",
+      "bullets": [
+        "3-month, full-time program focused on full stack web development basics"
+      ]
+    }
+  ]
+}
