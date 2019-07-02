@@ -21,10 +21,6 @@
     }
   }
 
-  .nav {
-    position: fixed;
-  }
-
   &__intro {
     color: @white;
     z-index: 5;
@@ -88,16 +84,29 @@
     min-width: 280px;
   }
 
+  .nav {
+    position: fixed;
+    // background: @sunrise-peach;
+    // .dark-mode & {
+    //   background: #698AFC;
+    // }
+  }
+
   &__main {
     position: absolute;
     top: 100vh;
     left: 0;
     right: 0;
     width: 100vw;
-    min-height: 100vh;
-    padding: 100px 70px 70px;
+    padding: 70px;
     background: white;
 
+    @media screen and (max-width: 985px) {
+      min-height: 120vh;
+    }
+    @media screen and (max-width: 830px) {
+      height: auto;
+    }
     h1 {
       color: @sunrise-nav-emphasis;
       font-weight: 900;
@@ -114,6 +123,10 @@
     font-weight: 100;
     color: @icon-gray;
     .flex(@justify: space-between);
+    @media screen and (max-width: 830px) {
+      flex-direction: column;
+      flex: 1;
+    }
   }
 
   &__bio {
@@ -173,7 +186,8 @@
       margin-right: 12px;
     }
     img {
-      width: 40px;
+      min-width: 42px;
+      width: 42px;
     }
   }
 

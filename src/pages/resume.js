@@ -29,7 +29,9 @@ const renderResume = props => (
       ))
     }
   />
-)
+);
+
+
 
 const Resume = () => {
 
