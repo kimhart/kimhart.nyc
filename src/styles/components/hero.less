@@ -17,22 +17,21 @@
       font-weight: 900;
       font-size: 30px;
       margin-bottom: 0;
-
       .flex(center, center);
-
-      > div {
-        display: inline-block;
-        width: 3px;
-        margin: 0 12px;
-        background: @white;
-        height: .65em;
-      }
     }
 
     .icon {
       transform: rotate(90deg);
-      margin-left: 2px;
+      margin-top: 5px;
     }
+  }
+
+  &__location-divider {
+    display: inline-block;
+    width: 3px;
+    margin: 0 12px;
+    background: @white;
+    height: .65em;
   }
 
   &__intro {
@@ -59,17 +58,14 @@
       font-family: @roboto;
       line-height: 1.5;
     }
-    
+
     .hero__shadow {
       position: absolute;
       top: 0;
       z-index: 2;
       transition: all 1s ease;
-      .light-mode & {
-        color: @sunrise-header-shadow;
-        transform: translate(-9px, 9px);
-
-      }
+      color: @sunrise-header-shadow;
+      transform: translate(-9px, 9px);
       .dark-mode & {
         color: @sunset-header-shadow;
         transform: translate(9px, 9px);
@@ -80,6 +76,7 @@
   &__theme-toggles {
     .flex(center, center);
     margin-bottom: 20px;
+
     .theme-toggle {
       margin: 20px;
       cursor: pointer;
@@ -103,3 +100,4 @@
     margin: 20px 0;
   }
 }
+

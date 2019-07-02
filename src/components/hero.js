@@ -6,7 +6,7 @@ import Button from "../components/button"
 import useDarkMode from "use-dark-mode"
 
 const Hero = () => {
-  
+
   const darkMode = useDarkMode(false);
 
   const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
@@ -15,8 +15,10 @@ const Hero = () => {
     <div className={`hero`}>
       <div className="hero__location">
         <h3>
-          BK <div /> NYC <div />
-          <IconLocation />
+          BK <div className="hero__location-divider" /> NYC <div className="hero__location-divider" />
+          <div className="hero__pindrop">
+            <IconLocation />
+          </div>
         </h3>
       </div>
       <div className="hero__intro">
@@ -34,8 +36,8 @@ const Hero = () => {
         </h2>
         <div className="hero__ctas">
           <Button type="secondary" text="About" link="about" />
-          <Button type="primary" text="See My Work" link="#projects"  />
-          <Button type="secondary" text="Resume" link="resume"  />
+          <Button type="primary" text="See My Work" link="#projects" />
+          <Button type="secondary" text="Resume" link="resume" />
         </div>
       </div>
     </div>

@@ -1,42 +1,86 @@
 [
   {
-    "src": "projects/dashboard.png",
-    "alt": "JW Player Dashboard",
-    "title": "JW Player Dashboard Homepage"
+    "src": "projects/childish.png",
+    "alt": "Mobile Dashboard",
+    "title": "Smol Dash",
+    "description": "A mobile analytics app for content creators",
+    "link": "http://simi-dash.longtailvideo.com"
   },
   {
-    "src": "projects/support.png",
-    "alt": "JW Player Support site",
-    "title": "JW Player Support"
+    "src": "projects/tacos.png",
+    "alt": "Mobile Dashboard",
+    "title": "Smol Dash",
+    "description": "A mobile analytics app for content creators",
+    "link": "http://simi-dash.longtailvideo.com"
+  },
+  {
+    "src": "projects/click-to-play.png",
+    "alt": "Click-to-Play Video Wall",
+    "title": "Click-to-Play Video Wall",
+    "description": "Video display proof of concept",
+    "link": "https://developer.jwplayer.com/jw-player/demos/innovation/click-to-play/"
   },
   {
     "src": "projects/tally.png",
     "alt": "Tally",
-    "title": "Tally"
+    "title": "Tally",
+    "description": "A React web app for keeping tracking US Senators and House reps",
+    "link": "https://tally.us.com"
+  },
+  {
+    "src": "projects/Bitmap.png",
+    "alt": "Tally",
+    "title": "Tally",
+    "description": "A React web app for keeping tracking US Senators and House reps",
+    "link": "https://tally.us.com"
   },
   {
     "src": "projects/idc.png",
     "alt": "IDCWDYW App",
-    "title": "I Don't Care, What Do You Want? (IDCWDYW)"
+    "title": "I Don't Care, What Do You Want? (IDCWDYW)",
+    "description": "Random restaurant generator based on Yelp's API",
+    "link": "https://idcwdyw.herokuapp.com/"
+  },
+  {
+    "src": "projects/dashboard.png",
+    "alt": "JW Player Dashboard",
+    "title": "JW Player Dashboard",
+    "description": "Content & account management dashboard for customers",
+    "link": "https://dashboard.jwplayer.com"
   },
   {
     "src": "projects/storybook.png",
     "alt": "Storybook UI Components Library",
-    "title": "Storybook UI Components (React)"
+    "title": "Storybook UI Components",
+    "description": "React & Angular component library for JW Player products",
+    "link": null
+  },
+  {
+    "src": "projects/support-2.png",
+    "alt": "JW Player Support site",
+    "title": "JW Player Support Site",
+    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
+    "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
+  },
+  {
+    "src": "projects/support.png",
+    "alt": "JW Player Support site",
+    "title": "JW Player Support Site",
+    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
+    "link": "https://support.jwplayer.com"
   },
   {
     "src": "projects/recs.png",
     "alt": "JW Player Recommendations Microsite",
-    "title": "JW Player Recommendations"
-  },
-  {
-    "src": "projects/metadata.png",
-    "alt": "Intelligent Metadata Viewer landing page",
-    "title": "Intelligent Metadata Viewer"
+    "title": "JW Player Recommendations",
+    "description": "Marketing site for the JW Player recommendations engine",
+    "link": null
   },
   {
     "src": "projects/metadata2.png",
     "alt": "Intelligent Metadata Viewer detail page",
-    "title": "Intelligent Metadata Viewer"
+    "title": "Intelligent Metadata Viewer",
+    "description": "Web app for a quick view of video metadata & transcriptions",
+    "link": null
   }
 ]
