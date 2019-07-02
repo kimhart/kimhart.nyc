@@ -1,7 +1,11 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Nav from "../components/nav"
+import Github from "../components/svgs/github"
+import Twitter from "../components/svgs/twitter"
+import LinkedIn from "../components/svgs/linkedin"
+import DevTo from "../components/svgs/devto"
 import Img from "gatsby-image"
 
 export default class About extends React.Component {
@@ -19,7 +23,6 @@ export default class About extends React.Component {
   handleScroll = () => {
     const content = document.querySelector(".page--about__main")
     if (content.getBoundingClientRect().top <= 70) {
-      console.log('top')
       this.setState({ isHidden: false });
     } else {
       this.setState({ isHidden: true });
@@ -63,9 +66,9 @@ export default class About extends React.Component {
                   tools, and the JW Player support site.
                 </p>
                 <p>
-                  I earned my BA in journalism and worked in the digital marketing
-                  space before learning to code. Curiosity about tech & design
-                  lead me to General Assembly's{" "}
+                  I earned my BA in journalism and worked in the digital
+                  marketing space before learning to code. Curiosity about tech
+                  & design lead me to General Assembly's{" "}
                   <a href="https://dev.to/kim_hart/5-lessons-my-bootcamp-didnt-teach-me">
                     web development bootcamp
                   </a>
@@ -74,8 +77,8 @@ export default class About extends React.Component {
                 </p>
                 <p>
                   I have a strong personal interest in D&I and have participated
-                  in mentorship roles, panel discussions & tutoring sessions
-                  for underrepresented groups through{" "}
+                  in mentorship roles, panel discussions & tutoring sessions for
+                  underrepresented groups through{" "}
                   <a
                     href="https://www.builtbygirls.com/about-wave"
                     target="_blank"
@@ -101,13 +104,13 @@ export default class About extends React.Component {
                   <a href="https://tally.us.com" target="_blank">
                     Tally
                   </a>
-                  , a React web app that helps you keep track of your senators and
-                  house reps.
+                  , a React web app that helps you keep track of your senators
+                  and house reps.
                 </p>
                 <p>
                   When I'm not on a computer, you can probably find me at a
-                  concert or music festival, traveling, or seeking out craft beer
-                  somewhere in Brooklyn.
+                  concert or music festival, traveling, or seeking out craft
+                  beer somewhere in Brooklyn.
                 </p>
               </div>
               <div className="page--about__panel">
@@ -137,7 +140,24 @@ export default class About extends React.Component {
                   <h4>General Assembly</h4>
                   <span>WDI Alumni</span>
                 </div>
-                <div className="page--about__social"></div>
+                <h3>Say Hello</h3>
+                <div className="page--about__social">
+                  <a href="https://github.com/kimhart" target="_blank">
+                    <Github />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/kimhart1/"
+                    target="_blank"
+                  >
+                    <LinkedIn />
+                  </a>
+                  <a href="https://twitter.com/kim_hart" target="_blank">
+                    <Twitter />
+                  </a>
+                  <a href="https://dev.to/kim_hart" target="_blank">
+                    <img src="social/Dev.to.png" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

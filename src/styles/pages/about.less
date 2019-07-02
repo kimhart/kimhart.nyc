@@ -33,6 +33,8 @@
     width: 100%;
     .flex(center);
     .page-center();
+    padding-left: 20px;
+    padding-right: 20px;
     @media screen and (max-width: 850px) {
       flex-wrap: wrap;
       .flex(center, center);
@@ -89,7 +91,6 @@
   &__main {
     position: absolute;
     top: 100vh;
-    bottom: 0;
     left: 0;
     right: 0;
     width: 100vw;
@@ -127,22 +128,24 @@
     p {
       color: @icon-gray;
       margin-bottom: 30px;
-      font-size: 19px;
+      font-size: 17px;
       font-weight: 100;
     }
   }
 
   &__panel {
     width: 25%;
-    margin-top: 20px;
     h3 {
       font-size: 17px;
       font-weight: 900;
       text-transform: uppercase;
-      margin-bottom: 40px;
+      margin: 50px 0 20px 0;
       color: @sunrise-nav;
       .dark-mode & {
         color: @sunset-nav;
+      }
+      &:first-of-type {
+        margin-top: 20px;
       }
     }
 
@@ -160,6 +163,17 @@
       font-size: 15px;
       display: block;
       line-height: 1.4;
+    }
+  }
+
+  &__social {
+    .flex();
+    > a {
+      height: 24px;
+      margin-right: 12px;
+    }
+    img {
+      width: 40px;
     }
   }
 
