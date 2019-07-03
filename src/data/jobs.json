@@ -4,34 +4,21 @@
     "company": "JW Player",
     "link": "https://jwplayer.com",
     "current": true,
+    "education": false,
     "location": "New York, NY",
     "duration": "April 2017 – Present",
     "bullets": [
-      "Architecting a design system of color and typography variables, iconography, mixins, DOM structure guidelines and CSS naming conventions; inheritable across all products as a yarn or npm dependency",
-      "Creating a robust Typescript library of reusable React/Angular components with Storybook",
-      "Transitioning a monolithic legacy codebase (the JW dashboard) to the UI component system",
-      "Building a React simulated dashboard environment for fast user testing and visual QA",
-      "Created a repo of prototyping starter kits with baked-in JS and Less build tools (makes it quick + easy to spin up new feature POCs and sales demos)",
-      "Acted as lead engineer of the re-architecture and CMS migration of support.jwplayer.com (features include a Salesforce-authenticated case submission service, type-ahead search + article filtering, etc.)",
-      "Created custom settings within our headless CMS that allows non-technical contributors to write dynamic content that returns as JSON and renders as fully-styled UI elements",
-      "Maintain and update developer.jwplayer.com",
-      "Build data-driven product demos like Recommendations Preview Generator, Smart Thumbnails, Metadata Viewer, Click-to-Play Video Wall, etc.",
+      "Creating a robust UI component library with Storybook (both React + Angular)",
+      "Build a read-only mobile analytics version of the JW Dashboard",
+      "Architecting a design system of color and typography variables, iconography, mixins, etc.",
+      "Building a React simulated dashboard for fast user testing and visual QA",
+      "Created a repo of prototyping starter kits with baked-in JS and Less build tools",
+      "Lead support site's rearchitecture, built UI and a Salesforce-authenticated backend service",
+      "Created custom API parameters & content specs for CMS migration to Prismic.io",
+      "Maintain and update Developer site & Support site",
+      "Build data-driven product demos and POCs",
       "Develop interactive data visualizations with D3",
       "Mentor junior developers and interns"
-    ]
-  },
-  {
-    "title": "Co-Founder, Software Engineer",
-    "company": "Tally",
-    "link": "https://tally.us.com",
-    "current": false,
-    "location": "New York, NY",
-    "duration": "Oct 2016 – June 2018",
-    "bullets": [
-      "Built from the ground up, from the ideation & research phase, to design iteration & feature development, to data engineering, to coding the front end, to branding & product marketing",
-      "Work with data scientist/engineer to create API endpoints + data structure",
-      "Collaborate with product designer to develop a fully responsive mobile-first UI",
-      "Tools/stack: React, Sass/SCSS, Relay, GraphQL, Webpack, Node.js, Python, SQL, Heroku, JIRA"
     ]
   },
   {
@@ -39,6 +26,7 @@
     "company": "Pier 59 Studios",
     "link": "https://www.pier59studios.com/",
     "current": false,
+    "education": false,
     "location": "New York, NY",
     "duration": "May 2016 – Sept 2016",
     "bullets": [
@@ -52,6 +40,7 @@
     "company": "TLC Marketing",
     "link": "https: //www.tlcmarketing.com/",
     "current": false,
+    "education": false,
     "location": "New York, NY",
     "duration": "Feb 2016 – May 2016",
     "bullets": [
@@ -62,10 +51,11 @@
     ]
   },
   {
-    "title": "Technology Marketing Associate",
-    "company": "Informa (Formerly Penton Media)",
+    "title": "Marketing Associate",
+    "company": "Penton",
     "link": "https://informa.com/",
     "current": false,
+    "education": false,
     "location": "New York, NY",
     "duration": "Feb 2014 – Oct 2015",
     "bullets": [
@@ -80,6 +70,7 @@
     "company": "Evergent Group",
     "link": "https://www.evergentgroup.com/",
     "current": false,
+    "education": false,
     "location": "Walnut Creek, CA",
     "duration": "Dec 2012 – Dec 2013",
     "bullets": [
@@ -94,10 +85,11 @@
     "company": "Broadway San Diego",
     "link": "https://www.broadwaysd.com/",
     "current": false,
+    "education": false,
     "location": "San Diego, CA",
     "duration": "Aug 2012 – Dec 2012",
     "bullets": [
-      "Publicized shows to local news outlets and blogs", 
+      "Publicized shows to local news outlets and blogs",
       "Launched an original social media strategy and built brand profiles",
       "Developed and distributed media kits for press night performances",
       "Organized event details for premieres and cast parties"
@@ -108,6 +100,7 @@
     "company": "Integrated Sports Marketing",
     "link": "https://www.ismsports.net/",
     "current": false,
+    "education": false,
     "location": "San Diego, CA",
     "duration": "May 2012 – Aug 2012",
     "bullets": [
@@ -122,6 +115,7 @@
     "company": "In-N-Out Burger",
     "link": "http://www.in-n-out.com/",
     "current": false,
+    "education": false,
     "location": "San Diego, CA",
     "duration": "Feb 2006 – June 2012",
     "bullets": [
@@ -132,6 +126,29 @@
       "Their rigorous + formulated cooking patterns inadvertently prepped my brain to learn how to code",
       "People seem to like this fact about me because I wore a silly uniform for many years",
       "The food is dope (Shake Shack is good too, I'm not trying to start a burger culture war)"
+    ]
+  },
+  {
+    "title": "Bachelor of Arts — Journalism",
+    "company": "San Diego State University",
+    "current": false,
+    "education": true,
+    "link": "https://www.sdsu.edu/",
+    "location": "San Diego, CA",
+    "duration": "2008 - 2012",
+    "bullets": [
+      "Minor in Sociology",
+      "Member of Associated Students Cultural Arts & Special Events Board"
+    ]
+  },
+  {
+    "title": "Web Development Immersive",
+    "company": "General Assembly",
+    "link": "https://generalassemb.ly",
+    "location": "New York, NY",
+    "duration": "2015 - 2016",
+    "bullets": [
+      "3-month, full-time program focused on full stack web development basics"
     ]
   }
 ]

@@ -1,16 +1,162 @@
 .page--resume {
+  font-family: @roboto;
+  color: black;
 
   &__main {
-    padding: @page-padding;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 0;
+
+    @media screen and (max-width: 1240px) {
+      padding: 70px;
+      margin: 0;
+    }
 
     h1 {
       font-size: 96px;
+      font-family: @roboto;
       opacity: .4;
       font-weight: 700;
       color: @sunrise-nav;
       .dark-mode & {
         color: @sunset-nav;
       }
+    }
+  }
+
+  &__job {
+    margin: 55px 0 25px 70px;
+    position: relative;
+    padding-bottom: 55px;
+    border-bottom: 1px solid fade(@border-gray, 25%);
+    &:nth-of-type(8),
+    &:nth-of-type(10), {
+      border-bottom: 0;
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 300;
+      color: black;
+      font-family: @roboto;
+      strong {
+        font-weight: 700;
+      }
+      a, a:visited, a:active {
+        text-decoration: none;
+        color: black;
+        transition: all .2s ease-in-out;
+      }
+      a:hover {
+        color: @link-blue;
+      }
+    }
+    &.-is-current {
+      margin-bottom: 55px;
+      border-bottom: 0;
+      h2 {
+        font-size: 28px;
+      }
+      &::before {
+        content: 'Currently';
+        white-space: nowrap;
+        top: -34px;
+        left: -72px;
+        position: absolute;
+        font-size: 94px;
+        font-weight: 900;
+        z-index: -1;
+        color: fade(@sunrise-nav, 20%);
+        .dark-mode & {
+          color: fade(@sunset-nav, 12%);
+        }
+        @media screen and (max-width: 800px) {
+          font-size: 60px;
+          top: -25px;
+        }
+      }
+    }
+    &:nth-of-type(2)::before {
+      content: 'Past Experience';
+      white-space: nowrap;
+      top: -34px;
+      left: -72px;
+      position: absolute;
+      font-size: 94px;
+      font-weight: 900;
+      z-index: -1;
+      color: fade(@sunrise-nav, 20%);
+      .dark-mode & {
+        color: fade(@sunset-nav, 12%);
+      }
+      @media screen and (max-width: 800px) {
+        font-size: 60px;
+        top: -25px;
+      }
+    }
+    &.-is-education {
+      margin-top: 100px;
+      &::before {
+        content: 'Education';
+        white-space: nowrap;
+        top: -34px;
+        left: -72px;
+        position: absolute;
+        font-size: 94px;
+        font-weight: 900;
+        z-index: -1;
+        color: fade(@sunrise-nav, 20%);
+        .dark-mode & {
+          color: fade(@sunset-nav, 12%);
+        }
+        @media screen and (max-width: 800px) {
+          font-size: 60px;
+          top: -25px;
+        }
+      }
+    }
+  }
+
+  &__wrap {
+    .flex();
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  &__details {
+    margin-right: 70px;
+    min-width: 170px;
+    @media screen and (max-width: 800px) {
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 100;
+      white-space: nowrap;
+      margin: 5px 0 15px;
+      color: @sunrise-text;
+      font-family: @roboto;
+    }
+  }
+
+  &__location {
+    font-size: 17px;
+    font-weight: 100;
+    white-space: nowrap;
+    color: @sunrise-text;
+    .flex(@align: center);
+    .icon--location {
+      height: 19px;
+      margin: 0 5px 0 -2px;
+    }
+  }
+
+  &__bullets {
+    font-size: 15px;
+    font-weight: 300;
+    ul li {
+      line-height: 1.6;
+      margin-bottom: 10px;
     }
   }
 }

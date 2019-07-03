@@ -10,7 +10,10 @@ import Img from "gatsby-image"
 
 export default class About extends React.Component {
 
-  state = { isHidden: false };
+  state = { 
+    isHidden: false,
+    isTransparent: true 
+  };
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
@@ -21,11 +24,11 @@ export default class About extends React.Component {
   };
 
   handleScroll = () => {
-    const content = document.querySelector(".page--about__main")
-    if (content.getBoundingClientRect().top <= 70) {
-      this.setState({ isHidden: false });
+    const main = document.querySelector(".page--about__main")
+    if (main.getBoundingClientRect().top <= 60) {
+      this.setState({ isTransparent: false, isHidden: false });
     } else {
-      this.setState({ isHidden: true });
+      this.setState({ isTransparent: true });
     }
   };
 
@@ -54,7 +57,7 @@ export default class About extends React.Component {
               </div>
             </div>
           </div>
-          <Nav isTransparent={isHidden} />
+          <Nav {...this.state} />
           <div className="page--about__main">
             <div className="page--about__wrap">
               <div className="page--about__bio">
