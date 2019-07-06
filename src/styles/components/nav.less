@@ -13,9 +13,19 @@
   font-family: @roboto;
   padding: 0 70px;
   .flex(@align: center);
+  transition: all .3s .6s ease-in-out;
 
   .dark-mode & {
     background: @sunset-nav;
+  }
+
+  &.-menu-open {
+    transition: all .3s 0s ease-in-out;
+  }
+
+  @media screen and (max-width: 480px) {
+    position: fixed;
+    padding: 0 0 0 20px;
   }
 
   a {
@@ -28,16 +38,25 @@
   &__content {
     width: @page-max-width;
     margin: 0 auto;
+    position: relative;
     .flex(center, space-between);
   }
 
   &__initials {
+    height: 60px;
     .flex(center);
     a {
       font-size: 40px;
       color: @sunrise-nav-emphasis;
       .dark-mode & {
         color: @sunset-nav-emphasis;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      a { 
+        font-size: 34px; 
+        height: 100%;
+        .flex(center, flex-start);
       }
     }
   }
@@ -55,6 +74,9 @@
         }
       }
     }
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   &__themes {
@@ -62,9 +84,60 @@
     width: 40px;
   }
 
+  &__menu {
+    display: none;
+    @media screen and (max-width: 480px) {
+      display: block;
+      height: 60px; 
+      width: 100px;
+      padding-right: 15px;
+      .flex(center, flex-end);
+    }
+  }
+
+  &__menu-pane {
+    height: 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    transition: all .4s .6s ease-in-out;
+    .flex(@justify: center,@direction: column);
+    a {
+      display: block;
+      line-height: 1.3em;
+      color: @white;
+      font-size: 70px;
+      opacity: 0;
+      text-transform: none;
+      transition: all .4s .3s ease-in-out;
+      margin: 0 0 40px 0;
+    }
+    .-menu-open & {
+      padding: 20px;
+      height: calc(~"100vh - 60px");
+      background: @sunrise-highlight;
+      transition: all .4s ease-in-out;
+      a {
+        opacity: 1;
+      }
+      .dark-mode & {
+        background: @sunset-highlight;
+      }
+    }
+
+    .nav__themes {
+      margin: -40px 0 40px 0;
+    }
+  }
+
   &.-is-hidden {
     opacity: 0;
     visibility: hidden;
+    &.-menu-open {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   &.-is-transparent {
@@ -72,4 +145,11 @@
     position: absolute;
   }
 
+  &.-is-hidden, 
+  &.-is-transparent {
+    &.-menu-open {
+      background: @sunrise-highlight;
+      .dark-mode & { background: @sunset-highlight; }
+    }
+  }
 }
