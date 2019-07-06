@@ -10,23 +10,31 @@ const Nav = (props) => {
   
   const darkMode = useDarkMode(false);
   const [menuOpen, toggleMenu] = useState();
-  const { style } = document.body;
-  const about = document.body.querySelector(".page--about__main");
 
   const handleTheme = theme => theme === "light" ? darkMode.enable() : darkMode.disable();
 
   const openMenu = () => {
     toggleMenu(true);
-    style.maxHeight = '100vh';
-    style.overflow = 'hidden';
-    about ? about.style.position = 'static' : null;
+
+    if (typeof document !== "undefined") {
+      const { style } = document.body;
+      const about = document.body.querySelector(".page--about__main");
+      style.maxHeight = '100vh';
+      style.overflow = 'hidden';
+      about ? about.style.position = 'static' : null;
+    }
   }
 
   const closeMenu = () => {
     toggleMenu(false);
-    style.maxHeight = 'none';
-    style.overflow = 'normal';
-    about ? about.style.position = 'absolute' : null;
+
+    if (typeof document !== "undefined") {
+      const { style } = document.body;
+      const about = document.body.querySelector(".page--about__main");
+      style.maxHeight = 'none';
+      style.overflow = 'normal';
+      about ? about.style.position = 'absolute' : null;
+    }
   }
 
   const getClasses = () =>
