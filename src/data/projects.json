@@ -1,29 +1,25 @@
 [
   {
-    "src": "projects/childish.png",
+    "src": "smol-dash-app.gif",
     "alt": "Mobile Dashboard",
     "title": "Smol Dash",
+    "gif": true,
     "description": "A mobile analytics app for content creators",
-    "link": "http://simi-dash.longtailvideo.com"
+    "link": "http://simi-dash.longtailvideo.com/app"
   },
   {
-    "src": "projects/tacos.png",
+    "src": "projects/Bitmap2.png",
     "alt": "Mobile Dashboard",
     "title": "Smol Dash",
+    "gif": false,
     "description": "A mobile analytics app for content creators",
-    "link": "http://simi-dash.longtailvideo.com"
-  },
-  {
-    "src": "projects/click-to-play.png",
-    "alt": "Click-to-Play Video Wall",
-    "title": "Click-to-Play Video Wall",
-    "description": "Video display proof of concept",
-    "link": "https://developer.jwplayer.com/jw-player/demos/innovation/click-to-play/"
+    "link": "http://simi-dash.longtailvideo.com/app"
   },
   {
     "src": "projects/tally.png",
     "alt": "Tally",
     "title": "Tally",
+    "gif": false,
     "description": "A React web app for keeping tracking US Senators and House reps",
     "link": "https://tally.us.com"
   },
@@ -31,27 +27,47 @@
     "src": "projects/Bitmap.png",
     "alt": "Tally",
     "title": "Tally",
+    "gif": false,
     "description": "A React web app for keeping tracking US Senators and House reps",
     "link": "https://tally.us.com"
   },
   {
     "src": "projects/idc.png",
     "alt": "IDCWDYW App",
+    "gif": false,
     "title": "I Don't Care, What Do You Want? (IDCWDYW)",
     "description": "Random restaurant generator based on Yelp's API",
     "link": "https://idcwdyw.herokuapp.com/"
   },
   {
+    "src": "projects/click-to-play.png",
+    "alt": "Click-to-Play Video Wall",
+    "title": "Click-to-Play Video Wall",
+    "gif": false,
+    "description": "Video display proof of concept",
+    "link": "https://developer.jwplayer.com/jw-player/demos/innovation/click-to-play/"
+  },
+  {
+    "src": "particle-waves.gif",
+    "alt": "Particle Waves Data Viz",
+    "gif": true,
+    "title": "Particle Waves Data Viz",
+    "description": "Data visualization using three.js and canvas",
+    "link": "https://kimhart.github.io/project-showcase/particle-waves/"
+  },
+  {
     "src": "projects/dashboard.png",
-    "alt": "JW Player Dashboard",
-    "title": "JW Player Dashboard",
-    "description": "Content & account management dashboard for customers",
+    "alt": "Simulated Dashboard",
+    "title": "Simulated Dashboard",
+    "gif": false,
+    "description": "React mock of Angular JW Player dashboard for rapid prototyping and UI validation",
     "link": "https://dashboard.jwplayer.com"
   },
   {
     "src": "projects/storybook.png",
     "alt": "Storybook UI Components Library",
     "title": "Storybook UI Components",
+    "gif": false,
     "description": "React & Angular component library for JW Player products",
     "link": null
   },
@@ -59,6 +75,7 @@
     "src": "projects/support-2.png",
     "alt": "JW Player Support site",
     "title": "JW Player Support Site",
+    "gif": false,
     "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
     "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
   },
@@ -66,13 +83,23 @@
     "src": "projects/support.png",
     "alt": "JW Player Support site",
     "title": "JW Player Support Site",
+    "gif": false,
     "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
     "link": "https://support.jwplayer.com"
+  },
+  {
+    "src": "orbital-particles.gif",
+    "alt": "Orbital Particles Data Viz",
+    "gif": true,
+    "title": "Orbital Particles Data Viz",
+    "description": "Data visualization using three.js",
+    "link": "https://kimhart.github.io/project-showcase/orbital-particles/"
   },
   {
     "src": "projects/recs.png",
     "alt": "JW Player Recommendations Microsite",
     "title": "JW Player Recommendations",
+    "gif": false,
     "description": "Marketing site for the JW Player recommendations engine",
     "link": null
   },
@@ -80,7 +107,8 @@
     "src": "projects/metadata2.png",
     "alt": "Intelligent Metadata Viewer detail page",
     "title": "Intelligent Metadata Viewer",
+    "gif": false,
     "description": "Web app for a quick view of video metadata & transcriptions",
-    "link": null
+    "link": "https://kimhart.github.io/project-showcase/visual-metadata-viewer/"
   }
 ]

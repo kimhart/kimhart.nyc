@@ -16,7 +16,9 @@ const renderProjects = props => (
               src
               alt
               title
+              gif
               description
+              link
             }
           }
         }
@@ -60,8 +62,8 @@ export default class IndexPage extends React.Component {
           <Nav {...this.state} />
           <div id="projects" className="home__projects">
             <div className="home__project tools">
-              <h4>Tools I use regularly:</h4>
-              <p>React (Javascript/Typescript), Less/Sass, Storybook, Webpack, Grunt, Docker, JIRA, Jenkins, Sketch, Zeplin, Prismic.io</p>
+              <h4>Tools & tech I use regularly:</h4>
+              <p>React (JS/Typescript), Less/Sass, Storybook, Webpack, Node/Express, Grunt, Docker, JIRA, Jenkins, Sketch, Zeplin</p>
               <div className="home__underline" />
             </div>
             {renderProjects()}
