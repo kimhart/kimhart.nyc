@@ -158,7 +158,7 @@ export default class About extends React.Component {
                     <Twitter />
                   </a>
                   <a href="https://dev.to/kim_hart" target="_blank">
-                    <img src="social/Dev.to.png" />
+                    <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Kim Hart's DEV Profile" height="27" width="27" />
                   </a>
                 </div>
               </div>

@@ -75,6 +75,7 @@
     height: 3px;
     background: @sunrise-nav-emphasis;
     margin: 40px 0;
+    transition: all .6s ease-in-out;
     .dark-mode & {
       background: @sunset-blue;
     }
@@ -182,14 +183,14 @@
   }
 
   &__social {
-    .flex();
+    .flex(@align: center);
     > a {
       height: 24px;
       margin-right: 12px;
     }
-    img {
-      min-width: 42px;
-      width: 42px;
+    &:last-child img {
+      margin-top: -2px;
+      margin-left: -2px;
     }
   }
 

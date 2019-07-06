@@ -17,6 +17,7 @@
     "gatsby-source-filesystem": "^2.0.38",
     "gatsby-transformer-json": "^2.1.11",
     "gatsby-transformer-sharp": "^2.1.21",
+    "gh-pages": "^2.0.1",
     "less": "^3.9.0",
     "lodash.get": "^4.4.2",
     "prop-types": "^15.7.2",
@@ -38,7 +39,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",
