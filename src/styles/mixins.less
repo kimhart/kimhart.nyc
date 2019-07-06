@@ -12,13 +12,12 @@
   flex-direction: @direction;
 }
 
-.buildGradient(@height, @min-height) {
-  position: relative;
+.buildGradient(@height, @min-height, @position: absolute) {
   background-image: linear-gradient(to bottom right, @sunrise-peach, @sunrise-yellow);
   z-index: 1;
 
   &::before {
-    position: absolute;
+    position: @position;
     content: "";
     top: 0;
     right: 0;
@@ -42,7 +41,7 @@
     height: @height;
     min-height: @min-height;
     width: 100%;
-    position: absolute;
+    position: @position;
     top: 0;
     right: 0;
     -webkit-clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);

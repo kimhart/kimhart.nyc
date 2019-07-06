@@ -22,11 +22,13 @@ export default class About extends React.Component {
   };
 
   handleScroll = () => {
-    const main = document.querySelector(".page--about__main")
-    if (main.getBoundingClientRect().top <= 60) {
-      this.setState({ isTransparent: false });
-    } else {
-      this.setState({ isTransparent: true });
+    const main = document.querySelector(".page--about__main");
+    if (main) {
+      if (main.getBoundingClientRect().top <= 70) {
+        this.setState({ isTransparent: false });
+      } else {
+        this.setState({ isTransparent: true });
+      }
     }
   };
 

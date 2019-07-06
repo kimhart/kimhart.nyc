@@ -1,7 +1,7 @@
 .nav {
   opacity: 1;
   visibility: visible;
-  transition: all .3s ease-in;
+  transition: all .3s ease-in-out;
   height: 60px;
   background: @sunrise-nav;
   margin: 0;
@@ -13,8 +13,10 @@
   font-family: @roboto;
   padding: 0 70px;
   .flex(@align: center);
-  transition: all .3s .6s ease-in-out;
 
+  @media screen and (max-width: 450px) {
+    transition: all .3s 0s ease-in-out;
+  }
   .dark-mode & {
     background: @sunset-nav;
   }
@@ -98,6 +100,7 @@
   &__menu-pane {
     height: 0;
     position: absolute;
+    z-index: -10;
     top: 60px;
     left: 0;
     width: 100%;
@@ -107,7 +110,7 @@
       display: block;
       line-height: 1.3em;
       color: @white;
-      font-size: 70px;
+      font-size: 52px;
       opacity: 0;
       text-transform: none;
       transition: all .4s .3s ease-in-out;
@@ -118,6 +121,7 @@
       height: calc(~"100vh - 60px");
       background: @sunrise-highlight;
       transition: all .4s ease-in-out;
+      z-index: 1000;
       a {
         opacity: 1;
       }
