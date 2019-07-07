@@ -60,11 +60,11 @@ export default class IndexPage extends React.Component {
         <div className={`page page--home`}>
           <Hero />
           <Nav {...this.state} />
-          <div id="projects" className="home__projects">
-            <div className="home__project tools">
+          <div id="projects" className="page--home__projects">
+            <div className="page--home__tools">
               <h4>Tools & tech I use regularly:</h4>
               <p>React (JS/Typescript), Less/Sass, Storybook, Webpack, Node/Express, Grunt, Docker, JIRA, Jenkins, Sketch, Zeplin</p>
-              <div className="home__underline" />
+              <div className="page--home__underline" />
             </div>
             {renderProjects()}
           </div>

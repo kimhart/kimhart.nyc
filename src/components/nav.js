@@ -13,28 +13,36 @@ const Nav = (props) => {
 
   const handleTheme = theme => theme === "light" ? darkMode.enable() : darkMode.disable();
 
-  const openMenu = () => {
-    toggleMenu(true);
-
-    if (typeof document !== "undefined") {
-      const { style } = document.body;
-      const about = document.body.querySelector(".page--about__main");
-      style.maxHeight = '100vh';
-      style.overflow = 'hidden';
-      about ? about.style.position = 'static' : null;
-    }
+  const renderThemeToggle = (size) => {
+    return (
+      <div className="nav__themes">
+        {!darkMode.value && <Sunrise size={size} onClick={handleTheme} />}
+        {darkMode.value && <Sunset size={size} onClick={handleTheme} />}
+      </div>
+    )
   }
 
-  const closeMenu = () => {
-    toggleMenu(false);
+  const renderNavLinks = (mobile) => {
+    const checkMobile = mobile ? () => toggleMenu(false) : null;
+    return (
+      <>
+      <Link to="/about" onClick={checkMobile}>About</Link>
+      <Link to="/#projects" onClick={checkMobile}>Work</Link>
+      <Link to="/resume" onClick={checkMobile}>Resume</Link>
+      </>
+    )
+  }
 
-    if (typeof document !== "undefined") {
-      const { style } = document.body;
-      const about = document.body.querySelector(".page--about__main");
-      style.maxHeight = 'none';
-      style.overflow = 'normal';
-      about ? about.style.position = 'absolute' : null;
-    }
+  const renderNavIcon = () => {
+    const menuAction = menuOpen
+      ? () => toggleMenu(false)
+      : () => toggleMenu(true);
+
+    return (
+      <div className="nav__icon" onClick={menuAction}>
+        {menuOpen ? <CloseIcon /> : <MenuIcon />}
+      </div>
+    )
   }
 
   const getClasses = () =>
@@ -43,50 +51,21 @@ const Nav = (props) => {
       props.isHidden && `-is-hidden`,
       props.isTransparent && `-is-transparent`,
       menuOpen && '-menu-open'
-    ]
-      .filter(Boolean)
-      .join(' ');
+    ].filter(Boolean).join(' ');
 
   return (
     <header className={getClasses()}>
       <div className="nav__content">
-        <div className="nav__initials">
-          <Link to="/">KH</Link>
-        </div>
+        <Link className="nav__initials" to="/">KH</Link>
         <div className="nav__links">
-          <Link to="/about">About</Link>
-          <Link to="/#projects">Work</Link>
-          <Link to="/resume">Resume</Link>
-          <div className="nav__themes">
-            {!darkMode.value && <Sunrise size="s" onClick={handleTheme} />}
-            {darkMode.value && <Sunset size="s" onClick={handleTheme} />}
-          </div>
+          {renderNavLinks(false)}
+          {renderThemeToggle("s")}
         </div>
-        {!menuOpen && (
-          <div className="nav__menu" onClick={() => openMenu()}>
-            <MenuIcon />
-          </div>
-        )}
-        {menuOpen && (
-          <div className="nav__menu" onClick={() => closeMenu()}>
-            <CloseIcon />
-          </div>
-        )}
+        {renderNavIcon()}
       </div>
       <div className="nav__menu-pane">
-        <div>
-          <div className="nav__themes">
-            {!darkMode.value && <Sunrise size="l" onClick={handleTheme} />}
-            {darkMode.value && <Sunset size="l" onClick={handleTheme} />}
-          </div>
-          <Link to="/about" onClick={() => closeMenu()}>
-            About
-          </Link>
-          <Link to="/#projects" onClick={() => closeMenu()}>
-            Work
-          </Link>
-          <Link to="/resume" onClick={() => closeMenu()}>Resume</Link>
-        </div>
+        {renderThemeToggle("l")}
+        {renderNavLinks(true)}
       </div>
     </header>
   )

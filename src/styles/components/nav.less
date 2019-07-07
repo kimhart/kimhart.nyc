@@ -40,26 +40,18 @@
   &__content {
     width: @page-max-width;
     margin: 0 auto;
-    position: relative;
     .flex(center, space-between);
   }
 
   &__initials {
     height: 60px;
-    .flex(center);
-    a {
-      font-size: 40px;
-      color: @sunrise-nav-emphasis;
-      .dark-mode & {
-        color: @sunset-nav-emphasis;
-      }
-    }
+    font-size: 40px;
+    color: @sunrise-nav-emphasis;
+    .flex(@align: center);
+    .dark-mode & { color: @sunset-nav-emphasis; }
     @media screen and (max-width: 480px) {
-      a { 
-        font-size: 34px; 
-        height: 100%;
-        .flex(center, flex-start);
-      }
+      font-size: 34px; 
+      height: 100%;
     }
   }
 
@@ -86,7 +78,7 @@
     width: 40px;
   }
 
-  &__menu {
+  &__icon {
     display: none;
     @media screen and (max-width: 480px) {
       display: block;
@@ -98,38 +90,29 @@
   }
 
   &__menu-pane {
-    height: 0;
     position: absolute;
-    z-index: -10;
-    top: 60px;
+    top: -100vh;
+    height: calc(~"100vh - 60px");
     left: 0;
     width: 100%;
-    transition: all .4s .6s ease-in-out;
+    transition: all .4s ease-in-out;
     .flex(@justify: center,@direction: column);
     a {
       display: block;
       line-height: 1.3em;
       color: @white;
       font-size: 52px;
-      opacity: 0;
       text-transform: none;
-      transition: all .4s .3s ease-in-out;
       margin: 0 0 40px 0;
     }
     .-menu-open & {
       padding: 20px;
-      height: calc(~"100vh - 60px");
-      background: @sunrise-highlight;
-      transition: all .4s ease-in-out;
-      z-index: 1000;
-      a {
-        opacity: 1;
-      }
+      background: @sunrise-nav;
+      top: 60px;
       .dark-mode & {
-        background: @sunset-highlight;
+        background: @sunset-nav;
       }
     }
-
     .nav__themes {
       margin: -40px 0 40px 0;
     }
