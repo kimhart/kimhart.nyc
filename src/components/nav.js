@@ -23,12 +23,12 @@ const Nav = (props) => {
   }
 
   const renderNavLinks = (mobile) => {
-    const checkMobile = mobile ? () => toggleMenu(false) : null;
+    const menuAction = mobile ? () => toggleMenu(false) : null;
     return (
       <>
-      <Link to="/about" onClick={checkMobile}>About</Link>
-      <Link to="/#projects" onClick={checkMobile}>Work</Link>
-      <Link to="/resume" onClick={checkMobile}>Resume</Link>
+      <Link to="/about" onClick={menuAction}>About</Link>
+      <Link to="/#projects" onClick={menuAction}>Work</Link>
+      <Link to="/resume" onClick={menuAction}>Resume</Link>
       </>
     )
   }
