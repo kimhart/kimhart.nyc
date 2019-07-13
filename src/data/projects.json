@@ -1,9 +1,9 @@
 [
   {
-    "src": "smol-dash-app.gif",
-    "alt": "Mobile Dashboard",
+    "src": "projects/smol-total.png",
+    "alt": "Smol Dash Mobile Dashboard",
     "title": "Smol Dash",
-    "gif": true,
+    "gif": false,
     "description": "A mobile analytics app for content creators",
     "link": "http://simi-dash.longtailvideo.com/app"
   },
@@ -65,7 +65,7 @@
   },
   {
     "src": "projects/smol-dash-2.png",
-    "alt": "Mobile Dashboard",
+    "alt": "Smol Dash Mobile Dashboard",
     "title": "Smol Dash",
     "gif": false,
     "description": "A mobile analytics app for content creators",
