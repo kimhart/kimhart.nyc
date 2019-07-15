@@ -5,7 +5,7 @@
     "title": "Smol Dash",
     "gif": false,
     "description": "A mobile analytics app for content creators",
-    "link": "http://simi-dash.longtailvideo.com/app"
+    "link": "https://simi-showcase.netlify.com/app"
   },
   {
     "src": "projects/storybook.png",
@@ -58,10 +58,10 @@
   {
     "src": "projects/dashboard.png",
     "alt": "Simulated Dashboard",
-    "title": "Simulated Dashboard",
+    "title": "Simulated Dashboard Homepage",
     "gif": false,
     "description": "React mock of Angular JW Player dashboard for rapid prototyping and UI validation",
-    "link": "https://dashboard.jwplayer.com"
+    "link": "https://simi-showcase.netlify.com"
   },
   {
     "src": "projects/smol-dash-2.png",
@@ -69,7 +69,7 @@
     "title": "Smol Dash",
     "gif": false,
     "description": "A mobile analytics app for content creators",
-    "link": "http://simi-dash.longtailvideo.com/app"
+    "link": "https://simi-showcase.netlify.com/app"
   },
   {
     "src": "projects/deliveryapi.png",
@@ -103,7 +103,6 @@
     "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
     "link": "https://support.jwplayer.com"
   },
-
   {
     "src": "projects/yoga.png",
     "alt": "Intelligent Metadata Viewer detail page",
