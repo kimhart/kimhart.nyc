@@ -1,19 +1,19 @@
 [
   {
-    "src": "smol-dash-app.gif",
-    "alt": "Mobile Dashboard",
-    "title": "Smol Dash",
-    "gif": true,
-    "description": "A mobile analytics app for content creators",
-    "link": "http://simi-dash.longtailvideo.com/app"
-  },
-  {
-    "src": "projects/Bitmap2.png",
-    "alt": "Mobile Dashboard",
+    "src": "projects/smol-total.png",
+    "alt": "Smol Dash Mobile Dashboard",
     "title": "Smol Dash",
     "gif": false,
     "description": "A mobile analytics app for content creators",
-    "link": "http://simi-dash.longtailvideo.com/app"
+    "link": "https://simi-showcase.netlify.com/app"
+  },
+  {
+    "src": "projects/storybook.png",
+    "alt": "Storybook UI Components Library",
+    "title": "Storybook UI Components",
+    "gif": false,
+    "description": "React & Angular component library for JW Player products",
+    "link": null
   },
   {
     "src": "projects/tally.png",
@@ -24,7 +24,7 @@
     "link": "https://tally.us.com"
   },
   {
-    "src": "projects/Bitmap.png",
+    "src": "projects/tally2.png",
     "alt": "Tally",
     "title": "Tally",
     "gif": false,
@@ -58,18 +58,34 @@
   {
     "src": "projects/dashboard.png",
     "alt": "Simulated Dashboard",
-    "title": "Simulated Dashboard",
+    "title": "Simulated Dashboard Homepage",
     "gif": false,
     "description": "React mock of Angular JW Player dashboard for rapid prototyping and UI validation",
-    "link": "https://dashboard.jwplayer.com"
+    "link": "https://simi-showcase.netlify.com"
   },
   {
-    "src": "projects/storybook.png",
-    "alt": "Storybook UI Components Library",
-    "title": "Storybook UI Components",
+    "src": "projects/smol-dash-2.png",
+    "alt": "Smol Dash Mobile Dashboard",
+    "title": "Smol Dash",
     "gif": false,
-    "description": "React & Angular component library for JW Player products",
-    "link": null
+    "description": "A mobile analytics app for content creators",
+    "link": "https://simi-showcase.netlify.com/app"
+  },
+  {
+    "src": "projects/deliveryapi.png",
+    "alt": "Delivery API Docs: JW Developer",
+    "title": "Delivery API Docs: JW Developer",
+    "gif": false,
+    "description": "API reference for getting JW Player content & metadata",
+    "link": "https://developer.jwplayer.com/jw-platform/docs/delivery-api-reference"
+  },
+  {
+    "src": "orbital-particles.gif",
+    "alt": "Orbital Particles Data Viz",
+    "gif": true,
+    "title": "Orbital Particles Data Viz",
+    "description": "Data visualization using three.js",
+    "link": "https://kimhart.github.io/project-showcase/orbital-particles/"
   },
   {
     "src": "projects/support-2.png",
@@ -88,23 +104,7 @@
     "link": "https://support.jwplayer.com"
   },
   {
-    "src": "orbital-particles.gif",
-    "alt": "Orbital Particles Data Viz",
-    "gif": true,
-    "title": "Orbital Particles Data Viz",
-    "description": "Data visualization using three.js",
-    "link": "https://kimhart.github.io/project-showcase/orbital-particles/"
-  },
-  {
-    "src": "projects/recs.png",
-    "alt": "JW Player Recommendations Microsite",
-    "title": "JW Player Recommendations",
-    "gif": false,
-    "description": "Marketing site for the JW Player recommendations engine",
-    "link": null
-  },
-  {
-    "src": "projects/metadata2.png",
+    "src": "projects/yoga.png",
     "alt": "Intelligent Metadata Viewer detail page",
     "title": "Intelligent Metadata Viewer",
     "gif": false,

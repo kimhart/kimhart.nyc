@@ -5,13 +5,11 @@ import Nav from "../components/nav"
 import Github from "../components/svgs/github"
 import Twitter from "../components/svgs/twitter"
 import LinkedIn from "../components/svgs/linkedin"
-import DevTo from "../components/svgs/devto"
 import Img from "gatsby-image"
 
 export default class About extends React.Component {
 
   state = { 
-    isHidden: false,
     isTransparent: true 
   };
 
@@ -24,19 +22,20 @@ export default class About extends React.Component {
   };
 
   handleScroll = () => {
-    const main = document.querySelector(".page--about__main")
-    if (main.getBoundingClientRect().top <= 60) {
-      this.setState({ isTransparent: false, isHidden: false });
-    } else {
-      this.setState({ isTransparent: true });
+    const main = document.querySelector(".page--about__main");
+    if (main) {
+      if (main.getBoundingClientRect().top <= 70) {
+        this.setState({ isTransparent: false });
+      } else {
+        this.setState({ isTransparent: true });
+      }
     }
   };
 
   render() {
-    const { isHidden } = this.state;
     return (
       <Layout>
-        <SEO title="Bio" />
+        <SEO title="About" />
         <div className="page page--about">
           <div className="page--about__hero">
             <div className="page--about__intro">
@@ -158,7 +157,7 @@ export default class About extends React.Component {
                     <Twitter />
                   </a>
                   <a href="https://dev.to/kim_hart" target="_blank">
-                    <img src="social/Dev.to.png" />
+                    <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Kim Hart's DEV Profile" height="27" width="27" />
                   </a>
                 </div>
               </div>

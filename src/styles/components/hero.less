@@ -24,19 +24,43 @@
       transform: rotate(90deg);
       margin-top: 5px;
     }
+
+    @media screen and (max-width: 800px) {
+      left: 0;
+      right: 0;
+      padding-top: 40px;
+      position: static;
+      h3 {
+        transform: rotate(0);
+      }
+      .icon {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 850px) {
+      display: none;
+    }
   }
 
   &__location-divider {
     display: inline-block;
-    width: 3px;
-    margin: 0 12px;
+    width: 4px;
+    margin: 0 15px;
     background: @white;
-    height: .65em;
+    height: .8em;
+    @media screen and (max-width: 800px) {
+      &:nth-of-type(2) {
+        display: none;
+      }
+    }
   }
 
   &__intro {
     .flex(center, center, column);
     height: 100vh;
+    @media screen and (max-width: 480px) {
+      padding: 20px;
+    }
   }
 
   &__name-wrap {
@@ -71,6 +95,25 @@
         transform: translate(9px, 9px);
       }
     }
+    @media screen and (max-width: 480px) {
+      .hero__shadow,
+      h1 {
+        font-size: 75px;
+      }
+    }
+    @media screen and (max-width: 412px) {
+      .hero__shadow,
+      h1 {
+        font-size: 56px;
+      }
+      .hero__shadow {
+        transform: translate(-4px, 4px);
+        .dark-mode & {
+          color: @sunset-header-shadow;
+          transform: translate(4px, 4px);
+        }
+      }
+    }
   }
 
   &__theme-toggles {
@@ -80,6 +123,20 @@
     .theme-toggle {
       margin: 20px;
       cursor: pointer;
+    }
+    @media screen and (max-width: 480px) {
+      margin: 40px;
+      .theme-toggle {
+        &.-sunrise { width: 52px; }
+        &.-sunset { width: 42px; }
+      }
+    }
+    @media screen and (max-width: 412px) {
+      margin: 10px 0;
+      .theme-toggle {
+        &.-sunrise { width: 42px; }
+        &.-sunset { width: 32px; }
+      }
     }
   }
   
@@ -91,6 +148,14 @@
     z-index: 10;
     font-family: @roboto;
     margin: -10px 0 60px;
+    @media screen and (max-width: 450px) {
+      text-align: center;
+      margin: 0 0 60px;
+      font-size: 17px;
+    }
+    @media screen and (max-width: 412px) {
+      font-size: 15px;
+    }
   }
 
   &__ctas {
@@ -98,6 +163,29 @@
     position: relative;
     z-index: 10;
     margin: 20px 0;
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      a {
+        width: 100%;
+      }
+      .button {
+        color: @white;
+        background: @button-hover;
+      }
+      .button--primary {
+        border: none;
+      }
+      .button {
+        width: 240px;
+      }
+    }
+    @media screen and (max-width: 412px) {
+      margin-top: -30px;
+      .button { 
+        font-size: 13px; 
+        height: 40px;
+      }
+    }
   }
 }
 

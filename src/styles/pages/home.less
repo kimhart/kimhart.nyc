@@ -1,4 +1,4 @@
-.home {
+.page--home {
   margin: 0;
   padding: 0;
   font-family: @roboto;
@@ -22,9 +22,12 @@
     @media screen and (max-width: 870px) {
       columns: 1;
     }
+    @media screen and (max-width: 480px) {
+      padding: 20px;
+    }
   }
   
-  .tools {
+  &__tools {
     width: 70%;
     margin: 0 auto 50px auto;
     text-align: center;
@@ -44,6 +47,16 @@
       font-size: 20px;
       font-weight: 300;
     }
+    @media screen and (max-width: 480px) {
+      margin: 60px auto 40px auto;
+      h4 { font-size: 13px; }
+      p { font-size: 17px; }
+    }
+    @media screen and (max-width: 412px) {
+      h4 { font-size: 13px; }
+      p { font-size: 13px; }
+    }
+
   }
 
   &__underline {
@@ -56,6 +69,5 @@
       background: @sunset-highlight;
     }
   }
-
 
 }
