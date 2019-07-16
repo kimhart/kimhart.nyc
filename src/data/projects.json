@@ -1,6 +1,6 @@
 [
   {
-    "src": "projects/smol-total.png",
+    "src": "projects/two-screens.png",
     "alt": "Smol Dash Mobile Dashboard",
     "title": "Smol Dash",
     "gif": false,
@@ -35,7 +35,7 @@
     "src": "projects/idc.png",
     "alt": "IDCWDYW App",
     "gif": false,
-    "title": "I Don't Care, What Do You Want? (IDCWDYW)",
+    "title": "I Don't Care, What Do You Want?",
     "description": "Random restaurant generator based on Yelp's API",
     "link": "https://idcwdyw.herokuapp.com/"
   },
@@ -48,36 +48,20 @@
     "link": "https://developer.jwplayer.com/jw-player/demos/innovation/click-to-play/"
   },
   {
-    "src": "particle-waves.gif",
-    "alt": "Particle Waves Data Viz",
-    "gif": true,
-    "title": "Particle Waves Data Viz",
-    "description": "Data visualization using three.js and canvas",
-    "link": "https://kimhart.github.io/project-showcase/particle-waves/"
+    "src": "projects/deliveryapi.png",
+    "alt": "Delivery API Docs",
+    "title": "JW Delivery API Docs",
+    "gif": false,
+    "description": "API reference for getting JW Player content & metadata",
+    "link": "https://developer.jwplayer.com/jw-platform/docs/delivery-api-reference"
   },
   {
     "src": "projects/dashboard.png",
     "alt": "Simulated Dashboard",
-    "title": "Simulated Dashboard Homepage",
+    "title": "Simulated Dashboard UI",
     "gif": false,
     "description": "React mock of Angular JW Player dashboard for rapid prototyping and UI validation",
     "link": "https://simi-showcase.netlify.com"
-  },
-  {
-    "src": "projects/smol-dash-2.png",
-    "alt": "Smol Dash Mobile Dashboard",
-    "title": "Smol Dash",
-    "gif": false,
-    "description": "A mobile analytics app for content creators",
-    "link": "https://simi-showcase.netlify.com/app"
-  },
-  {
-    "src": "projects/deliveryapi.png",
-    "alt": "Delivery API Docs: JW Developer",
-    "title": "Delivery API Docs: JW Developer",
-    "gif": false,
-    "description": "API reference for getting JW Player content & metadata",
-    "link": "https://developer.jwplayer.com/jw-platform/docs/delivery-api-reference"
   },
   {
     "src": "orbital-particles.gif",
@@ -102,6 +86,14 @@
     "gif": false,
     "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
     "link": "https://support.jwplayer.com"
+  },
+  {
+    "src": "particle-waves.gif",
+    "alt": "Particle Waves Data Viz",
+    "gif": true,
+    "title": "Particle Waves Data Viz",
+    "description": "Data visualization using three.js and canvas",
+    "link": "https://kimhart.github.io/project-showcase/particle-waves/"
   },
   {
     "src": "projects/yoga.png",
