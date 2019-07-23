@@ -1,10 +1,10 @@
 [
   {
-    "src": "projects/smol-total.png",
+    "src": "projects/two-screens.png",
     "alt": "Smol Dash Mobile Dashboard",
     "title": "Smol Dash",
     "gif": false,
-    "description": "A mobile analytics app for content creators",
+    "description": "A React app for content creators to view video analytics and calculate ROI (based on JW Player metadata & advertising metrics), made for #JWHackWeek",
     "link": "https://simi-showcase.netlify.com/app"
   },
   {
@@ -12,103 +12,103 @@
     "alt": "Storybook UI Components Library",
     "title": "Storybook UI Components",
     "gif": false,
-    "description": "React & Angular component library for JW Player products",
-    "link": null
+    "description": "React component library that demos components in every possible state & style variant and bundles them for production use",
+    "link": "https://pui-storybook-showcase.netlify.com/?path=/story/components-basic-form-controls-checkinput--default"
   },
   {
     "src": "projects/tally.png",
     "alt": "Tally",
     "title": "Tally",
     "gif": false,
-    "description": "A React web app for keeping tracking US Senators and House reps",
-    "link": "https://tally.us.com"
-  },
-  {
-    "src": "projects/tally2.png",
-    "alt": "Tally",
-    "title": "Tally",
-    "gif": false,
-    "description": "A React web app for keeping tracking US Senators and House reps",
+    "description": "A React web app for keeping track of voting records, talking points and work attendance of US Senators and House reps",
     "link": "https://tally.us.com"
   },
   {
     "src": "projects/idc.png",
     "alt": "IDCWDYW App",
     "gif": false,
-    "title": "I Don't Care, What Do You Want? (IDCWDYW)",
-    "description": "Random restaurant generator based on Yelp's API",
+    "title": "I Don't Care, What Do You Want?",
+    "description": "Random restaurant generator for indecisive people, built with Yelp's API",
     "link": "https://idcwdyw.herokuapp.com/"
+  },
+  {
+    "src": "projects/streaming.png",
+    "alt": "Video Streaming POC",
+    "title": "Video Streaming POC",
+    "gif": false,
+    "description": "Static UI mock of a video streaming platform for JW Player content",
+    "link": "https://jw-streaming-showcase.netlify.com/"
   },
   {
     "src": "projects/click-to-play.png",
     "alt": "Click-to-Play Video Wall",
     "title": "Click-to-Play Video Wall",
     "gif": false,
-    "description": "Video display proof of concept",
+    "description": "Video display demo for fast video rendering on click",
     "link": "https://developer.jwplayer.com/jw-player/demos/innovation/click-to-play/"
   },
   {
-    "src": "particle-waves.gif",
-    "alt": "Particle Waves Data Viz",
-    "gif": true,
-    "title": "Particle Waves Data Viz",
-    "description": "Data visualization using three.js and canvas",
-    "link": "https://kimhart.github.io/project-showcase/particle-waves/"
+    "src": "projects/hp.png",
+    "alt": "Harry Potter Memory Game",
+    "title": "Harry Potter Memory Game",
+    "gif": false,
+    "description": "This is buggy as hell but it's the first thing I ever coded and I think it's important to remember our humble beginnings 🙃",
+    "link": "https://kimhart.github.io/Project1_HPmemory/"
   },
   {
     "src": "projects/dashboard.png",
-    "alt": "Simulated Dashboard",
-    "title": "Simulated Dashboard Homepage",
+    "alt": "Dashboard UI",
+    "title": "Dashboard UI",
     "gif": false,
-    "description": "React mock of Angular JW Player dashboard for rapid prototyping and UI validation",
+    "description": "React version of JW Player dashboard for rapid prototyping, UI validation and user testingL",
     "link": "https://simi-showcase.netlify.com"
   },
   {
-    "src": "projects/smol-dash-2.png",
-    "alt": "Smol Dash Mobile Dashboard",
-    "title": "Smol Dash",
-    "gif": false,
-    "description": "A mobile analytics app for content creators",
-    "link": "https://simi-showcase.netlify.com/app"
-  },
-  {
-    "src": "projects/deliveryapi.png",
-    "alt": "Delivery API Docs: JW Developer",
-    "title": "Delivery API Docs: JW Developer",
-    "gif": false,
-    "description": "API reference for getting JW Player content & metadata",
-    "link": "https://developer.jwplayer.com/jw-platform/docs/delivery-api-reference"
-  },
-  {
-    "src": "orbital-particles.gif",
-    "alt": "Orbital Particles Data Viz",
-    "gif": true,
-    "title": "Orbital Particles Data Viz",
-    "description": "Data visualization using three.js",
-    "link": "https://kimhart.github.io/project-showcase/orbital-particles/"
-  },
-  {
     "src": "projects/support-2.png",
-    "alt": "JW Player Support site",
-    "title": "JW Player Support Site",
+    "alt": "JW Support site",
+    "title": "JW Support Site",
     "gif": false,
-    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
+    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player. Built with React, Node & Prismic.io",
     "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
   },
   {
-    "src": "projects/support.png",
-    "alt": "JW Player Support site",
-    "title": "JW Player Support Site",
+    "src": "projects/mobile-support.png",
+    "alt": "JW Support (Mobile)",
+    "title": "JW Support (Mobile)",
     "gif": false,
-    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
-    "link": "https://support.jwplayer.com"
+    "description": "Small screen design & implementation for JW Player support site — and this awesome 404 page",
+    "link": "https://support.jwplayer.com/404"
+  },
+  {
+    "src": "orbital-particles.gif",
+    "alt": "Orbital Particles",
+    "gif": true,
+    "title": "Orbital Particles",
+    "description": "Three.js data visualization for JW Insights event marketing",
+    "link": "https://kimhart.github.io/project-showcase/orbital-particles/"
+  },
+  {
+    "src": "projects/deliveryapi.png",
+    "alt": "Delivery API Docs",
+    "title": "JW Delivery API Docs",
+    "gif": false,
+    "description": "API reference for requesting JW Player content & metadata, built with Swagger UI",
+    "link": "https://developer.jwplayer.com/jw-platform/docs/delivery-api-reference"
+  },
+  {
+    "src": "particle-waves.gif",
+    "alt": "Particle Waves",
+    "gif": true,
+    "title": "Particle Waves",
+    "description": "Three.js & Canvas data visualization for JW Insights event marketing",
+    "link": "https://kimhart.github.io/project-showcase/particle-waves/"
   },
   {
     "src": "projects/yoga.png",
     "alt": "Intelligent Metadata Viewer detail page",
     "title": "Intelligent Metadata Viewer",
     "gif": false,
-    "description": "Web app for a quick view of video metadata & transcriptions",
+    "description": "React app for a quick view of video metadata, smart thumbnails and audio transcriptions",
     "link": "https://kimhart.github.io/project-showcase/visual-metadata-viewer/"
   }
 ]

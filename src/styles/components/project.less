@@ -8,93 +8,135 @@
   &__info {
     position: absolute;
     visibility: hidden;
-    background: white;
+    overflow: hidden;
+    background: fade(black, 90%);
     opacity: 0;
     max-height: 100%;
     max-width: 100%;
-    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     z-index: 10;
     text-align: left;
-    padding: 30px;
-    transition: all .3s ease-in-out;
-    .flex(flex-start, center, column);
-
-    &::before,
-    &::after {
-      content: '';
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      border-color: transparent;
-      border-style: solid;
-      border-width: 0em;
-    }
-    &::before {
-      border-width: 0em;
-      transition: all .3s ease-in-out;
-      border-right-color: @sunrise-nav;
-      border-bottom-color: @sunrise-nav;
-    }
-    &::after {
-      width: 1.5em;
-      height: 1.5em;
-      bottom: 1.2em;
-      right: 1em;
-      z-index: 20;
-      opacity: 0;
-      transition: all .2s .2s ease-in-out;
-      background: url('../../images/chevron-right-white.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
+    padding: 60px;
+    transition: all .4s ease-in-out;
+    .flex(@direction: column);
     .dark-mode & {
-      background: black;
+      background: fade(white, 97%);
+    }
+  }
 
-      &::before {
-        border-right-color: @sunset-nav;
-        border-bottom-color: @sunset-nav;
+  .arrow-icon {
+    position: absolute;
+    bottom: 0px;
+    right: 60px;
+    width: 62px;
+    height: 62px;
+    opacity: 0;
+    transition: all .3s .2s ease-in-out;
+  }
+
+  &__title-wrap {
+    position: relative;
+    width: 100%;
+  }
+
+  &__corner {
+    visibility: hidden;
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+    transition: all .3s ease-in-out;
+    .triangle {
+      fill: @sunrise-highlight;
+      .dark-mode & {
+        fill: @sunset-highlight;
       }
     }
   }
 
   &__title {
-    font-size: 28px;
+    color: white;
+    .dark-mode & {
+      color: black;
+    }
+  }
+
+  &__title,
+  &__shadow {
+    width: 100%;
+    font-size: 42px;
     font-weight: 900;
+    text-transform: uppercase;
     font-family: @roboto;
     line-height: 1.1;
-    text-transform: uppercase;
-    color: @sunrise-highlight;
     margin-bottom: 20px;
+    @media screen and (max-width: 1040px) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: 980px) {
+      font-size: 28px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 20px;
+    }
+  }
+
+  &__shadow {
+    position: absolute;
+    left: -3px;
+    bottom: -3px;
+    z-index: -1;
+    color: fade(@sunrise-nav, 45%);
+
     .dark-mode & {
-      color: @sunset-nav;
+      color: fade(@sunset-highlight, 55%);
     }
   }
 
   &__description {
-    color: black;
+    color: white;
+    max-width: 75%;
+    font-weight: 100;
+    font-size: 19px;
+    margin-top: 10px;
     .dark-mode & {
-      color: white;
+      color: @sunrise-text;
+    }
+    @media screen and (max-width: 1030px) {
+      font-size: 17px;
+      width: 100%;
+    }
+    @media screen and (max-width: 490px) {
+      font-size: 15px;
+      max-width: 100%;
     }
   }
 
   &:hover {
     cursor: pointer;
+
+    .project__corner {
+      visibility: visible;
+      z-index: -1;
+      right: 0;
+      bottom: 0;
+    }
     .project__info {
       border: 1px solid @border-gray;
       opacity: 1;
       visibility: visible;
-      &::before {
-        border-width: 3em;
-      }
-      &::after {
-        opacity: 1;
-      }
       .dark-mode & {
         border: none;
+      }
+    }
+    .arrow-icon {
+      bottom: 50px;
+      opacity: 1;
+      @media screen and (max-width: 490px) {
+        right: 40px;
+        bottom: 40px;
       }
     }
   }

@@ -36,7 +36,7 @@ const renderResume = props => (
           }`}
         >
           <h2>
-            <strong>{job.title}</strong> at <a href={job.link}>{job.company}</a>
+            <strong>{job.title}</strong> at <a target="_blank" href={job.link}>{job.company}</a>
           </h2>
           <div className="page--resume__wrap">
             <div className="page--resume__details">
