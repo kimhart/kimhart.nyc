@@ -7,7 +7,7 @@ import useDarkMode from "use-dark-mode"
 
 const Hero = () => {
 
-  const darkMode = useDarkMode(false);
+  const darkMode = useDarkMode();
 
   const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
 
