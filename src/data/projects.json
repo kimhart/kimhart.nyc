@@ -13,7 +13,7 @@
     "title": "Storybook UI Components",
     "gif": false,
     "description": "React & Angular component library for JW Player products",
-    "link": null
+    "link": "https://pui-storybook-showcase.netlify.com/?path=/story/components-basic-form-controls-checkinput--default"
   },
   {
     "src": "projects/tally.png",
