@@ -48,11 +48,19 @@
     "link": "https://developer.jwplayer.com/jw-player/demos/innovation/click-to-play/"
   },
   {
+    "src": "projects/hp.png",
+    "alt": "Harry Potter Memory Game",
+    "title": "Harry Potter Memory Game",
+    "gif": false,
+    "description": "This is buggy as hell but it's the first thing I ever coded and I think it's important to remember our humble beginnings 🙃",
+    "link": "https://kimhart.github.io/Project1_HPmemory/"
+  },
+  {
     "src": "projects/dashboard.png",
     "alt": "Dashboard UI",
     "title": "Dashboard UI",
     "gif": false,
-    "description": "React version of JW Player dashboard for rapid prototyping, UI validation and user testing",
+    "description": "React version of JW Player dashboard for rapid prototyping, UI validation and user testingL",
     "link": "https://simi-showcase.netlify.com"
   },
   {
@@ -62,6 +70,14 @@
     "gif": false,
     "description": "Curated troubleshooting guides, tutorials and support articles for JW Player. Built with React, Node & Prismic.io",
     "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
+  },
+  {
+    "src": "projects/mobile-support.png",
+    "alt": "JW Support (Mobile)",
+    "title": "JW Support (Mobile)",
+    "gif": false,
+    "description": "Small screen design & implementation for JW Player support site — and this awesome 404 page",
+    "link": "https://support.jwplayer.com/404"
   },
   {
     "src": "orbital-particles.gif",
