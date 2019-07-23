@@ -95,10 +95,16 @@
         transform: translate(9px, 9px);
       }
     }
+    @media screen and (max-width: 600px) {
+      .hero__shadow,
+      h1 {
+        font-size: 76px;
+      }
+    }
     @media screen and (max-width: 480px) {
       .hero__shadow,
       h1 {
-        font-size: 75px;
+        font-size: 60px;
       }
     }
     @media screen and (max-width: 412px) {
@@ -148,8 +154,11 @@
     z-index: 10;
     font-family: @roboto;
     margin: -10px 0 60px;
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 600px) {
+      padding: 20px;
       text-align: center;
+    }
+    @media screen and (max-width: 450px) {
       margin: 0 0 60px;
       font-size: 17px;
     }

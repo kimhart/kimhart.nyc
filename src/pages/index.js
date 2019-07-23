@@ -56,7 +56,7 @@ export default class IndexPage extends React.Component {
   render() { 
     return (
       <Layout>
-        <SEO title="Welcome" />
+        <SEO title="Home" />
         <div className={`page page--home`}>
           <Hero />
           <Nav {...this.state} />

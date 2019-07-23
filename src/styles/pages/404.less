@@ -1,82 +1,51 @@
 .page--not-found {
   min-height: 100vh;
-  height: 100vh;
   width: 100%;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-image: linear-gradient(to bottom right, #FF8E65, #FFECAC);
   font-family: 'Roboto', sans-serif;
 
   .dark-mode & {
     background-image: linear-gradient(to bottom right, #A366FF, #30C0E2);
   }
+
+  &__404 {
+    color: white;
+    font-size: 240px;
+    margin: 40px 0;
+    font-weight: 900;
+    @media screen and (max-width: 500px) {
+      font-size: 180px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 100px;
+      margin: 0;
+    }
+  }
+
+  &__text {
+    font-size: 36px;
+    font-weight: 100;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    @media screen and (max-width: 400px) {
+      font-size: 26px;
+      line-height: 70px;
+    }
+  }
   
   &__back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 90px;
     width: 100%;
-    display: inline-block;
-  }
-
-  text {
-    font-weight: 900;
-  }
-
-  a {
-    position: absolute;
-    z-index: 10000;
-  }
-
-  text:nth-child(2) {
-    font-size: 96px;
-    transform: translateY(28%);
-  }
-
-  text:nth-child(3) {
-    font-size: 390px;
-    transform: translateY(60%);
-  }
-
-  text:nth-child(4) {
-    font-size: 72px;
-    transform: translateY(70%);
-  }
-
-  @media screen and (max-width: 850px) {
-    text:nth-child(2) {
-      font-size: 70px;
-      transform: translateY(26%);
-    }
-
-    text:nth-child(3) {
-      font-size: 280px;
-      transform: translateY(50%);
-    }
-
-    text:nth-child(4) {
-      font-size: 52px;
-      transform: translateY(58%);
-    }
-  }
-
-  @media screen and (max-width: 450px) {
-    text:nth-child(2) {
-      font-size: 40px;
-      transform: translateY(32%);
-    }
-
-    text:nth-child(3) {
-      font-size: 160px;
-      transform: translateY(50%);
-    }
-
-    text:nth-child(4) {
-      font-size: 30px;
-      transform: translateY(57%);
+    width: 60px;
+    height: 60px;
+    @media screen and (max-width: 400px) {
+      width: 30px;
+      height: 30px;
     }
   }
 }
