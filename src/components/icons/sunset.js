@@ -3,7 +3,7 @@ import useDarkMode from "use-dark-mode"
 
 const Sunset = (props) => {
   const { size } = props;
-  const darkMode = useDarkMode();
+  const darkMode = useDarkMode(false);
   let color, color2, opacity;
   
   const handleClick = () => props.onClick && props.onClick('dark');
