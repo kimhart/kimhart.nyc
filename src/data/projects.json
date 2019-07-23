@@ -52,16 +52,16 @@
     "alt": "Dashboard UI",
     "title": "Dashboard UI",
     "gif": false,
-    "description": "React version of JW Player dashboard for rapid prototyping, UI validation and front end code delivery",
+    "description": "React version of JW Player dashboard for rapid prototyping, UI validation and user testing",
     "link": "https://simi-showcase.netlify.com"
   },
   {
-    "src": "projects/deliveryapi.png",
-    "alt": "Delivery API Docs",
-    "title": "JW Delivery API Docs",
+    "src": "projects/support-2.png",
+    "alt": "JW Support site",
+    "title": "JW Support Site",
     "gif": false,
-    "description": "API reference for requesting JW Player content & metadata, built with Swagger UI",
-    "link": "https://developer.jwplayer.com/jw-platform/docs/delivery-api-reference"
+    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player. Built with React, Node & Prismic.io",
+    "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
   },
   {
     "src": "orbital-particles.gif",
@@ -72,12 +72,12 @@
     "link": "https://kimhart.github.io/project-showcase/orbital-particles/"
   },
   {
-    "src": "projects/support-2.png",
-    "alt": "JW Support site",
-    "title": "JW Support Site",
+    "src": "projects/deliveryapi.png",
+    "alt": "Delivery API Docs",
+    "title": "JW Delivery API Docs",
     "gif": false,
-    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
-    "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
+    "description": "API reference for requesting JW Player content & metadata, built with Swagger UI",
+    "link": "https://developer.jwplayer.com/jw-platform/docs/delivery-api-reference"
   },
   {
     "src": "particle-waves.gif",
