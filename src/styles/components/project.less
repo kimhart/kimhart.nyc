@@ -23,7 +23,7 @@
     transition: all .4s ease-in-out;
     .flex(@direction: column);
     .dark-mode & {
-      background: white;
+      background: fade(white, 95%);
     }
   }
 
@@ -97,10 +97,10 @@
 
   &__description {
     color: white;
-    max-width: 80%;
+    max-width: 75%;
     font-weight: 100;
     font-size: 19px;
-    margin-top: 20px;
+    margin-top: 10px;
     .dark-mode & {
       color: @sunrise-text;
     }
