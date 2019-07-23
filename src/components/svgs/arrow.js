@@ -6,15 +6,15 @@ const Arrow = () => {
       <g
         id="D2:-Sun-Up-Sun-Down"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g
           id="Sun-Up"
           transform="translate(-598.000000, -1562.000000)"
           stroke="#FFFD9A"
-          stroke-width="2"
+          strokeWidth="2"
         >
           <g id="Work-Grid" transform="translate(170.000000, 894.000000)">
             <g id="hover" transform="translate(0.000000, 240.000000)">
