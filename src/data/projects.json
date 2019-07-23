@@ -4,7 +4,7 @@
     "alt": "Smol Dash Mobile Dashboard",
     "title": "Smol Dash",
     "gif": false,
-    "description": "A mobile analytics app for content creators",
+    "description": "A React mobile analytics app for content creators, made for #JWHackWeek",
     "link": "https://simi-showcase.netlify.com/app"
   },
   {
@@ -20,7 +20,7 @@
     "alt": "Tally",
     "title": "Tally",
     "gif": false,
-    "description": "A React web app for keeping tracking US Senators and House reps",
+    "description": "A React web app for keeping track of voting records, talking points and work attendance of US Senators and House reps",
     "link": "https://tally.us.com"
   },
   {
@@ -28,7 +28,7 @@
     "alt": "Tally",
     "title": "Tally",
     "gif": false,
-    "description": "A React web app for keeping tracking US Senators and House reps",
+    "description": "A React web app for keeping track of voting records, talking points and work attendance of US Senators and House reps",
     "link": "https://tally.us.com"
   },
   {
@@ -36,7 +36,7 @@
     "alt": "IDCWDYW App",
     "gif": false,
     "title": "I Don't Care, What Do You Want?",
-    "description": "Random restaurant generator based on Yelp's API",
+    "description": "Random restaurant generator for indecisive people, built with Yelp's API",
     "link": "https://idcwdyw.herokuapp.com/"
   },
   {
@@ -44,7 +44,7 @@
     "alt": "Click-to-Play Video Wall",
     "title": "Click-to-Play Video Wall",
     "gif": false,
-    "description": "Video display proof of concept",
+    "description": "Video display utilizing JW8's click-to-play functionality",
     "link": "https://developer.jwplayer.com/jw-player/demos/innovation/click-to-play/"
   },
   {
@@ -52,29 +52,29 @@
     "alt": "Delivery API Docs",
     "title": "JW Delivery API Docs",
     "gif": false,
-    "description": "API reference for getting JW Player content & metadata",
+    "description": "API reference for requesting JW Player content & metadata, built with Swagger UI",
     "link": "https://developer.jwplayer.com/jw-platform/docs/delivery-api-reference"
   },
   {
     "src": "projects/dashboard.png",
-    "alt": "Simulated Dashboard",
-    "title": "Simulated Dashboard UI",
+    "alt": "Dashboard UI",
+    "title": "Dashboard UI",
     "gif": false,
-    "description": "React mock of Angular JW Player dashboard for rapid prototyping and UI validation",
+    "description": "React version of JW Player dashboard for rapid prototyping, UI validation and front end code delivery",
     "link": "https://simi-showcase.netlify.com"
   },
   {
     "src": "orbital-particles.gif",
-    "alt": "Orbital Particles Data Viz",
+    "alt": "Orbital Particles",
     "gif": true,
-    "title": "Orbital Particles Data Viz",
-    "description": "Data visualization using three.js",
+    "title": "Orbital Particles",
+    "description": "Three.js data visualization for JW Insights event marketing",
     "link": "https://kimhart.github.io/project-showcase/orbital-particles/"
   },
   {
     "src": "projects/support-2.png",
-    "alt": "JW Player Support site",
-    "title": "JW Player Support Site",
+    "alt": "JW Support site",
+    "title": "JW Support Site",
     "gif": false,
     "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
     "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
@@ -82,17 +82,17 @@
   {
     "src": "projects/support.png",
     "alt": "JW Player Support site",
-    "title": "JW Player Support Site",
+    "title": "JW Support Site",
     "gif": false,
     "description": "Curated troubleshooting guides, tutorials and support articles for JW Player",
     "link": "https://support.jwplayer.com"
   },
   {
     "src": "particle-waves.gif",
-    "alt": "Particle Waves Data Viz",
+    "alt": "Particle Waves",
     "gif": true,
-    "title": "Particle Waves Data Viz",
-    "description": "Data visualization using three.js and canvas",
+    "title": "Particle Waves",
+    "description": "Three.js & Canvas data visualization for JW Insights event marketing",
     "link": "https://kimhart.github.io/project-showcase/particle-waves/"
   },
   {
@@ -100,7 +100,7 @@
     "alt": "Intelligent Metadata Viewer detail page",
     "title": "Intelligent Metadata Viewer",
     "gif": false,
-    "description": "Web app for a quick view of video metadata & transcriptions",
+    "description": "React app for a quick view of video metadata, smart thumbnails and audio transcriptions",
     "link": "https://kimhart.github.io/project-showcase/visual-metadata-viewer/"
   }
 ]

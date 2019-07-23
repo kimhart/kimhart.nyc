@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "../components/image"
+import Arrow from "../components/svgs/arrow"
 
 export default class Project extends React.Component {
 
@@ -16,13 +17,18 @@ export default class Project extends React.Component {
               <div className="project__shadow">{title}</div>
             </div>
             <div className="project__description">{description}</div>
-            <svg className="project__corner" viewBox="0 0 540 270" xmlns="http://www.w3.org/2000/svg">
-              <g transform="translate(-170.000000, -1404.000000)" fill="#678EF8">
+            <svg
+              className="project__corner"
+              viewBox="0 0 540 270"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g className="triangle" transform="translate(-170.000000, -1404.000000)">
                 <g transform="translate(170.000000, 1134.000000)">
-                  <polygon points="540 270 0 540 540 540"></polygon>
+                  <polygon points="540 270 0 540 540 540" />
                 </g>
               </g>
             </svg>
+            <Arrow />
           </div>
         </a>
       </div>
