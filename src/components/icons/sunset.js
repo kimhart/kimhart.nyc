@@ -1,14 +1,12 @@
 import React from "react"
-import useDarkMode from "use-dark-mode"
 
 const Sunset = (props) => {
-  const { size, isActive } = props;
+  const { size } = props;
 
   const handleClick = () => props.onClick && props.onClick('dark');
-
+  
   return (
-    <div className={`theme-toggle theme-toggle--sunset -size-${size} ${isActive ? "-is-active" : ""
-      }`} onClick={handleClick}>
+    <div className={`theme-toggle theme-toggle--sunset -size-${size}`} onClick={handleClick}>
       <svg
         className="icon icon--sunset"
         width="100%"

@@ -1,18 +1,6 @@
 .theme-toggle {
   cursor: pointer;
-  opacity: 0.3;
   .flex(center, center);
-  
-  .yellow,
-  .white {
-    stroke: @icon-gray;
-  }
-
-  &.-is-active {
-    opacity: 1;
-    .white { stroke: white; }
-    .yellow { stroke: @button-yellow; }
-  }
 
   &--sunrise {
     &.-size-s {
@@ -22,13 +10,46 @@
       width: 72px;
     }
   }
-
   &--sunset {
     &.-size-s {
       width: 32px;
     }
     &.-size-l {
       width: 56px;
+    }
+  }
+}
+
+.light-mode {
+  .theme-toggle {
+    &--sunrise {
+      opacity: 1;
+      .white { stroke: white; }
+      .yellow { stroke: @button-yellow; }
+    }
+    &--sunset {
+      opacity: 0.3;
+      .yellow,
+      .white {
+        stroke: @icon-gray;
+      }
+    }
+  }
+}
+
+.dark-mode {
+  .theme-toggle {
+    &--sunset {
+      opacity: 1;
+      .white { stroke: white; }
+      .yellow { stroke: @button-yellow; }
+    }
+    &--sunrise {
+      opacity: 0.3;
+      .yellow,
+      .white {
+        stroke: @icon-gray;
+      }
     }
   }
 }
