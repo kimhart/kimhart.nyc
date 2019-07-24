@@ -8,14 +8,14 @@ import useDarkMode from "use-dark-mode"
 const Hero = () => {
 
   const darkMode = useDarkMode();
-
   const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
-
+  
   return (
     <div className={`hero`}>
       <div className="hero__location">
         <h3>
-          BK <div className="hero__location-divider" /> NYC <div className="hero__location-divider" />
+          BK <div className="hero__location-divider" /> NYC{" "}
+          <div className="hero__location-divider" />
           <div className="hero__pindrop">
             <IconLocation />
           </div>
@@ -23,8 +23,16 @@ const Hero = () => {
       </div>
       <div className="hero__intro">
         <div className="hero__theme-toggles">
-          <Sunrise onClick={handleTheme} size="l" />
-          <Sunset onClick={handleTheme} size="l" />
+          <Sunrise
+            isActive={!darkMode.value}
+            onClick={handleTheme}
+            size="l"
+          />
+          <Sunset
+            isActive={darkMode.value}
+            onClick={handleTheme}
+            size="l"
+          />
         </div>
         <div className="hero__name-wrap">
           <h1>Kim Hart</h1>

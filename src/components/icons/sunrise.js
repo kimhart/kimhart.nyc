@@ -2,16 +2,13 @@ import React from "react"
 import useDarkMode from "use-dark-mode"
 
 const Sunrise = (props) => {
-  const { size } = props;
-  const darkMode = useDarkMode(false);
+  const { size, isActive } = props;
   const handleClick = () => props.onClick && props.onClick('light');
-  let color, color2, opacity;
+  let color = "#212229";
+  let color2 = "#212229";
+  let opacity = 0.3;
   
-  if (darkMode.value) {
-    color = "#212229";
-    color2 = "#212229";
-    opacity = 0.3;
-  } else {
+  if (isActive) {
     color = "#FFFD9A";
     color2 = "#FFFFFF";
     opacity = 1;
