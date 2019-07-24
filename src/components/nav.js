@@ -8,7 +8,7 @@ import useDarkMode from "use-dark-mode"
 
 const Nav = (props) => {
   
-  const darkMode = useDarkMode(false);
+  const darkMode = useDarkMode();
   const [menuOpen, toggleMenu] = useState();
 
   const handleTheme = theme => theme === "light" ? darkMode.enable() : darkMode.disable();
@@ -16,8 +16,8 @@ const Nav = (props) => {
   const renderThemeToggle = (size) => {
     return (
       <div className="nav__themes">
-        {!darkMode.value && <Sunrise size={size} onClick={handleTheme} />}
-        {darkMode.value && <Sunset size={size} onClick={handleTheme} />}
+        {!darkMode.value && <Sunrise isActive={!darkMode.value} size={size} onClick={handleTheme} />}
+        {darkMode.value && <Sunset isActive={darkMode.value} size={size} onClick={handleTheme} />}
       </div>
     )
   }
