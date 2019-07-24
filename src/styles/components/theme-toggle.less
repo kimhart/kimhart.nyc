@@ -1,7 +1,8 @@
 .theme-toggle {
   cursor: pointer;
   .flex(center, center);
-  &.-sunrise {
+
+  &--sunrise {
     &.-size-s {
       width: 38px;
     }
@@ -9,12 +10,46 @@
       width: 72px;
     }
   }
-  &.-sunset {
+  &--sunset {
     &.-size-s {
       width: 32px;
     }
     &.-size-l {
       width: 56px;
+    }
+  }
+}
+
+.light-mode {
+  .theme-toggle {
+    &--sunrise {
+      opacity: 1;
+      .white { stroke: white; }
+      .yellow { stroke: @button-yellow; }
+    }
+    &--sunset {
+      opacity: 0.3;
+      .yellow,
+      .white {
+        stroke: @icon-gray;
+      }
+    }
+  }
+}
+
+.dark-mode {
+  .theme-toggle {
+    &--sunset {
+      opacity: 1;
+      .white { stroke: white; }
+      .yellow { stroke: @button-yellow; }
+    }
+    &--sunrise {
+      opacity: 0.3;
+      .yellow,
+      .white {
+        stroke: @icon-gray;
+      }
     }
   }
 }

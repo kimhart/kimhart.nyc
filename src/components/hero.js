@@ -24,12 +24,10 @@ const Hero = () => {
       <div className="hero__intro">
         <div className="hero__theme-toggles">
           <Sunrise
-            isActive={!darkMode.value}
             onClick={handleTheme}
             size="l"
           />
           <Sunset
-            isActive={darkMode.value}
             onClick={handleTheme}
             size="l"
           />
