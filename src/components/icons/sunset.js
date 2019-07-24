@@ -3,20 +3,12 @@ import useDarkMode from "use-dark-mode"
 
 const Sunset = (props) => {
   const { size, isActive } = props;
-  let color = "#212229";
-  let color2 = "#212229";
-  let opacity = 0.3;
-  
+
   const handleClick = () => props.onClick && props.onClick('dark');
 
-  if (isActive) {
-    color = "#FFFD9A";
-    color2 = "#FFFFFF";
-    opacity = 1;
-  }
-
   return (
-    <div className={`theme-toggle -sunset -size-${size}`} onClick={handleClick}>
+    <div className={`theme-toggle theme-toggle--sunset -size-${size} ${isActive ? "-is-active" : ""
+      }`} onClick={handleClick}>
       <svg
         className="icon icon--sunset"
         width="100%"
@@ -28,14 +20,13 @@ const Sunset = (props) => {
           strokeWidth="1"
           fill="none"
           fillRule="evenodd"
-          opacity={opacity}
           strokeLinecap="round"
           strokeLinejoin="round"
         >
           <g
             id="Sun-Up"
+            className="yellow"
             transform="translate(-756.000000, -174.000000)"
-            stroke={color}
             strokeWidth="2"
           >
             <g id="Group-4" transform="translate(633.000000, 169.000000)">
@@ -48,17 +39,17 @@ const Sunset = (props) => {
                   <path
                     d="M0.31449697,28.4210526 L49.7412848,28.4210526"
                     id="Stroke-12"
-                    stroke={color2}
+                    className="white"
                   />
                   <path
                     d="M7.314497,34.4210526 L44.741285,34.4210526"
                     id="Stroke-12"
-                    stroke={color}
+                    className="yellow"
                   />
                   <path
                     d="M13.314497,40.4210526 L37.741285,40.4210526"
                     id="Stroke-12"
-                    stroke={color}
+                    className="yellow"
                   />
                 </g>
               </g>

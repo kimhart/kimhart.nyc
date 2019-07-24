@@ -9,7 +9,7 @@ export default class Project extends React.Component {
     return (
       <div className={`project`}>
         <a href={link} target="_blank">
-          {gif && <img src={`${src}`} alt={alt} className="gif" />}
+          {gif && <img src={src} alt={alt} className="gif" />}
           {!gif && <Image {...this.props} />}
           <div className="project__info">
             <div className="project__title-wrap">

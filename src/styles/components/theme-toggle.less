@@ -1,7 +1,20 @@
 .theme-toggle {
   cursor: pointer;
+  opacity: 0.3;
   .flex(center, center);
-  &.-sunrise {
+  
+  .yellow,
+  .white {
+    stroke: @icon-gray;
+  }
+
+  &.-is-active {
+    opacity: 1;
+    .white { stroke: white; }
+    .yellow { stroke: @button-yellow; }
+  }
+
+  &--sunrise {
     &.-size-s {
       width: 38px;
     }
@@ -9,7 +22,8 @@
       width: 72px;
     }
   }
-  &.-sunset {
+
+  &--sunset {
     &.-size-s {
       width: 32px;
     }
