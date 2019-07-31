@@ -3,6 +3,7 @@ module.exports = {
     title: `Kim Hart`,
     description: `Front End Engineer in BK, NY`,
     author: `kim_hart`,
+    image: `https://ibb.co/CbBDCW3`,
   },
   pathPrefix: "/kimhart.nyc",
   plugins: [
@@ -18,13 +19,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-less`,
     {
-      resolve: 'gatsby-plugin-use-dark-mode',
+      resolve: "gatsby-plugin-use-dark-mode",
       options: {
-        classNameDark: 'dark-mode',
-        classNameLight: 'light-mode',
-        storageKey: 'darkMode',
+        classNameDark: "dark-mode",
+        classNameLight: "light-mode",
+        storageKey: "darkMode",
         minify: true,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
