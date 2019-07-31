@@ -13,7 +13,6 @@ const Arrow = () => {
         <g
           id="Sun-Up"
           transform="translate(-598.000000, -1562.000000)"
-          stroke="#FFFD9A"
           strokeWidth="2"
         >
           <g id="Work-Grid" transform="translate(170.000000, 894.000000)">
