@@ -70,7 +70,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: image
+          content: `https://ibb.co/CbBDCW3`
         }
       ].concat(meta)}
     />
