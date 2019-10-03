@@ -129,12 +129,18 @@
     .theme-toggle {
       margin: 20px;
       cursor: pointer;
+      &--sunset {
+        margin-bottom: -10px;
+      }
     }
     @media screen and (max-width: 480px) {
       margin: 40px;
       .theme-toggle {
         &--sunrise { width: 52px; }
-        &--sunset { width: 42px; }
+        &--sunset { 
+          width: 42px;
+          margin-bottom: 0px;
+        }
       }
     }
     @media screen and (max-width: 412px) {

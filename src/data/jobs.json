@@ -10,6 +10,7 @@
     "bullets": [
       "Creating a robust UI component library with Storybook (both React + Angular)",
       "Build a read-only mobile analytics version of the JW Dashboard",
+      "Created an in-house music app using Spotify's API for use with office Sonos system",
       "Architecting a design system of color and typography variables, iconography, mixins, etc.",
       "Building a React simulated dashboard for fast user testing and visual QA",
       "Created a repo of prototyping starter kits with baked-in JS and Less build tools",
