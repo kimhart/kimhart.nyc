@@ -42,7 +42,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://ibb.co/CbBDCW3`,
+          content: `https://ibb.co/S0GWH8K`,
         },
         {
           property: `og:type`,
@@ -70,7 +70,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: `https://ibb.co/CbBDCW3`
+          content: `https://ibb.co/S0GWH8K`
         }
       ].concat(meta)}
     />
