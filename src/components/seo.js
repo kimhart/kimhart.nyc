@@ -42,7 +42,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://i.ibb.co/ZK7tvPh/Screen-Shot-2020-03-16-at-6-47-52-PM.png`,
+          content: `http://i.ibb.co/2hbCNtp/ogimage.jpg`,
+        },
+        {
+          property: `og:image:secure_url`,
+          content: `https://i.ibb.co/2hbCNtp/ogimage.jpg`,
+        },
+        {
+          property: `og:image:type`,
+          content: `image/jpeg`,
         },
         {
           property: `og:type`,
@@ -70,7 +78,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: `https://i.ibb.co/ZK7tvPh/Screen-Shot-2020-03-16-at-6-47-52-PM.png`
+          content: `http://i.ibb.co/2hbCNtp/ogimage.jpg`
         }
       ].concat(meta)}
     />
