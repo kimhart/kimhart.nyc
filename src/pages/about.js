@@ -171,7 +171,7 @@ export default class About extends React.Component {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "kim.png" }) {
+    file(relativePath: { eq: "kimhart.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid_noBase64
