@@ -42,7 +42,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://ibb.co/S0GWH8K`,
+          content: `https://i.ibb.co/ZK7tvPh/Screen-Shot-2020-03-16-at-6-47-52-PM.png`,
         },
         {
           property: `og:type`,
@@ -70,7 +70,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: `https://ibb.co/S0GWH8K`
+          content: `https://i.ibb.co/ZK7tvPh/Screen-Shot-2020-03-16-at-6-47-52-PM.png`
         }
       ].concat(meta)}
     />
