@@ -1,7 +1,7 @@
 # Kim Hart Portfolio
 Kim Hart's personal portflio site, built with GatsbyJS.
 
-## 🚀 Devving
+## Devving 🚜
 
 1.  **Dev**
 
@@ -18,7 +18,7 @@ Kim Hart's personal portflio site, built with GatsbyJS.
   gatsby serve
   ```
 
-## Deployments
+## Deploying 🚀 
 
 This site is hosted on Netflify and builds to `https://kimhart.nyc`. 
 
