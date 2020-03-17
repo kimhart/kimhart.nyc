@@ -111,8 +111,7 @@ export default class About extends React.Component {
                 </p>
                 <p>
                   When I'm not on a computer, you can probably find me at a
-                  concert or music festival, traveling, or seeking out craft
-                  beer somewhere in Brooklyn.
+                  concert or music festival, traveling, or hanging out somewhere in Brooklyn.
                 </p>
               </div>
               <div className="page--about__panel">
