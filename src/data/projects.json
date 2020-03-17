@@ -16,6 +16,14 @@
     "link": "https://pui-storybook-showcase.netlify.com/?path=/story/components-basic-form-controls-checkinput--default"
   },
   {
+    "src": "projects/spotify.png",
+    "alt": "JW Music System",
+    "gif": false,
+    "title": "JW Music System",
+    "description": "Custom music player powered by Spotify API (for use with JW Spotify Account credentials & curated playlists)",
+    "link": "https://jw-spotify-app.netlify.com/"
+  },
+  {
     "src": "projects/tally.png",
     "alt": "Tally",
     "title": "Tally",
@@ -60,7 +68,7 @@
     "alt": "Dashboard UI",
     "title": "Dashboard UI",
     "gif": false,
-    "description": "React version of JW Player dashboard for rapid prototyping, UI validation and user testingL",
+    "description": "React version of JW Player dashboard for rapid prototyping, UI validation and user testing",
     "link": "https://simi-showcase.netlify.com"
   },
   {
@@ -70,6 +78,14 @@
     "gif": false,
     "description": "Curated troubleshooting guides, tutorials and support articles for JW Player. Built with React, Node & Prismic.io",
     "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
+  },
+  {
+    "src": "projects/streaming-demo.png",
+    "alt": "Streaming Demo",
+    "title": "Streaming Demo",
+    "gif": false,
+    "description": "Streaming service dashboard showcasing video metadata and IAB confidence scores",
+    "link": "https://streaming-demo.netlify.com"
   },
   {
     "src": "projects/mobile-support.png",

@@ -2,6 +2,12 @@
   font-family: @roboto;
   background: @white;
 
+  @media screen and (max-width: 1250px) {
+    .page--about__intro {
+      padding: 70px;
+    }
+  }
+    
   &__hero {
     padding-top: 60px;
     height: 100vh;
@@ -26,17 +32,15 @@
     color: @white;
     z-index: 5;
     height: 100%;
-    padding: 70px;
     width: 100%;
+    max-width: 1100px;
     position: fixed;
+    padding: 0;
     .flex(center, center);
-    
-    @media screen and (max-width: 1100px) {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+
     @media screen and (max-width: 850px) {
       flex-direction: column;
+      padding: 70px;
     }
     @media screen and (max-width: 450px) {
       padding: 20px;
@@ -99,6 +103,8 @@
 
   &__photo {
     min-width: 280px;
+    width: 65%;
+    clip-path: circle(40%);
     @media screen and (max-width: 450px) {
       min-width: 160px;
     }
