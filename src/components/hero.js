@@ -11,7 +11,7 @@ const Hero = () => {
   const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
   
   return (
-    <div className={`hero`}>
+    <div className="hero">
       <div className="hero__location">
         <h3>
           BK <div className="hero__location-divider" /> NYC{" "}

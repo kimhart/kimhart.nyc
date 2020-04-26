@@ -48,10 +48,7 @@ const About = (props) => {
             <div className="page--about__bio">
               <h1>About Me</h1>
               <p>
-                I'm currently tackling design system architecture and
-                refactoring a legacy codebase into a React component library.
-                I've also built a variety of experimental POCs, prototyping
-                tools, and the JW Player support site.
+                I'm currently building solutions for complex workflows in the JW Dashboard and assisting in the development of our APIs & a custom web component library. I've also built an internal design system, a variety of product demos & POCs, and the JW Player support site.
               </p>
               <p>
                 I earned my BA in journalism and worked in the digital
@@ -86,14 +83,6 @@ const About = (props) => {
                 </a>{" "}
                 . I'm a big fan of bringing new faces, skillsets, and
                 backgrounds into the industry.
-              </p>
-              <p>
-                My most-loved side project is{" "}
-                <a href="https://tally.us.com" target="_blank">
-                  Tally
-                </a>
-                , a React web app that helps you keep track of your senators
-                and house reps.
               </p>
               <p>
                 When I'm not on a computer, you can probably find me at a
