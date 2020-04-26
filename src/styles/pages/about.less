@@ -124,6 +124,11 @@
     width: 100vw;
     padding: 90px 70px 70px;
     background: white;
+    transition: background .4s ease;
+    .dark-mode & {
+      background: @sunset-bg;
+      color: @sunset-text;
+    }
 
     @media screen and (max-width: 985px) {
       min-height: 120vh;
@@ -173,6 +178,10 @@
       margin-bottom: 30px;
       font-size: 17px;
       font-weight: 100;
+      transition: color .4s ease;
+      .dark-mode & {
+        color: @sunset-text;
+      }
     }
     @media screen and (max-width: 850px) {
       width: 100%;
@@ -182,6 +191,11 @@
 
   &__panel {
     width: 25%;
+    transition: color .4s ease;
+    color: @sunrise-text;
+    .dark-mode & {
+      color: @sunset-text;
+    }
     h3 {
       font-size: 17px;
       font-weight: 900;
@@ -194,6 +208,7 @@
       &:first-of-type {
         margin-top: 20px;
       }
+      
     }
 
     > div {
