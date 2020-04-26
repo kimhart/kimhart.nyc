@@ -16,9 +16,7 @@ const Hero = () => {
         <h3>
           BK <div className="hero__location-divider" /> NYC{" "}
           <div className="hero__location-divider" />
-          <div className="hero__pindrop">
             <IconLocation />
-          </div>
         </h3>
       </div>
       <div className="hero__intro">
@@ -37,8 +35,7 @@ const Hero = () => {
           <span className="hero__shadow">Kim Hart</span>
         </div>
         <h2 className="hero__headline">
-          Front-end engineer building UIs & design system methodology @ JW
-          Player
+          Front-end engineer hacking on UX/UI, APIs, and internal tools at JW Player<br/>
         </h2>
         <div className="hero__ctas">
           <Button type="secondary" text="About" link="about" />

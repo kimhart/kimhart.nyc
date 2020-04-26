@@ -9,7 +9,8 @@
     position: absolute;
     visibility: hidden;
     overflow: hidden;
-    background: fade(black, 90%);
+    // background: fade(black, 90%);
+    background: fade(white, 97%);
     opacity: 0;
     max-height: 100%;
     max-width: 100%;
@@ -57,10 +58,7 @@
   }
 
   &__title {
-    color: white;
-    .dark-mode & {
-      color: black;
-    }
+    color: black;
   }
 
   &__title,
@@ -85,10 +83,10 @@
 
   &__shadow {
     position: absolute;
-    left: -3px;
-    bottom: -3px;
+    left: -2px;
+    bottom: -2px;
     z-index: -1;
-    color: fade(@sunrise-nav, 45%);
+    color: fade(@sunrise-nav, 50%);
 
     .dark-mode & {
       color: fade(@sunset-highlight, 55%);
@@ -96,14 +94,11 @@
   }
 
   &__description {
-    color: white;
+    color: @sunrise-text;
     max-width: 75%;
     font-weight: 100;
     font-size: 19px;
     margin-top: 10px;
-    .dark-mode & {
-      color: @sunrise-text;
-    }
     @media screen and (max-width: 1030px) {
       font-size: 17px;
       width: 100%;
