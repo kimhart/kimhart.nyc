@@ -30,7 +30,7 @@ const About = (props) => {
           <div className="page--about__intro">
             <div className="page--about__text">
               <h1>
-                <span>Hey there, I'm Kim.{" "}</span><br/>
+                <span>Hey, I'm Kim.</span><br/>
                 I'm a Brooklyn-based dev with roots in California.
               </h1>
               <div className="page--about__underline" />
