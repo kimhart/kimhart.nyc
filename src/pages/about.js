@@ -30,14 +30,14 @@ const About = (props) => {
           <div className="page--about__intro">
             <div className="page--about__text">
               <h1>
-                <span>Hey there.</span>
+                <span>Hey there, I'm Kim.{" "}</span><br/>
                 I'm a Brooklyn-based dev with roots in California.
               </h1>
               <div className="page--about__underline" />
               <h2>
                 While I'm down to learn pretty much anything, I'm happiest
                 working at the intersection of design and engineering, where I
-                can focus on creative problem-solving and elegant UI.
+                can focus on creative problem solving and elegant UI.
               </h2>
             </div>
             <div className="page--about__photo">
@@ -60,8 +60,7 @@ const About = (props) => {
                 <a href="https://dev.to/kim_hart/5-lessons-my-bootcamp-didnt-teach-me">
                   web development bootcamp
                 </a>
-                , where I learned enough to hustle my way into a career that I
-                love.
+                , where I learned enough to hustle my way into a career that I love.
               </p>
               <p>
                 I have a strong personal interest in D&I and have participated

@@ -8,7 +8,7 @@
     "location": "New York, NY",
     "duration": "April 2017 – Present",
     "bullets": [
-      "Pull from data-rich APIs & build elegant UI for complex workflows like live streaming, content management, and advanced searching & filtering",
+      "Pull from data-rich APIs & build elegant UI for complex workflows like live streaming, video management, and advanced searching & filtering",
       "Built a dashboard environment complete with user authentication & session management",
       "Assist in creating robust web component library (previous iterations include React & Angular versions in Storybook)",
       "Built a Salesforce-authenticated Express service that handles all JW support case submissions",
@@ -114,7 +114,7 @@
     ]
   },
   {
-    "title": "Level 6 Associate",
+    "title": "Level 6 Associate (Burger Maker)",
     "company": "In-N-Out Burger",
     "link": "http://www.in-n-out.com/",
     "current": false,
@@ -123,25 +123,29 @@
     "duration": "Feb 2006 – June 2012",
     "bullets": [
       "Why is this still on my resume? Good question!",
-      "This job taught me everything I know about how to operate in a highly-systematized environment",
+      "This was my first job and it taught me how to operate in a highly-systematized environment",
       "It was excellent for honing a strong work ethic and communication skills",
       "I learned how to handle tough situations with grace when the customer *definitely wasn't* always right",
-      "Their rigorous + formulated cooking patterns inadvertently prepped my brain to learn how to code",
+      "Their formulated cooking patterns/tag-reading sytem actually prepped my brain to learn how to code",
       "People seem to like this fact about me because I wore a silly uniform for many years",
+      "Yes, I still have that giant safety pin",
       "The food is dope (Shake Shack is good too, I'm not trying to start a burger culture war)"
     ]
   },
   {
-    "title": "Bachelor of Arts — Journalism",
+    "title": "BA, Journalism & Media Studies",
     "company": "San Diego State University",
     "current": false,
     "education": true,
     "link": "https://www.sdsu.edu/",
     "location": "San Diego, CA",
-    "duration": "2008 - 2012",
+    "duration": "2008 – 2012",
     "bullets": [
-      "Minor in Sociology",
-      "Member of Associated Students Cultural Arts & Special Events Board"
+      "Specialization in broadcast journalism (news reporting, feature writing, copy editing)",
+      "Additional focus on marketing/advertising strategies & trends in new media",
+      "Minor in sociology, emphasis in social psychology",
+      "Events chairperson — Residence Hall Council",
+      "Committee member — Associated Students Cultural Arts & Special Events"
     ]
   },
   {
@@ -149,7 +153,7 @@
     "company": "General Assembly",
     "link": "https://generalassemb.ly",
     "location": "New York, NY",
-    "duration": "2015 - 2016",
+    "duration": "Oct 2015 – Feb 2016",
     "bullets": [
       "3-month, full-time program focused on full stack web development basics"
     ]

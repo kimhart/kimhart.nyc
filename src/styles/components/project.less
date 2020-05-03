@@ -20,7 +20,7 @@
     z-index: 10;
     text-align: left;
     padding: 60px;
-    transition: all .4s ease-in-out;
+    transition: @fast-transition;
     .flex(@direction: column);
     .dark-mode & {
       background: fade(white, 97%);
@@ -34,7 +34,8 @@
     width: 62px;
     height: 62px;
     opacity: 0;
-    transition: all .3s .2s ease-in-out;
+    transition: @fast-transition;
+    transition-delay: .2s;
   }
 
   &__title-wrap {
@@ -47,7 +48,7 @@
     position: absolute;
     right: -60px;
     bottom: -60px;
-    transition: all .3s ease-in-out;
+    transition: @fast-transition;
     .triangle {
       fill: @sunrise-highlight;
       .dark-mode & {
