@@ -90,9 +90,9 @@
   &__underline {
     width: 260px;
     height: 3px;
-    background: @sunrise-nav-emphasis;
+    background: @sunrise-yellow;
     margin: 40px 0;
-    transition: all .6s ease-in-out;
+    transition: @theme-transition;
     .dark-mode & {
       background: @sunset-blue;
     }
@@ -124,7 +124,7 @@
     width: 100vw;
     padding: 90px 70px 70px;
     background: white;
-    transition: background .4s ease;
+    transition: @theme-transition;
     .dark-mode & {
       background: @sunset-bg;
       color: @sunset-text;
@@ -178,7 +178,7 @@
       margin-bottom: 30px;
       font-size: 17px;
       font-weight: 100;
-      transition: color .4s ease;
+      transition: @theme-transition;
       .dark-mode & {
         color: @sunset-text;
       }
@@ -191,7 +191,7 @@
 
   &__panel {
     width: 25%;
-    transition: color .4s ease;
+    transition: @theme-transition;
     color: @sunrise-text;
     .dark-mode & {
       color: @sunset-text;
