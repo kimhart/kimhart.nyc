@@ -11,34 +11,31 @@ const Hero = () => {
   const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
   
   return (
-    <div className={`hero`}>
+    <div className="hero">
       <div className="hero__location">
         <h3>
           BK <div className="hero__location-divider" /> NYC{" "}
           <div className="hero__location-divider" />
-          <div className="hero__pindrop">
             <IconLocation />
-          </div>
         </h3>
       </div>
+      <div className="hero__theme-toggles">
+        <Sunrise
+          onClick={handleTheme}
+          size="l"
+        />
+        <Sunset
+          onClick={handleTheme}
+          size="l"
+        />
+      </div>
       <div className="hero__intro">
-        <div className="hero__theme-toggles">
-          <Sunrise
-            onClick={handleTheme}
-            size="l"
-          />
-          <Sunset
-            onClick={handleTheme}
-            size="l"
-          />
-        </div>
         <div className="hero__name-wrap">
           <h1>Kim Hart</h1>
           <span className="hero__shadow">Kim Hart</span>
         </div>
         <h2 className="hero__headline">
-          Front-end engineer building UIs & design system methodology @ JW
-          Player
+          Front-end engineer hacking on all things UX/UI and internal tools @ JW Player
         </h2>
         <div className="hero__ctas">
           <Button type="secondary" text="About" link="about" />

@@ -57,7 +57,7 @@
 
   &__intro {
     .flex(center, center, column);
-    height: 100vh;
+    height: calc(~"100vh - 200px") ;
     @media screen and (max-width: 480px) {
       padding: 20px;
     }
@@ -89,10 +89,10 @@
       z-index: 2;
       transition: all 1s ease;
       color: @sunrise-header-shadow;
-      transform: translate(-9px, 9px);
+      transform: translate(-8px, 8px);
       .dark-mode & {
         color: @sunset-header-shadow;
-        transform: translate(9px, 9px);
+        transform: translate(8px, 8px);
       }
     }
     @media screen and (max-width: 600px) {
@@ -124,19 +124,20 @@
 
   &__theme-toggles {
     .flex(center, center);
-    margin-bottom: 20px;
 
     .theme-toggle {
-      margin: 20px;
+      margin: 50px 15px 10px 15px;
       cursor: pointer;
       &--sunset {
-        margin-bottom: -10px;
+        margin-bottom: -18px;
       }
     }
     @media screen and (max-width: 480px) {
       margin: 40px;
       .theme-toggle {
-        &--sunrise { width: 52px; }
+        &--sunrise { 
+          width: 52px; 
+        }
         &--sunset { 
           width: 42px;
           margin-bottom: 0px;
@@ -154,12 +155,12 @@
   
   &__headline {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 22px;
     color: @white;
     position: relative;
     z-index: 10;
     font-family: @roboto;
-    margin: -10px 0 60px;
+    margin-bottom: 10px;
     @media screen and (max-width: 600px) {
       padding: 20px;
       text-align: center;

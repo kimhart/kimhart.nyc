@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Nav from "../components/nav"
@@ -32,44 +32,40 @@ const renderProjects = props => (
   />
 );
 
-export default class IndexPage extends React.Component {
+const IndexPage = () => {
+  const [isHidden, setIsHidden] = useState(true);
 
-  state = { isHidden: true };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+  }, []);
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+  const handleScroll = () => {
+    const hero = document.querySelector(".hero");
+    hero && (hero.getBoundingClientRect().bottom <= 20) ?  setIsHidden(false) : setIsHidden(true);
   };
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  };
-
-  handleScroll = () => {
-    const hero = document.querySelector('.hero');
-    if (hero.getBoundingClientRect().bottom <= 20) {
-      this.setState({ isHidden: false });
-    } else {
-      this.setState({ isHidden: true });
-    }
-  };
-
-  render() { 
-    return (
-      <Layout>
-        <SEO title="Hello" />
-        <div className={`page page--home`}>
-          <Hero />
-          <Nav {...this.state} />
-          <div id="projects" className="page--home__projects">
-            <div className="page--home__tools">
-              <h4>Tools & tech I use regularly:</h4>
-              <p>React (JS/TS), Less/Sass, Storybook, Webpack, Node/Express, Grunt, Docker, JIRA, Jenkins, Sketch, Zeplin</p>
-              <div className="page--home__underline" />
-            </div>
-            {renderProjects()}
+  return (
+    <Layout>
+      <SEO title="Hello" />
+      <div className={`page page--home`}>
+        <Hero />
+        <Nav isHidden={isHidden} />
+        <div id="projects" className="page--home__projects">
+          <div className="page--home__tools">
+            <h4>Tools & Tech</h4>
+            <p>
+              React (Javascript/Typescript), Less/Sass, Node/Express, Webpack,
+              Docker, Grunt, Storybook, JIRA, Jenkins, Sketch, Zeplin
+            </p>
+            <h4>A Note</h4>
+            <p>These lil guys are simplified builds of some of my work (not the completed products!) Always happy to chat in detail about the real thing. </p>
+            <div className="page--home__underline" />
           </div>
+          {renderProjects()}
         </div>
-      </Layout>
-    )
-  }
+      </div>
+    </Layout>
+  )
 }
+
+export default IndexPage;

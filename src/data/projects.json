@@ -16,12 +16,28 @@
     "link": "https://pui-storybook-showcase.netlify.com/?path=/story/components-basic-form-controls-checkinput--default"
   },
   {
-    "src": "projects/spotify.png",
-    "alt": "JW Music System",
+    "src": "projects/support-2.png",
+    "alt": "JW Support site",
+    "title": "JW Support Site",
     "gif": false,
-    "title": "JW Music System",
-    "description": "Custom music player powered by Spotify API (for use with JW Spotify Account credentials & curated playlists)",
-    "link": "https://jw-spotify-app.netlify.com/"
+    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player. Built with React, Node & Prismic.io",
+    "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
+  },
+  {
+    "src": "projects/streaming-demo.png",
+    "alt": "Streaming Demo",
+    "title": "Streaming Demo",
+    "gif": false,
+    "description": "Streaming service dashboard showcasing video metadata and IAB confidence scores",
+    "link": "https://streaming-demo.netlify.com"
+  },
+  {
+    "src": "projects/streaming.png",
+    "alt": "Video Streaming POC",
+    "title": "Video Streaming POC",
+    "gif": false,
+    "description": "Static UI mock of a video streaming platform for JW Player content",
+    "link": "https://jw-streaming-showcase.netlify.com/"
   },
   {
     "src": "projects/tally.png",
@@ -40,22 +56,6 @@
     "link": "https://idcwdyw.herokuapp.com/"
   },
   {
-    "src": "projects/streaming.png",
-    "alt": "Video Streaming POC",
-    "title": "Video Streaming POC",
-    "gif": false,
-    "description": "Static UI mock of a video streaming platform for JW Player content",
-    "link": "https://jw-streaming-showcase.netlify.com/"
-  },
-  {
-    "src": "projects/click-to-play.png",
-    "alt": "Click-to-Play Video Wall",
-    "title": "Click-to-Play Video Wall",
-    "gif": false,
-    "description": "Video display demo for fast video rendering on click",
-    "link": "https://developer.jwplayer.com/jw-player/demos/innovation/click-to-play/"
-  },
-  {
     "src": "projects/hp.png",
     "alt": "Harry Potter Memory Game",
     "title": "Harry Potter Memory Game",
@@ -64,7 +64,7 @@
     "link": "https://kimhart.github.io/Project1_HPmemory/"
   },
   {
-    "src": "projects/dashboard.png",
+    "src": "projects/simi.jpg",
     "alt": "Dashboard UI",
     "title": "Dashboard UI",
     "gif": false,
@@ -72,20 +72,19 @@
     "link": "https://simi-showcase.netlify.com"
   },
   {
-    "src": "projects/support-2.png",
-    "alt": "JW Support site",
-    "title": "JW Support Site",
+    "src": "projects/spotifyapp.png",
+    "alt": "JW Spotify App",
     "gif": false,
-    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player. Built with React, Node & Prismic.io",
-    "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
+    "title": "JW Spotify App",
+    "description": "Custom music player powered by Spotify API (for use with JW Spotify Account credentials & curated playlists)",
+    "link": "https://jw-spotify-app.netlify.com/"
   },
   {
-    "src": "projects/streaming-demo.png",
-    "alt": "Streaming Demo",
-    "title": "Streaming Demo",
+    "src": "projects/multi.jpg",
+    "alt": "Multi-App POC",
     "gif": false,
-    "description": "Streaming service dashboard showcasing video metadata and IAB confidence scores",
-    "link": "https://streaming-demo.netlify.com"
+    "title": "Multi-App POC",
+    "description": "Dashboard proof-of-concept with tiled workspaces"
   },
   {
     "src": "projects/mobile-support.png",
@@ -104,12 +103,12 @@
     "link": "https://kimhart.github.io/project-showcase/orbital-particles/"
   },
   {
-    "src": "projects/deliveryapi.png",
-    "alt": "Delivery API Docs",
-    "title": "JW Delivery API Docs",
+    "src": "projects/wall.png",
+    "alt": "Click-to-Play Video Wall",
+    "title": "Click-to-Play Video Wall",
     "gif": false,
-    "description": "API reference for requesting JW Player content & metadata, built with Swagger UI",
-    "link": "https://developer.jwplayer.com/jw-platform/docs/delivery-api-reference"
+    "description": "Video display demo for fast video rendering on click",
+    "link": "https://developer.jwplayer.com/jw-player/demos/innovation/click-to-play/"
   },
   {
     "src": "particle-waves.gif",
