@@ -5,18 +5,21 @@ import Nav from "../components/nav"
 import Github from "../components/svgs/github"
 import Twitter from "../components/svgs/twitter"
 import LinkedIn from "../components/svgs/linkedin"
+import DevTo from "../components/svgs/dev"
 import Img from "gatsby-image"
+import useDarkMode from "use-dark-mode"
 
 const About = (props) => {
   const [isTransparent, setIsTransparent] = useState(true);
-  
+  const darkMode = useDarkMode().value;
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
   }, []);
 
   const handleScroll = () => {
     const main = document.querySelector(".page--about__main");
-    main&& (main.getBoundingClientRect().top <= 70) ?  setIsTransparent(false) : setIsTransparent(true);
+    main && (main.getBoundingClientRect().top <= 70) ?  setIsTransparent(false) : setIsTransparent(true);
   };
 
   return (
@@ -117,21 +120,21 @@ const About = (props) => {
                 <span>WDI Alumni</span>
               </div>
               <h3>Say Hello</h3>
-              <div className="page--about__social">
+              <div className={`page--about__social`}>
                 <a href="https://github.com/kimhart" target="_blank">
-                  <Github />
+                  <Github fill={darkMode ? "#fff" : "#000"} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/kimhart1/"
                   target="_blank"
                 >
-                  <LinkedIn />
+                  <LinkedIn fill={darkMode ? "#fff" : "#000"} />
                 </a>
                 <a href="https://twitter.com/kim_hart" target="_blank">
-                  <Twitter />
+                  <Twitter fill={darkMode ? "#fff" : "#000"} />
                 </a>
                 <a href="https://dev.to/kim_hart" target="_blank">
-                  <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Kim Hart's DEV Profile" height="27" width="27" />
+                  <DevTo fill={darkMode ? "#fff" : "#000"} />
                 </a>
               </div>
             </div>

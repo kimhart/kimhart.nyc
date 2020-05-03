@@ -53,21 +53,23 @@
       color: black;
       font-family: @roboto;
       .dark-mode & {
+        color: @sunset-highlight;
         color: @white;
       }
       strong {
         font-weight: 700;
+        color: @sunrise-highlight;
+        .dark-mode & {
+          color: @sunset-highlight;
+        }
       }
       a, a:visited, a:active {
         text-decoration: none;
         color: black;
         transition: all .1s ease-in-out;
         .dark-mode & {
-        color: @sunset-text;
+          color: @white;
         }
-      }
-      a:hover {
-        color: @link-blue;
       }
       @media screen and (max-width: 450px) {
         font-size: 17px;
@@ -90,7 +92,6 @@
         position: absolute;
         font-size: 94px;
         font-weight: 900;
-        z-index: 1;
         color: fade(@sunrise-nav, 20%);
         .dark-mode & {
           color: fade(@sunset-nav, 20%);
@@ -114,7 +115,6 @@
       position: absolute;
       font-size: 94px;
       font-weight: 900;
-      z-index: 1;
       color: fade(@sunrise-nav, 20%);
       .dark-mode & {
         color: fade(@sunset-nav, 20%);
