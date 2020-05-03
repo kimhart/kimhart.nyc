@@ -53,10 +53,6 @@ function SEO({ description, lang, meta, title }) {
           content: site.siteMetadata.author,
         },
         {
-          property: `og:url`,
-          content: "https://kimhart.nyc/"
-        },
-        {
           property: `og:image:secure_url`,
           content: `https://kimhart.nyc/og-image.jpg`,
         },
