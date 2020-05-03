@@ -1,7 +1,7 @@
 .nav {
   opacity: 1;
   visibility: visible;
-  transition: @theme-transition;
+  transition: @fast-transition;
   height: 60px;
   background: @sunrise-nav;
   margin: 0;
@@ -15,14 +15,14 @@
   .flex(@align: center);
 
   @media screen and (max-width: 450px) {
-    transition: @theme-transition;
+    transition: @fast-transition;
   }
   .dark-mode & {
     background: @sunset-nav;
   }
 
   &.-menu-open {
-    transition: @theme-transition;
+    transition: @fast-transition;
   }
 
   @media screen and (max-width: 480px) {
@@ -34,7 +34,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 900;
-    transition: @theme-transition;
+    transition: @fast-transition;
   }
 
   &__content {
@@ -95,7 +95,7 @@
     height: calc(~"100vh - 60px");
     left: 0;
     width: 100%;
-    transition: @theme-transition;
+    transition: @fast-transition;
     opacity: 0;
 
     .flex(@justify: center,@direction: column);
