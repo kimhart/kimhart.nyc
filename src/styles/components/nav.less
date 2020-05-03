@@ -95,7 +95,9 @@
     height: calc(~"100vh - 60px");
     left: 0;
     width: 100%;
-    transition: all .4s ease-in-out;
+    transition: @theme-transition;
+    opacity: 0;
+
     .flex(@justify: center,@direction: column);
     a {
       display: block;
@@ -109,6 +111,7 @@
       padding: 20px;
       background: @sunrise-nav;
       top: 60px;
+      opacity: 1;
       .dark-mode & {
         background: @sunset-nav;
       }

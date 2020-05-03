@@ -46,11 +46,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `http://i.ibb.co/2hbCNtp/ogimage.jpg`,
+          content: `https://i.ibb.co/hYKzSb6/og-image.jpg`,
         },
         {
           property: `og:image:secure_url`,
-          content: `https://i.ibb.co/2hbCNtp/ogimage.jpg`,
+          content: `https://i.ibb.co/hYKzSb6/og-image.jpg`,
         },
         {
           property: `og:image:type`,
@@ -82,7 +82,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: `http://i.ibb.co/2hbCNtp/ogimage.jpg`
+          content: `https://i.ibb.co/hYKzSb6/og-image.jpg`
         }
       ].concat(meta)}
     />
