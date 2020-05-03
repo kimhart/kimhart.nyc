@@ -46,11 +46,19 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://i.ibb.co/hYKzSb6/og-image.jpg`,
+          content: `https://i.ibb.co/kSnvLW0/image.jpg`,
+        },
+        {
+          name: `og:author`,
+          content: site.siteMetadata.author,
+        },
+        {
+          name: `og:url`,
+          content: "https://kimhart.nyc/"
         },
         {
           property: `og:image:secure_url`,
-          content: `https://i.ibb.co/hYKzSb6/og-image.jpg`,
+          content: `https://i.ibb.co/kSnvLW0/image.jpg`,
         },
         {
           property: `og:image:type`,
@@ -82,7 +90,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: `https://i.ibb.co/hYKzSb6/og-image.jpg`
+          content: `https://i.ibb.co/kSnvLW0/image.jpg`
         }
       ].concat(meta)}
     />
