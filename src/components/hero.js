@@ -35,7 +35,7 @@ const Hero = () => {
           <span className="hero__shadow">Kim Hart</span>
         </div>
         <h2 className="hero__headline">
-          Front-end engineer hacking on all things UX/UI and internal tools at JW Player<br/>
+          Front-end engineer hacking on all things UX/UI and internal tools @ JW Player<br/>
         </h2>
         <div className="hero__ctas">
           <Button type="secondary" text="About" link="about" />
