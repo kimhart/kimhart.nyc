@@ -2,7 +2,7 @@
   font-family: @roboto;
   color: @sunrise-text;
   position: relative;
-
+  transition: @theme-transition;
   .dark-mode & {
     background: @sunset-bg;
     color: @sunset-text;
@@ -53,11 +53,11 @@
       margin-left: 20px;
     }
     h2 {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 300;
       color: black;
       font-family: @roboto;
-      transition: @fast-transition;
+      transition: @theme-transition;
       .dark-mode & {
         color: @white;
       }
@@ -71,7 +71,7 @@
       a, a:visited, a:active {
         text-decoration: none;
         color: black;
-        transition: @fast-transition;
+        transition: @theme-transition;
         .dark-mode & {
           color: @white;
         }
@@ -93,9 +93,9 @@
         z-index: 100;
       }
       &::before {
-        content: 'Right now';
+        content: 'Right now...';
         white-space: nowrap;
-        top: -45px;
+        top: -50px;
         left: -72px;
         position: absolute;
         z-index: -1;
@@ -103,7 +103,7 @@
         font-weight: 900;
         color: fade(@sunrise-nav, 20%);
         .dark-mode & {
-          color: fade(@sunset-nav, 28%);
+          color: fade(@sunset-nav, 18%);
         }
         @media screen and (max-width: 800px) {
           font-size: 60px;
@@ -126,7 +126,7 @@
       font-weight: 900;
       color: fade(@sunrise-nav, 20%);
       .dark-mode & {
-        color: fade(@sunset-nav, 25%);
+        color: fade(@sunset-nav, 18%);
       }
       @media screen and (max-width: 800px) {
         font-size: 60px;
@@ -144,9 +144,9 @@
         margin-top: 0;
       }
       &::before {
-        content: 'Education';
+        content: 'Education...';
         white-space: nowrap;
-        top: -38px;
+        top: -44px;
         left: -72px;
         position: absolute;
         font-size: 94px;
@@ -154,7 +154,7 @@
         z-index: 1;
         color: fade(@sunrise-nav, 20%);
         .dark-mode & {
-          color: fade(@sunset-nav, 25%);
+          color: fade(@sunset-nav, 18%);
         }
         @media screen and (max-width: 800px) {
           font-size: 60px;
@@ -200,6 +200,8 @@
     font-weight: 100;
     white-space: nowrap;
     color: @sunrise-text;
+    transition: @theme-transition;
+
     .flex(@align: center);
     .icon--location {
       height: 20px;

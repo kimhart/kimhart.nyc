@@ -14,9 +14,9 @@ const Hero = () => {
     <div className="hero">
       <div className="hero__location">
         <h3>
-          BK <div className="hero__location-divider" /> NYC{" "}
-          <div className="hero__location-divider" />
-            <IconLocation />
+          BK <div className="hero__location-divider" /> 
+          NYC{" "}
+          <IconLocation />
         </h3>
       </div>
       <div className="hero__theme-toggles">

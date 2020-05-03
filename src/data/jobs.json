@@ -133,10 +133,21 @@
     ]
   },
   {
+    "title": "Web Development Immersive",
+    "company": "General Assembly",
+    "current": false,
+    "education": true,
+    "link": "https://generalassemb.ly",
+    "location": "New York, NY",
+    "duration": "Oct 2015 – Feb 2016",
+    "bullets": [
+      "3-month, full-time program focused on full stack web development basics"
+    ]
+  },
+  {
     "title": "BA, Journalism & Media Studies",
     "company": "San Diego State University",
     "current": false,
-    "education": true,
     "link": "https://www.sdsu.edu/",
     "location": "San Diego, CA",
     "duration": "2008 – 2012",
@@ -146,16 +157,6 @@
       "Minor in sociology, emphasis in social psychology",
       "Events chairperson — Residence Hall Council",
       "Committee member — Associated Students Cultural Arts & Special Events"
-    ]
-  },
-  {
-    "title": "Web Development Immersive",
-    "company": "General Assembly",
-    "link": "https://generalassemb.ly",
-    "location": "New York, NY",
-    "duration": "Oct 2015 – Feb 2016",
-    "bullets": [
-      "3-month, full-time program focused on full stack web development basics"
     ]
   }
 ]
