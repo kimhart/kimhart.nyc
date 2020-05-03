@@ -9,7 +9,6 @@
     position: absolute;
     visibility: hidden;
     overflow: hidden;
-    // background: fade(black, 90%);
     background: fade(white, 97%);
     opacity: 0;
     max-height: 100%;
@@ -58,7 +57,10 @@
   }
 
   &__title {
-    color: black;
+    color: @sunrise-text;
+    .dark-mode & {
+      color: @sunset-bg;
+    }
   }
 
   &__title,
@@ -99,6 +101,9 @@
     font-weight: 100;
     font-size: 19px;
     margin-top: 10px;
+    .dark-mode & {
+      color: @sunset-bg;
+    }
     @media screen and (max-width: 1030px) {
       font-size: 17px;
       width: 100%;

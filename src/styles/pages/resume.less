@@ -48,17 +48,16 @@
       margin-left: 20px;
     }
     h2 {
-      font-size: 19px;
+      font-size: 22px;
       font-weight: 300;
       color: black;
       font-family: @roboto;
       .dark-mode & {
-        color: @sunset-highlight;
         color: @white;
       }
       strong {
         font-weight: 700;
-        color: @sunrise-highlight;
+        color: @sunrise-peach;
         .dark-mode & {
           color: @sunset-highlight;
         }
@@ -79,7 +78,7 @@
       margin-bottom: 55px;
       border-bottom: 0;
       h2 {
-        font-size: 28px;
+        font-size: 30px;
         @media screen and (max-width: 450px) {
           font-size: 20px;
         }
@@ -92,9 +91,9 @@
         position: absolute;
         font-size: 94px;
         font-weight: 900;
-        color: fade(@sunrise-nav, 20%);
+        color: fade(@sunrise-nav, 15%);
         .dark-mode & {
-          color: fade(@sunset-nav, 20%);
+          color: fade(@sunset-nav, 15%);
         }
         @media screen and (max-width: 800px) {
           font-size: 60px;
@@ -115,9 +114,9 @@
       position: absolute;
       font-size: 94px;
       font-weight: 900;
-      color: fade(@sunrise-nav, 20%);
+      color: fade(@sunrise-nav, 15%);
       .dark-mode & {
-        color: fade(@sunset-nav, 20%);
+        color: fade(@sunset-nav, 15%);
       }
       @media screen and (max-width: 800px) {
         font-size: 60px;
@@ -143,9 +142,9 @@
         font-size: 94px;
         font-weight: 900;
         z-index: 1;
-        color: fade(@sunrise-nav, 20%);
+        color: fade(@sunrise-nav, 15%);
         .dark-mode & {
-          color: fade(@sunset-nav, 20%);
+          color: fade(@sunset-nav, 15%);
         }
         @media screen and (max-width: 800px) {
           font-size: 60px;
@@ -174,10 +173,10 @@
       margin-bottom: 20px;
     }
     h3 {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 100;
       white-space: nowrap;
-      margin: 5px 0 15px;
+      margin: 5px 0;
       color: @sunrise-text;
       font-family: @roboto;
       .dark-mode & {
@@ -187,13 +186,13 @@
   }
 
   &__location {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 100;
     white-space: nowrap;
     color: @sunrise-text;
     .flex(@align: center);
     .icon--location {
-      height: 19px;
+      height: 20px;
       margin: 0 5px 0 -2px;
     }
     .dark-mode & {
@@ -202,8 +201,11 @@
   }
 
   &__bullets {
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 16px;
+    color: @sunrise-text;
+    .dark-mode & {
+      color: @sunset-text;
+    }
     ul li {
       line-height: 1.6;
       margin-bottom: 10px;

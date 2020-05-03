@@ -19,17 +19,17 @@ const Hero = () => {
             <IconLocation />
         </h3>
       </div>
+      <div className="hero__theme-toggles">
+        <Sunrise
+          onClick={handleTheme}
+          size="l"
+        />
+        <Sunset
+          onClick={handleTheme}
+          size="l"
+        />
+      </div>
       <div className="hero__intro">
-        <div className="hero__theme-toggles">
-          <Sunrise
-            onClick={handleTheme}
-            size="l"
-          />
-          <Sunset
-            onClick={handleTheme}
-            size="l"
-          />
-        </div>
         <div className="hero__name-wrap">
           <h1>Kim Hart</h1>
           <span className="hero__shadow">Kim Hart</span>
