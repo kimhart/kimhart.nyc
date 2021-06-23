@@ -8,6 +8,7 @@ import LinkedIn from "../components/svgs/linkedin"
 import DevTo from "../components/svgs/dev"
 import Img from "gatsby-image"
 import useDarkMode from "use-dark-mode"
+import { graphql } from 'gatsby'
 
 const About = (props) => {
   const [isTransparent, setIsTransparent] = useState(true);
