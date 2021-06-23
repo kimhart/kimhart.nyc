@@ -2,8 +2,8 @@
 @sunrise-peach: #FF8E65;
 @sunrise-yellow: #FFECAC;
 @sunrise-overlay: fade(#FF6262, 30%);
-@sunrise-header-shadow: rgba(255,  253, 154, .35);
-@sunrise-text: #686D77;
+@sunrise-header-shadow: rgba(255,  253, 154, .25);
+@sunrise-text: #212229;
 @sunrise-highlight: #FFA680;
 @sunrise-bg: #FEFCF1;
 @sunrise-nav: fade(#FFA781, 90%);
@@ -13,20 +13,20 @@
 @sunset-blue: #30C0E2;
 @sunset-pink: #D95CEE;
 @sunset-overlay: fade(@sunset-pink, 25%);
-@sunset-header-shadow: rgba(239, 232, 255, .25);
+@sunset-header-shadow: fade(@sunrise-text, 18%);
 @sunset-text: #D9DDE6;
 @sunset-highlight: #668FF7; 
 @sunset-bg: #1A1B30;
 @sunset-nav: fade(#698AFC, 90%);
-@sunset-nav-emphasis: #4CC3CA;
+@sunset-nav-emphasis: #30C0E2;
 
 @button-yellow: #FFFD9A; 
 @button-hover: rgba(255, 253, 154, .2);
 @link-blue: #61AFEF;
 
+
 @white: #FFFFFF;
 
-@icon-gray: #212229;
 @light-gray: #9799A4;
 @border-gray: fade(@light-gray, 50%);
 
@@ -38,3 +38,8 @@
 
 @page-max-width: 1100px;
 @page-padding: 70px;
+
+// Animations
+
+@theme-transition: all .7s ease-in-out;
+@fast-transition: all .3s ease;

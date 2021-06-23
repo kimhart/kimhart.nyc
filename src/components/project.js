@@ -2,21 +2,21 @@ import React from "react"
 import Image from "../components/image"
 import Arrow from "../components/svgs/arrow"
 
-export default class Project extends React.Component {
-
-  render() {
-    const { title, description, link, gif, src, alt } = this.props;
-    return (
-      <div className={`project`}>
-        <a href={link} target="_blank">
-          {gif && <img src={src} alt={alt} className="gif" />}
-          {!gif && <Image {...this.props} />}
-          <div className="project__info">
-            <div className="project__title-wrap">
-              <div className="project__title">{title}</div>
-              <div className="project__shadow">{title}</div>
-            </div>
-            <div className="project__description">{description}</div>
+const Project = (props) => {
+  const { title, description, link, gif, src, alt } = props;
+  return (
+    <div className={`project ${link ? "-has-link" : ""}`}>
+      <a href={link} target="_blank">
+        {gif && <img src={src} alt={alt} className="gif" />}
+        {!gif && <Image {...props} />}
+        <div className="project__info">
+          <div className="project__title-wrap">
+            <div className="project__title">{title}</div>
+            <div className="project__shadow">{title}</div>
+          </div>
+          <div className="project__description">{description}</div>
+          {link &&
+          <>
             <svg
               className="project__corner"
               viewBox="0 0 540 270"
@@ -29,9 +29,13 @@ export default class Project extends React.Component {
               </g>
             </svg>
             <Arrow />
-          </div>
-        </a>
-      </div>
-    )
-  }
+            </>
+          }
+        </div>
+      </a>
+    </div>
+  )
 }
+
+export default Project;
+

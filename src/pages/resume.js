@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { StaticQuery, graphql } from "gatsby"
 import IconLocation from "../components/icons/location"
-
+import useDarkMode from "use-dark-mode"
 
 const renderResume = props => (
   <StaticQuery
@@ -28,6 +28,7 @@ const renderResume = props => (
     `}
     render={data => data.allJobsJson.edges.map((edge, i) => {
       const job = edge.node;
+      const darkMode = useDarkMode().value;
       return (
         <div
           key={i}
@@ -42,7 +43,7 @@ const renderResume = props => (
             <div className="page--resume__details">
               <h3>{job.duration}</h3>
               <div className="page--resume__location">
-                {job.current && <IconLocation fill="#FF6262" />}
+                {job.current && <IconLocation fill={darkMode ? "#A366FF" : "#FF6262"} />}
                 {job.location}
               </div>
             </div>

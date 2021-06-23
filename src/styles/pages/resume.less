@@ -1,11 +1,17 @@
 .page--resume {
   font-family: @roboto;
-  color: black;
-
+  color: @sunrise-text;
+  position: relative;
+  transition: @theme-transition;
+  .dark-mode & {
+    background: @sunset-bg;
+    color: @sunset-text;
+  }
   &__main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 70px 0;
+    position: relative;
 
     @media screen and (max-width: 1240px) {
       padding: 70px;
@@ -33,32 +39,42 @@
     position: relative;
     padding-bottom: 55px;
     border-bottom: 1px solid fade(@border-gray, 25%);
+    position: relative;
+    z-index: 100;
     @media screen and (max-width: 450px) {
       margin: 40px 0;
       padding-bottom: 10px;
     }
     &:nth-of-type(8),
-    &:nth-of-type(10), {
+    &:nth-of-type(10) {
       border-bottom: 0;
     }
     @media screen and (max-width: 450px) {
       margin-left: 20px;
     }
     h2 {
-      font-size: 19px;
+      font-size: 20px;
       font-weight: 300;
       color: black;
       font-family: @roboto;
+      transition: @theme-transition;
+      .dark-mode & {
+        color: @white;
+      }
       strong {
         font-weight: 700;
+        color: @sunrise-peach;
+        .dark-mode & {
+          color: @sunset-highlight;
+        }
       }
       a, a:visited, a:active {
         text-decoration: none;
         color: black;
-        transition: all .1s ease-in-out;
-      }
-      a:hover {
-        color: @link-blue;
+        transition: @theme-transition;
+        .dark-mode & {
+          color: @white;
+        }
       }
       @media screen and (max-width: 450px) {
         font-size: 17px;
@@ -68,23 +84,26 @@
       margin-bottom: 55px;
       border-bottom: 0;
       h2 {
-        font-size: 28px;
+        font-size: 30px;
         @media screen and (max-width: 450px) {
           font-size: 20px;
         }
       }
+      > * {
+        z-index: 100;
+      }
       &::before {
-        content: 'Currently';
+        content: 'Right now...';
         white-space: nowrap;
-        top: -34px;
+        top: -50px;
         left: -72px;
         position: absolute;
+        z-index: -1;
         font-size: 94px;
         font-weight: 900;
-        z-index: -1;
         color: fade(@sunrise-nav, 20%);
         .dark-mode & {
-          color: fade(@sunset-nav, 12%);
+          color: fade(@sunset-nav, 18%);
         }
         @media screen and (max-width: 800px) {
           font-size: 60px;
@@ -98,17 +117,16 @@
       }
     }
     &:nth-of-type(2)::before {
-      content: 'Past Experience';
+      content: 'Back then...';
       white-space: nowrap;
-      top: -34px;
+      top: -40px;
       left: -72px;
       position: absolute;
       font-size: 94px;
       font-weight: 900;
-      z-index: -1;
       color: fade(@sunrise-nav, 20%);
       .dark-mode & {
-        color: fade(@sunset-nav, 12%);
+        color: fade(@sunset-nav, 18%);
       }
       @media screen and (max-width: 800px) {
         font-size: 60px;
@@ -126,17 +144,17 @@
         margin-top: 0;
       }
       &::before {
-        content: 'Education';
+        content: 'Education...';
         white-space: nowrap;
-        top: -34px;
+        top: -44px;
         left: -72px;
         position: absolute;
         font-size: 94px;
         font-weight: 900;
-        z-index: -1;
+        z-index: 1;
         color: fade(@sunrise-nav, 20%);
         .dark-mode & {
-          color: fade(@sunset-nav, 12%);
+          color: fade(@sunset-nav, 18%);
         }
         @media screen and (max-width: 800px) {
           font-size: 60px;
@@ -165,30 +183,41 @@
       margin-bottom: 20px;
     }
     h3 {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 100;
       white-space: nowrap;
-      margin: 5px 0 15px;
+      margin: 5px 0;
       color: @sunrise-text;
       font-family: @roboto;
+      .dark-mode & {
+        color: @sunset-text;
+      }
     }
   }
 
   &__location {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 100;
     white-space: nowrap;
     color: @sunrise-text;
+    transition: @theme-transition;
+
     .flex(@align: center);
     .icon--location {
-      height: 19px;
+      height: 20px;
       margin: 0 5px 0 -2px;
+    }
+    .dark-mode & {
+      color: @sunset-text;
     }
   }
 
   &__bullets {
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 16px;
+    color: @sunrise-text;
+    .dark-mode & {
+      color: @sunset-text;
+    }
     ul li {
       line-height: 1.6;
       margin-bottom: 10px;

@@ -11,7 +11,7 @@
   box-sizing: border-box;
   height: 55px;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: @fast-transition;
 
   &:focus {
     outline: none;
@@ -25,6 +25,9 @@
     &:hover {
       color: @sunrise-text;
       background: @button-yellow;
+      .dark-mode & {
+        color: @sunset-bg;
+      }
     }
   }
 

@@ -33,6 +33,10 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `author`,
+          content: site.siteMetadata.author,
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -42,7 +46,19 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://ibb.co/S0GWH8K`,
+          content: `https://kimhart.nyc/og-image.jpg`,
+        },
+        {
+          name: `og:author`,
+          content: site.siteMetadata.author,
+        },
+        {
+          property: `og:image:secure_url`,
+          content: `https://kimhart.nyc/og-image.jpg`,
+        },
+        {
+          property: `og:image:type`,
+          content: `image/jpeg`,
         },
         {
           property: `og:type`,
@@ -70,7 +86,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: `https://ibb.co/S0GWH8K`
+          content: `https://kimhart.nyc/og-image.jpg`
         }
       ].concat(meta)}
     />

@@ -1,7 +1,7 @@
 .nav {
   opacity: 1;
   visibility: visible;
-  transition: all .3s ease-in-out;
+  transition: @fast-transition;
   height: 60px;
   background: @sunrise-nav;
   margin: 0;
@@ -15,14 +15,14 @@
   .flex(@align: center);
 
   @media screen and (max-width: 450px) {
-    transition: all .3s 0s ease-in-out;
+    transition: @fast-transition;
   }
   .dark-mode & {
     background: @sunset-nav;
   }
 
   &.-menu-open {
-    transition: all .3s 0s ease-in-out;
+    transition: @fast-transition;
   }
 
   @media screen and (max-width: 480px) {
@@ -34,7 +34,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 900;
-    transition: .2s ease;
+    transition: @fast-transition;
   }
 
   &__content {
@@ -95,7 +95,9 @@
     height: calc(~"100vh - 60px");
     left: 0;
     width: 100%;
-    transition: all .4s ease-in-out;
+    transition: @fast-transition;
+    opacity: 0;
+
     .flex(@justify: center,@direction: column);
     a {
       display: block;
@@ -109,6 +111,7 @@
       padding: 20px;
       background: @sunrise-nav;
       top: 60px;
+      opacity: 1;
       .dark-mode & {
         background: @sunset-nav;
       }

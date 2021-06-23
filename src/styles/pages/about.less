@@ -90,9 +90,9 @@
   &__underline {
     width: 260px;
     height: 3px;
-    background: @sunrise-nav-emphasis;
+    background: @sunrise-yellow;
     margin: 40px 0;
-    transition: all .6s ease-in-out;
+    transition: @theme-transition;
     .dark-mode & {
       background: @sunset-blue;
     }
@@ -124,6 +124,11 @@
     width: 100vw;
     padding: 90px 70px 70px;
     background: white;
+    transition: @theme-transition;
+    .dark-mode & {
+      background: @sunset-bg;
+      color: @sunset-text;
+    }
 
     @media screen and (max-width: 985px) {
       min-height: 120vh;
@@ -151,8 +156,16 @@
     max-width: 1100px;
     margin: 0 auto;
     font-weight: 100;
-    color: @icon-gray;
+    color: @sunrise-text;
     .flex(@justify: space-between);
+    
+    a,
+    a:active,
+    a:hover {
+      text-decoration: none;
+      color: @link-blue;
+    }
+
     @media screen and (max-width: 850px) {
       flex-direction: column;
       flex: 1;
@@ -162,17 +175,15 @@
   &__bio {
     width: 75%;
     margin-right: 90px;
-    a,
-    a:active,
-    a:hover {
-      text-decoration: none;
-      color: @link-blue;
-    }
     p {
-      color: @icon-gray;
+      color: @sunrise-text;
       margin-bottom: 30px;
       font-size: 17px;
       font-weight: 100;
+      transition: @theme-transition;
+      .dark-mode & {
+        color: @sunset-text;
+      }
     }
     @media screen and (max-width: 850px) {
       width: 100%;
@@ -182,6 +193,11 @@
 
   &__panel {
     width: 25%;
+    transition: @theme-transition;
+    color: @sunrise-text;
+    .dark-mode & {
+      color: @sunset-text;
+    }
     h3 {
       font-size: 17px;
       font-weight: 900;
@@ -194,6 +210,7 @@
       &:first-of-type {
         margin-top: 20px;
       }
+      
     }
 
     > div {
@@ -220,7 +237,7 @@
   &__social {
     .flex(@align: center);
     > a {
-      height: 24px;
+      height: 27px;
       margin-right: 12px;
       @media screen and (max-width: 850px) {
         margin-right: 20px;

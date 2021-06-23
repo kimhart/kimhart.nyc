@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Kim Hart`,
-    description: `Front End Engineer in BK, NY`,
+    description: `Design-focused front end engineer in Brooklyn, NY. Hacking on all things UX/UI and internal tools @ JW Player`,
     author: `kim_hart`,
     image: `https://ibb.co/CbBDCW3`,
   },
