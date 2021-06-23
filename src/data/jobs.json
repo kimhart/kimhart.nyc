@@ -1,27 +1,42 @@
 [
   {
-    "title": "Front End Engineer",
+    "title": "Senior Front End Engineer",
     "company": "JW Player",
     "link": "https://jwplayer.com",
     "current": true,
     "education": false,
     "location": "New York, NY",
-    "duration": "April 2017 – Present",
+    "duration": "October 2020 – Present",
     "bullets": [
-      "Pull from data-rich APIs & build elegant UI for complex workflows like live streaming, video management, and advanced searching & filtering",
-      "Built a dashboard environment complete with user authentication & session management",
-      "Assist in creating robust web component library (previous iterations include React & Angular versions in Storybook)",
-      "Built a Salesforce-authenticated Express service that handles all JW support case submissions",
-      "Build a read-only mobile analytics version of the JW Dashboard",
-      "Created an in-house music app using Spotify's API for use with office Sonos system",
-      "Architected a design system of color and typography variables, iconography, mixins, etc.",
+       "Lead a variety of complex, UI-heavy content management features in our enterprise dashboard using React, Typescript and SCSS",
+        "Spearheaded a rewrite of the legacy Angular dashboard to its current modern stack",
+        "Develop a custom web component library built in React + Stencil that powers the modular, accessible UI of the React dashboard",
+        "Contribute to a custom Typescript “Companion Library” that integrates with JW Player APIs and facilitates authentication and session management",
+        "Established a smoother QA process and closer partnership with Test Engineering through the addition of test IDs in UI elements",
+        "Created a chrome extension called Scout that locates + visualizes test IDs on any page",
+        "Maintain the JW Design Library, Hook, and its documentation site, Neverland",
+        "Translate designs from Figma, facilitate visual-QA with designers, and help define design system patterns",
+        "Work closely with product + engineering leaders to write and groom acceptance criteria for product features and epics",
+        "Work with other leads on cross-team initiatives and provide guidance to fellow engineers"
+    ]
+  },
+  {
+    "title": "Front End Engineer",
+    "company": "JW Player",
+    "link": "https://jwplayer.com",
+    "current": false,
+    "education": false,
+    "location": "New York, NY",
+    "duration": "April 2017 – October 2020",
+    "bullets": [
+      "Contributed to a UI component library with Storybook (React + Angular)",
+      "Created a design library of colors, typography, logos and iconography",
+      "Built a React simulated dashboard for fast user testing and visual QA",
       "Created a repo of prototyping starter kits with baked-in JS and Less build tools",
-      "Lead support site's rearchitecture, built UI and a Salesforce-authenticated backend service",
+      "Built the current JW Support site, both front-end architecture + deployments and a Salesforce-authenticated Express service that handles case submission",
       "Created custom API parameters & content specs for CMS migration to Prismic.io",
-      "Maintain and update Developer site & Support site",
-      "Build data-driven product demos and POCs",
-      "Develop interactive data visualizations with D3",
-      "Mentor junior developers and interns"
+      "Build data-driven product demos, prototypes & POCs",
+      "Develop interactive data visualizations with D3"
     ]
   },
   {

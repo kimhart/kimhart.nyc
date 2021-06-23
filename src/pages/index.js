@@ -52,13 +52,13 @@ const IndexPage = () => {
         <Nav isHidden={isHidden} />
         <div id="projects" className="page--home__projects">
           <div className="page--home__tools">
-            <h4>Tools & Tech</h4>
+            <h4>Current Stack & Tools</h4>
             <p>
-              React (Javascript/Typescript), Less/Sass, Node/Express, Webpack,
-              Docker, Grunt, Storybook, JIRA, Jenkins, Sketch, Zeplin
+              React, Typescript (Javascript), SCSS, CSS modules, REST APIs, 
+              Stencil, Jest, Figma, JIRA, Buildkite, Postman, Docker
             </p>
-            <h4>A Note</h4>
-            <p>These lil guys are simplified builds of some of my work (not the completed products!) Always happy to chat in detail about the real thing. </p>
+            <h4>Other stuff I can hang with</h4>
+            <p>Less, Storybook, GraphQL, Webpack, Grunt/Gulp, Express/Node, Mockoon, Sketch, Zeplin, Jenkins, Netlify</p>
             <div className="page--home__underline" />
           </div>
           {renderProjects()}

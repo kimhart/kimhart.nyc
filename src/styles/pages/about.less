@@ -158,6 +158,14 @@
     font-weight: 100;
     color: @sunrise-text;
     .flex(@justify: space-between);
+    
+    a,
+    a:active,
+    a:hover {
+      text-decoration: none;
+      color: @link-blue;
+    }
+
     @media screen and (max-width: 850px) {
       flex-direction: column;
       flex: 1;
@@ -167,12 +175,6 @@
   &__bio {
     width: 75%;
     margin-right: 90px;
-    a,
-    a:active,
-    a:hover {
-      text-decoration: none;
-      color: @link-blue;
-    }
     p {
       color: @sunrise-text;
       margin-bottom: 30px;
