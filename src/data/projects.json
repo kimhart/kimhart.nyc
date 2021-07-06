@@ -101,7 +101,7 @@
     "title": "Scout Chrome Extension",
     "gif": false,
     "description": "Locates elements with data-test attributes on any webpage and highlights their test IDs",
-    "link": "https://jw-spotify-app.netlify.com/"
+    "link": null
   },
   {
     "src": "projects/multi.jpg",
