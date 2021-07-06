@@ -55,10 +55,10 @@ const IndexPage = () => {
             <h4>Current Stack & Tools</h4>
             <p>
               React, Typescript (Javascript), SCSS, CSS modules, REST APIs, 
-              Stencil, Jest, Figma, JIRA, Buildkite, Postman, Docker
+              Stencil, Parcel, Jest, Figma, JIRA, Buildkite, Postman, Docker
             </p>
             <h4>Other stuff I can hang with</h4>
-            <p>Less, Storybook, GraphQL, Webpack, Grunt/Gulp, Express/Node, Mockoon, Sketch, Zeplin, Jenkins, Netlify</p>
+            <p>Less, Storybook, GraphQL, Webpack, Grunt/Gulp, Express/Node, Sketch, Zeplin, Jenkins, Netlify</p>
             <div className="page--home__underline" />
           </div>
           {renderProjects()}
