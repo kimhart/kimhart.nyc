@@ -36,9 +36,9 @@ const About = (props) => {
               </h1>
               <div className="page--about__underline" />
               <h2>
-                While I'm down to learn pretty much anything, I'm happiest
-                working at the intersection of design and engineering, where I
-                can focus on creative problem solving and elegant UI.
+                I'm down to learn pretty much anything, but I'm happiest
+                working at the intersection of design and engineering where I
+                can focus on creative problem-solving and elegant UI.
               </h2>
             </div>
             <div className="page--about__photo">
@@ -52,11 +52,11 @@ const About = (props) => {
             <div className="page--about__bio">
               <h1>About Me</h1>
               <p>
-                I'm currently building solutions for complex workflows in the JW Dashboard and assisting in the development of our APIs & a custom web component library. 
+                I'm currently building solutions for complex workflows in the JW Dashboard and assisting in the development of our APIs &amp; a custom web component library. 
               </p>
               <p>
                 I earned my BA in journalism and worked in marketing before learning to code. Curiosity about tech
-                & design lead me to General Assembly's{" "}
+                &amp; design lead me to General Assembly's{" "}
                 <a href="https://dev.to/kim_hart/5-lessons-my-bootcamp-didnt-teach-me">
                   web development bootcamp
                 </a>
@@ -85,11 +85,11 @@ const About = (props) => {
               </p>
               <p>
                 When I'm not on a computer, you can probably find me at a
-                concert or music festival, traveling, or hanging out somewhere in Brooklyn.
+                concert or music festival, traveling, or hanging out somewhere around New York City.
               </p>
             </div>
             <div className="page--about__panel">
-              <h3>Blogs</h3>
+              <h3>Articles</h3>
               <div>
                 <a href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90" target="_blank" rel="noopener noreferrer">Translating Design Principles into Scalable Code</a>
               </div>
