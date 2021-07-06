@@ -1,75 +1,27 @@
 [
   {
+    "src": "projects/wui-atlas.png",
+    "alt": "Web Component Library (WUI)",
+    "title": "Web Component Library (WUI)",
+    "gif": false,
+    "description": "Custom UI component library and its built-in, interactive documentation site, Atlas",
+    "link": "https://wui.jwplayer.com"
+  },
+  {
+    "src": "projects/trimmer-2.png",
+    "alt": "Video Trimming Tool",
+    "title": "Video Trimming Tool",
+    "gif": false,
+    "description": "JW Dashboard's in-platform tool for trimming duration and creating new clips of videos",
+    "link": "http://dashboard.jwplayer.com"
+  },
+  {
     "src": "projects/two-screens.png",
     "alt": "Smol Dash Mobile Dashboard",
     "title": "Smol Dash",
     "gif": false,
     "description": "A React app for content creators to view video analytics and calculate ROI (based on JW Player metadata & advertising metrics), made for #JWHackWeek",
     "link": "https://simi-showcase.netlify.com/app"
-  },
-  {
-    "src": "projects/storybook.png",
-    "alt": "Storybook UI Components Library",
-    "title": "Storybook UI Components",
-    "gif": false,
-    "description": "React component library that demos components in every possible state & style variant and bundles them for production use",
-    "link": "https://pui-storybook-showcase.netlify.com/?path=/story/components-basic-form-controls-checkinput--default"
-  },
-  {
-    "src": "projects/support-2.png",
-    "alt": "JW Support site",
-    "title": "JW Support Site",
-    "gif": false,
-    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player. Built with React, Node & Prismic.io",
-    "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
-  },
-  {
-    "src": "projects/streaming-demo.png",
-    "alt": "Streaming Demo",
-    "title": "Streaming Demo",
-    "gif": false,
-    "description": "Streaming service dashboard showcasing video metadata and IAB confidence scores",
-    "link": "https://streaming-demo.netlify.com"
-  },
-  {
-    "src": "projects/streaming.png",
-    "alt": "Video Streaming POC",
-    "title": "Video Streaming POC",
-    "gif": false,
-    "description": "Static UI mock of a video streaming platform for JW Player content",
-    "link": "https://jw-streaming-showcase.netlify.com/"
-  },
-  {
-    "src": "projects/tally.png",
-    "alt": "Tally",
-    "title": "Tally",
-    "gif": false,
-    "description": "A React web app for keeping track of voting records, talking points and work attendance of US Senators and House reps",
-    "link": "https://tally.us.com"
-  },
-  {
-    "src": "projects/idc.png",
-    "alt": "IDCWDYW App",
-    "gif": false,
-    "title": "I Don't Care, What Do You Want?",
-    "description": "Random restaurant generator for indecisive people, built with Yelp's API",
-    "link": "https://idcwdyw.herokuapp.com/"
-  },
-  {
-    "src": "projects/hp.png",
-    "alt": "Harry Potter Memory Game",
-    "title": "Harry Potter Memory Game",
-    "gif": false,
-    "description": "This is buggy as hell but it's the first thing I ever coded and I think it's important to remember our humble beginnings 🙃",
-    "link": "https://kimhart.github.io/Project1_HPmemory/"
-  },
-  {
-    "src": "projects/simi.jpg",
-    "alt": "Dashboard UI",
-    "title": "Dashboard UI",
-    "gif": false,
-    "description": "React version of JW Player dashboard for rapid prototyping, UI validation and user testing",
-    "link": "https://simi-showcase.netlify.com"
   },
   {
     "src": "projects/spotifyapp.png",
@@ -80,11 +32,12 @@
     "link": "https://jw-spotify-app.netlify.com/"
   },
   {
-    "src": "projects/multi.jpg",
-    "alt": "Multi-App POC",
+    "src": "projects/support-2.png",
+    "alt": "JW Support site",
+    "title": "JW Support Site",
     "gif": false,
-    "title": "Multi-App POC",
-    "description": "Dashboard proof-of-concept with tiled workspaces. (Sorry, this one's not currently deployable!)"
+    "description": "Curated troubleshooting guides, tutorials and support articles for JW Player. Built with React, Node & Prismic.io",
+    "link": "https://support.jwplayer.com/articles/how-to-embed-non-linear-overlay-ads"
   },
   {
     "src": "projects/mobile-support.png",
@@ -95,6 +48,69 @@
     "link": "https://support.jwplayer.com/404"
   },
   {
+    "src": "projects/storybook.png",
+    "alt": "Storybook UI Components",
+    "title": "Storybook UI Components",
+    "gif": false,
+    "description": "React + Angular UI libraries (older iteration of WUI)",
+    "link": "https://pui-storybook-showcase.netlify.com/?path=/story/components-basic-form-controls-checkinput--default"
+  },
+  {
+    "src": "projects/tally.png",
+    "alt": "Tally",
+    "title": "Tally",
+    "gif": false,
+    "description": "A React web app for keeping track of voting records, talking points and work attendance of US Senators and House reps",
+    "link": null
+  },
+  {
+    "src": "projects/idc.png",
+    "alt": "IDCWDYW App",
+    "gif": false,
+    "title": "I Don't Care, What Do You Want?",
+    "description": "Random restaurant generator for indecisive people, built with Yelp's API",
+    "link": "https://idcwdyw.herokuapp.com/"
+  },
+  {
+    "src": "projects/streaming.png",
+    "alt": "Video Streaming POC",
+    "title": "Video Streaming POC",
+    "gif": false,
+    "description": "Static UI mock of a video streaming platform for JW Player content",
+    "link": "https://jw-streaming-showcase.netlify.com/"
+  },
+  {
+    "src": "projects/neverland.png",
+    "alt": "Neverland Design System",
+    "title": "Neverland Design System",
+    "gif": false,
+    "description": "JW Design Library (Hook), an NPM package of variables + assets, and its overarching design system documentation (Neverland)",
+    "link": "https://design.jwplayer.com"
+  },
+  {
+    "src": "projects/dashboard.png",
+    "alt": "Jw Player Dashboard",
+    "title": "JW Player Dashboard",
+    "gif": false,
+    "description": "Production platform where customers manage their media content, ads, players, livestreams, analytics, accounts & billing",
+    "link": "https://dashboard.jwplayer.com"
+  },
+  {
+    "src": "projects/scout.png",
+    "alt": "Scout Chrome Extension",
+    "title": "Scout Chrome Extension",
+    "gif": false,
+    "description": "Locates elements with data-test attributes on any webpage and highlights their test IDs",
+    "link": "https://jw-spotify-app.netlify.com/"
+  },
+  {
+    "src": "projects/multi.jpg",
+    "alt": "Multi-App POC",
+    "gif": false,
+    "title": "Multi-App POC",
+    "description": "Dashboard proof-of-concept with tiled workspaces. (Sorry, this one's not currently deployable!)"
+  },
+  {
     "src": "orbital-particles.gif",
     "alt": "Orbital Particles",
     "gif": true,
@@ -103,12 +119,12 @@
     "link": "https://kimhart.github.io/project-showcase/orbital-particles/"
   },
   {
-    "src": "projects/wall.png",
-    "alt": "Click-to-Play Video Wall",
-    "title": "Click-to-Play Video Wall",
+    "src": "projects/streaming-demo.png",
+    "alt": "Streaming Demo",
+    "title": "Streaming Demo",
     "gif": false,
-    "description": "Video display demo for fast video rendering on click",
-    "link": "https://developer.jwplayer.com/jw-player/demos/innovation/click-to-play/"
+    "description": "Streaming service dashboard showcasing video metadata and IAB confidence scores",
+    "link": "https://streaming-demo.netlify.com"
   },
   {
     "src": "particle-waves.gif",
@@ -125,5 +141,13 @@
     "gif": false,
     "description": "React app for a quick view of video metadata, smart thumbnails and audio transcriptions",
     "link": "https://kimhart.github.io/project-showcase/visual-metadata-viewer/"
+  },
+  {
+    "src": "projects/hp.png",
+    "alt": "Harry Potter Memory Game",
+    "title": "Harry Potter Memory Game",
+    "gif": false,
+    "description": "This is buggy as hell but it's the first thing I ever coded and I think it's important to remember our humble beginnings 🙃",
+    "link": "https://kimhart.github.io/Project1_HPmemory/"
   }
 ]

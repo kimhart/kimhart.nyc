@@ -8,6 +8,7 @@ import LinkedIn from "../components/svgs/linkedin"
 import DevTo from "../components/svgs/dev"
 import Img from "gatsby-image"
 import useDarkMode from "use-dark-mode"
+import { graphql } from 'gatsby'
 
 const About = (props) => {
   const [isTransparent, setIsTransparent] = useState(true);
@@ -35,9 +36,9 @@ const About = (props) => {
               </h1>
               <div className="page--about__underline" />
               <h2>
-                While I'm down to learn pretty much anything, I'm happiest
-                working at the intersection of design and engineering, where I
-                can focus on creative problem solving and elegant UI.
+                I'm down to learn pretty much anything, but I'm happiest
+                working at the intersection of design and engineering where I
+                can focus on creative problem-solving and elegant UI.
               </h2>
             </div>
             <div className="page--about__photo">
@@ -51,21 +52,18 @@ const About = (props) => {
             <div className="page--about__bio">
               <h1>About Me</h1>
               <p>
-                I'm currently building solutions for complex workflows in the JW Dashboard and assisting in the development of our APIs & a custom web component library. I've also built an internal design system, a variety of product demos & POCs, and the JW Player support site.
+                I'm currently building solutions for complex workflows in the JW Dashboard and assisting in the development of our APIs &amp; a custom web component library. 
               </p>
               <p>
-                I earned my BA in journalism and worked in the digital
-                marketing space before learning to code. Curiosity about tech
-                & design lead me to General Assembly's{" "}
+                I earned my BA in journalism and worked in marketing before learning to code. Curiosity about tech
+                &amp; design lead me to General Assembly's{" "}
                 <a href="https://dev.to/kim_hart/5-lessons-my-bootcamp-didnt-teach-me">
                   web development bootcamp
                 </a>
                 , where I learned enough to hustle my way into a career that I love.
               </p>
               <p>
-                I have a strong personal interest in D&I and have participated
-                in mentorship roles, panel discussions & tutoring sessions for
-                underrepresented groups through{" "}
+                I think we should always be working toward making the scene around us a more diverse and inclusive space, and I've really enjoyed participating in mentorship programs and events through {" "}
                 <a
                   href="https://www.builtbygirls.com/about-wave"
                   target="_blank"
@@ -83,40 +81,23 @@ const About = (props) => {
                 <a href="https://codenation.org/" target="_blank">
                   CodeNation
                 </a>{" "}
-                . I'm a big fan of bringing new faces, skillsets, and
-                backgrounds into the industry.
+                .
               </p>
               <p>
                 When I'm not on a computer, you can probably find me at a
-                concert or music festival, traveling, or hanging out somewhere in Brooklyn.
+                concert or music festival, traveling, or hanging out somewhere around New York City.
               </p>
             </div>
             <div className="page--about__panel">
-              <h3>Industry Affiliations</h3>
+              <h3>Articles</h3>
               <div>
-                <h4>#BuiltByGirls</h4>
-                <span>Mentor</span>
+                <a href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90" target="_blank" rel="noopener noreferrer">Translating Design Principles into Scalable Code</a>
               </div>
               <div>
-                <h4>Flatiron School</h4>
-                <span>Panelist</span>
-                <span>Apprenticeship Mentor</span>
+                <a href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe" target="_blank" rel="noopener noreferrer">Creating a Custom Web Component Library</a>
               </div>
               <div>
-                <h4>CodeNation</h4>
-                <span>Tutor</span>
-              </div>
-              <div>
-                <h4>Uncubed NY</h4>
-                <span>Panelist</span>
-              </div>
-              <div>
-                <h4>DEV.to</h4>
-                <span>Contributor</span>
-              </div>
-              <div>
-                <h4>General Assembly</h4>
-                <span>WDI Alumni</span>
+                <a href="https://medium.com/jw-player-engineering/streamdivning-the-design-x-engineering-partnership-9d2328cfff4f" target="_blank" rel="noopener noreferrer">Streamlining the Design x Engineering Partnership</a>
               </div>
               <h3>Say Hello</h3>
               <div className={`page--about__social`}>
