@@ -9,9 +9,8 @@ const NotFoundPage = () => (
     <SEO title="404" />
     <div className="page page--not-found">
       <div className="page--not-found__text">
-        Welp, you tried.
         <div className="page--not-found__404">404</div>
-        But that's not a thing.
+        Go back
       </div>
       <Link className="page--not-found__back" to="/">
         <svg

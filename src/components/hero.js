@@ -4,22 +4,25 @@ import Sunrise from "../components/icons/sunrise"
 import Sunset from "../components/icons/sunset"
 import Button from "../components/button"
 import useDarkMode from "use-dark-mode"
+import { KeywordsCircle } from "./keywords"
 
 const Hero = () => {
 
   const darkMode = useDarkMode();
   const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
-  
+
   return (
     <div className="hero">
-      <div className="hero__location">
-        <h3>
-          BK <div className="hero__location-divider" /> 
-          NYC{" "}
-          <IconLocation />
-        </h3>
+      <div className="gradient">
+        <div className="info">
+          <h1>KIM HART</h1>
+          <h2>senior frontend engineer / design technologist</h2>
+        </div>
+        <div className="sun">
+          <KeywordsCircle />
+        </div>
       </div>
-      <div className="hero__theme-toggles">
+      {/* <div className="hero__theme-toggles">
         <Sunrise
           onClick={handleTheme}
           size="l"
@@ -28,8 +31,8 @@ const Hero = () => {
           onClick={handleTheme}
           size="l"
         />
-      </div>
-      <div className="hero__intro">
+      </div> */}
+      {/* <div className="hero__intro">
         <div className="hero__name-wrap">
           <h1>Kim Hart</h1>
           <span className="hero__shadow">Kim Hart</span>
@@ -42,7 +45,7 @@ const Hero = () => {
           <Button type="primary" text="See My Work" link="#projects" />
           <Button type="secondary" text="Resume" link="resume" />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
