@@ -11,17 +11,28 @@ const Hero = () => {
   const darkMode = useDarkMode();
   const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
 
+  const renderName = () => {
+    const arr = 'kim hart'.split('');
+    return arr.map((letter) => {
+      return <span key={letter} className="letter-in-name">{letter}</span>
+    });
+    
+  }
+
   return (
     <div className="hero">
-      <div className="gradient">
+      <div className="gradient"/>
+      <div className="content">
         <div className="info">
-          <h1>KIM HART</h1>
-          <h2>senior frontend engineer / design technologist</h2>
+          <h1>{renderName()}</h1>
+          <h2>frontend engineer &bull; design technologist</h2>
         </div>
-        <div className="sun">
-          <KeywordsCircle />
-        </div>
+
       </div>
+        {/* <div className="sun"> */}
+          {/* <KeywordsCircle /> */}
+        {/* </div> */}
+      {/* </div> */}
       {/* <div className="hero__theme-toggles">
         <Sunrise
           onClick={handleTheme}
