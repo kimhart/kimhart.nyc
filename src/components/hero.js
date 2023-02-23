@@ -14,7 +14,7 @@ const Hero = () => {
   const renderName = () => {
     const arr = 'kim hart'.split('');
     return arr.map((letter) => {
-      return <span key={letter} className="letter-in-name">{letter}</span>
+      return <span key={letter} className="neon-letter">{letter}</span>
     });
     
   }
@@ -24,8 +24,16 @@ const Hero = () => {
       <div className="gradient"/>
       <div className="content">
         <div className="info">
+          <h2>
+            <span>
+              front-end engineer
+              <span className="bullet">&nbsp;&bull;&nbsp;</span>
+              design technologist 
+              <span className="bullet">&nbsp;&bull;&nbsp;</span>
+              brooklyn, ny
+            </span>
+          </h2>
           <h1>{renderName()}</h1>
-          <h2>frontend engineer &bull; design technologist</h2>
         </div>
 
       </div>
