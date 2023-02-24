@@ -1,5 +1,4 @@
 import React from "react"
-import Nav from "../components/nav"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { StaticQuery, graphql } from "gatsby"
@@ -67,9 +66,7 @@ const Resume = () => {
 
   return (
     <Layout>
-      <SEO title="Resume" />
       <div className="page page--resume">
-        <Nav />
         <div className="page--resume__main">
           {renderResume()}
         </div>

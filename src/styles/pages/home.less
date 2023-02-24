@@ -1,74 +1,14 @@
 .page--home {
   margin: 0;
   padding: 0;
-  font-family: @roboto;
-  background: @sunrise-bg;
-  color: @sunrise-text;
   
   .dark-mode & {
-    background: @sunset-bg;
-    color: @sunset-text;
-  }
-  
-  &__projects {
-    .page-center();
-    padding-top: 110px;
-    margin: 0 auto;
-    columns: 2;
-    column-gap: 16px;
-    max-width: @page-max-width;
-    @media screen and (max-width: 870px) {
-      columns: 1;
-    }
-    @media screen and (max-width: 480px) {
-      padding: 20px;
-    }
-  }
-  
-  &__tools {
-    width: 70%;
-    margin: 0 auto 50px auto;
-    text-align: center;
-
-    h4 {
-      font-size: 15px;
-      font-weight: 900;
-      text-transform: uppercase;
-      color: @sunrise-highlight;
-      margin: 40px 0 16px;
-      &:first-of-type {
-        margin-top: 0;
-      }
-      .dark-mode & {
-        color: @sunset-highlight;
-      }
-    }
-    p {
-      font-family: @roboto;
-      font-size: 20px;
-      font-weight: 300;
-    }
-    @media screen and (max-width: 480px) {
-      margin: 60px auto 40px auto;
-      h4 { font-size: 13px; }
-      p { font-size: 17px; }
-    }
-    @media screen and (max-width: 412px) {
-      h4 { font-size: 13px; }
-      p { font-size: 13px; }
-    }
-
+    background: black;
   }
 
-  &__underline {
-    width: 80px;
-    height: 3px;
-    background: @sunrise-highlight;
-    margin: 0 auto;
-
-    .dark-mode & {
-      background: @sunset-highlight;
-    }
+  .product-shots {
+    padding: 40px;
+    display: grid;
+    gap: 80px;
   }
-
 }

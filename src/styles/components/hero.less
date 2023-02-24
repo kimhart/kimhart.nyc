@@ -1,6 +1,5 @@
 .hero {
   height: 100vh;
-  background: @color-gunmetal;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -12,8 +11,7 @@
     height: 100%;
     opacity: 20%;
     // background: radial-gradient(60% bottom,rgba(169,175,240,0.34077380952380953) 0%, rgba(236,233,215,0.5480567226890756) 69%, rgba(212,167,228,0.5032387955182073) 100%);
-    // background: radial-gradient(at 60% bottom,rgba(169,175,240,0.34077380952380953) 0%, rgba(236,233,215,0.5480567226890756) 69%, rgba(212,167,228,0.5032387955182073) 100%)
-
+    // background: radial-gradient(at 60% bottom,rgba(169,175,240,0.34077380952380953) 0%, rgba(236,233,215,0.5480567226890756) 69%, rgba(212,167,228,0.5032387955182073) 100%);
   }
 
   .content {
@@ -22,34 +20,34 @@
     padding: 40px;
     position: absolute;
     z-index: 2;
+    text-align: center;
   }
 
   .info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: end;
+    justify-content: end;
+    align-items: center;
 
     h1 {
       user-select: none;
       font-family: @font-neon-cursive;
       font-weight: 400;
-      font-size: 200px;
-      color: white;
-      
-      margin-right: 40px;
-      margin-top: -20px;
+      font-size: 320px;
+      color: #ffe2fd;
 
+      margin: 0 0 20px 0;
+      
       text-shadow: 
-        1px 0px 4px @color-bright-purple, 
-        2px 0px 4px @color-bright-purple, 
-        3px 0px 4px @color-bright-purple, 
-        2px 0px 3px @color-neon-pink, 
-        2px 3px 15px @color-neon-pink,
+        2px 0px 4px @color-neon-purple, 
+        2px 0px 4px @color-neon-purple, 
+        3px 0px 4px @color-neon-purple, 
+        2px 0px 100px @color-neon-purple, 
+        2px 3px 100px @color-neon-purple,
         2px 0px 15px,
-        5px 0px 85px, 
-        40px 0vw 100px  @color-neon-pink,
-        40px 0vw 100px  @color-neon-pink;
+        5px 0px 100px, 
+        40px 0vw 100px  @color-neon-purple,
+        40px 0vw 200px @color-neon-purple;
 
       .neon-letter {
         &:nth-child(3) {
@@ -60,9 +58,32 @@
         }
       }
     }
-  
-    h2 {
-      margin: 0 500px 0 0;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 200;
+      font-family: @font-neon;
+      color: #e9e1ff;
+
+      max-width: fit-content;
+
+      text-transform: uppercase;
+
+      text-shadow: 
+        1px 0px 4px @color-neon-indigo, 
+        2px 0px 10px @color-neon-indigo, 
+        3px 0px 20px @color-neon-indigo-light, 
+        2px 0px 30px @color-neon-indigo-light, 
+        2px 3px 6px @color-neon-indigo-light,
+        5px 0px 45px, 
+        40px 0vw 100px  @color-neon-indigo,
+        40px 0vw 100px  @color-neon-indigo;
+    }
+
+    .thought-bubble {
+      width: fit-content;
+      margin: 0 auto;
+      translate: 50%;
 
       font-size: 16px;
       font-weight: 200;
@@ -160,26 +181,4 @@
     line-height: 30px;
     transform: translatey(0px);
   }
-}
-
-
-@-webkit-keyframes rotate {
-    from { -webkit-transform: rotate(360deg); }
-    to { -webkit-transform: rotate(0); }
-}
-@-moz-keyframes rotate {
-    from { -moz-transform: rotate(360deg); }
-    to { -moz-transform: rotate(0); }
-}
-@-ms-keyframes rotate {
-    from { -ms-transform: rotate(360deg); }
-    to { -ms-transform: rotate(0); }
-}
-@-o-keyframes rotate {
-    from { -o-transform: rotate(360deg); }
-    to { -o-transform: rotate(0); }
-}
-@keyframes rotate {
-    from { transform: rotate(360deg); }
-    to { transform: rotate(0); }
 }

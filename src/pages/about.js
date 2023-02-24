@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Nav from "../components/nav"
 import Github from "../components/svgs/github"
 import Twitter from "../components/svgs/twitter"
 import LinkedIn from "../components/svgs/linkedin"
@@ -25,7 +24,6 @@ const About = (props) => {
 
   return (
     <Layout>
-      <SEO title="About" />
       <div className="page page--about">
         <div className="page--about__hero">
           <div className="page--about__intro">
@@ -46,7 +44,6 @@ const About = (props) => {
             </div>
           </div>
         </div>
-        <Nav isTransparent={isTransparent} />
         <div className="page--about__main">
           <div className="page--about__wrap">
             <div className="page--about__bio">

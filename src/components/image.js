@@ -10,8 +10,8 @@ const Image = ({ src, ...props }) => {
         nodes {
           relativePath
           childImageSharp {
-            fluid(maxWidth: 540) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 7000, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
