@@ -10,8 +10,6 @@ const IndexPage = () => {
   
   const darkMode = useDarkMode();
 
-  const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
-
   const renderName = () => {
     const arr = 'kim hart'.split('');
     return arr.map((letter) => {
@@ -19,15 +17,23 @@ const IndexPage = () => {
     }); 
   }
 
+  console.log(darkMode.value)
   return (
     <Layout>
       <SEO title="Kim Hart | Frontend Engineer" />
       <div className="page page--home">
-      <div className="hero">
-        <div className="gradient"/>
+        <div className="hero">
+          {/* <div className="gradient"/> */}
+
+          <div className="toggle-switch">
+            <label>
+              <input type="checkbox" onChange={() => darkMode.toggle()} checked={!!darkMode.value} />
+              <span className="slider" />
+            </label>
+          </div>
+
           <div className="content">
-            <img src={mirrorball} />
-            <div className="info">
+            <div className="title">
               <h1>{renderName()}</h1>
               <h3> 
                 <span>
@@ -41,9 +47,11 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+
         <div style={{maxWidth: '400px'}}>
           <Image src="kim.jpeg" alt="Headshot of Kim" />
         </div>
+        
         <div className="product-shots">
           <Image src="product-shots/trimming-tool.png" alt="3 product shots of a media trimming tool featuring a video of a skateboarder in Venice Beach, an audio file of a podcast." />
 

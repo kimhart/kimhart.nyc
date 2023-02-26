@@ -3,41 +3,115 @@
   position: relative;
   overflow: hidden;
   z-index: 0;
+  background: @color-gunmetal;
 
-  .gradient {
+  .dark-mode & {
+    background: white;
+  }
+
+  .toggle-switch {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+
+    label {
+      position: absolute;
+      width: 100%;
+      display: block;
+      height: 100px;
+      border-radius: 50px;
+      background-color: white;
+      background-color: @color-neon-indigo;
+      cursor: pointer;
+    }
+    
+    input {
+      position: absolute;
+      display: none;
+    }
+    
+    .slider {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+    
+    input:checked ~ .slider {
+      background: rgb(236,233,215);
+      background: linear-gradient(351deg, rgba(236,233,215,1) 39%, rgba(241,203,255,1) 89%);
+    }
+
+  .slider::before {
+    content: "";
     position: absolute;
-    z-index: 1;
-    width: 100%;
+    top: 13px;
+    left: 16px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: inset 28px -4px 0px 0px @color-neon-banana;
+    background-color: @color-neon-indigo;
+    transition: 0.3s;
+  }
+
+  input:checked ~ .slider::before {
+    transform: translateX(95px);
+    background-color:@sunrise-highlight;
+    box-shadow: none;
+  }
+
+  .box {
     height: 100%;
-    opacity: 20%;
-    // background: radial-gradient(60% bottom,rgba(169,175,240,0.34077380952380953) 0%, rgba(236,233,215,0.5480567226890756) 69%, rgba(212,167,228,0.5032387955182073) 100%);
-    // background: radial-gradient(at 60% bottom,rgba(169,175,240,0.34077380952380953) 0%, rgba(236,233,215,0.5480567226890756) 69%, rgba(212,167,228,0.5032387955182073) 100%);
+    margin: 0 16px;
+    border-radius: 40px;
+    border: 2px solid @color-neon-indigo;
+    background: black;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
   }
 
   .content {
     width: 100%;
     height: 100%;
-    padding: 40px;
+    
     position: absolute;
     z-index: 2;
+    
     text-align: center;
+    padding: 40px;
+
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .info {
+  .title {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: center;
+    align-items: end;
+
+    padding: 0 60px;
+    
+    user-select: none;
 
     h1 {
-      user-select: none;
       font-family: @font-neon-cursive;
       font-weight: 400;
-      font-size: 320px;
+      font-size: 160px;
       color: #ffe2fd;
 
-      margin: 0 0 20px 0;
+      margin: 0 0 10px 0;
+
+      white-space: nowrap;
       
+      // Creates neon effect
       text-shadow: 
         2px 0px 4px @color-neon-purple, 
         2px 0px 4px @color-neon-purple, 
@@ -49,6 +123,7 @@
         40px 0vw 100px  @color-neon-purple,
         40px 0vw 200px @color-neon-purple;
 
+        // Neon flickering
       .neon-letter {
         &:nth-child(3) {
           animation: flicker 5s linear infinite;
@@ -80,105 +155,16 @@
         40px 0vw 100px  @color-neon-indigo;
     }
 
-    .thought-bubble {
-      width: fit-content;
-      margin: 0 auto;
-      translate: 50%;
 
-      font-size: 16px;
-      font-weight: 200;
-      font-family: @font-fun;
-      
-      color: @color-neon-blue;
-      background-color: @color-neon-blue;
-      box-shadow: 10px 11px @color-neon-blue-dark;
-      
-      padding: 12px 16px;
-      border-radius: 12px;
-      
-      width: fit-content;
-
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      
-      animation: float 5s ease-in-out infinite;
-      
-      > span {
-        color: white;
-      }
-
-      .bullet {
-        color: @color-neon-blue-dark;
-      }
+    @keyframes flicker {
+      0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        //text-shadow: none;
+        opacity: .99;
         
-        &::after {
-          // Dots and lines
-          content: ".";
-          
-          text-shadow: 16px 16px  @color-neon-blue-dark;
-          box-shadow: 12px 18px @color-neon-blue-dark;
-          
-          background-color: @color-neon-blue;
-          
-          font-size: 52px;
-          font-weight: bold;
-          text-align: right;
-          line-height: 30px;
-
-          width: 55px;
-          height: 11px;
-          border-radius: 13px;
-
-          position: absolute;
-          bottom: -20px;
-          right: 0;
-          z-index: -2;
-
-          animation: float2 5s ease-in-out infinite;
-        }
+      }
+      20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+      }
     }
-  }
-}
-
-@keyframes flicker {
-	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-		//text-shadow: none;
-    opacity: .99;
-		
-	}
-	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-		opacity: 0.4;
-	}
-}
-
-@keyframes float {
-  // Main bubble
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-@keyframes float2 {
-  // Dots and lines
-  0% {
-    line-height: 30px;
-    transform: translatey(0px);
-  }
-  55% {
-    transform: translatey(-20px);
-  }
-  60% {
-    line-height: 10px;
-  }
-  100% {
-    line-height: 30px;
-    transform: translatey(0px);
   }
 }
