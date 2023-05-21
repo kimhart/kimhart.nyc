@@ -1,9 +1,9 @@
 import React, { useEffect } from "react"
 
 const Twitter = (props) => {
-  const fill = props.fill || "#000";
+  const fill = props.fill || "#fff";
   return (
-    <svg width="29px" viewBox="0 0 29 24">
+    <svg width="29px" viewBox="0 0 29 24" alt="twitter-logo">
       <title>Twitter</title>
       <defs>
         <polygon id="path-1" points="0.00012 0 28.8012 0 28.8012 23.40816 0.00012 23.40816"></polygon>

@@ -1,14 +1,254 @@
-.page--home {
+.home {
   margin: 0;
   padding: 0;
-  
-  .dark-mode & {
+  background: black;
+
+  .hero {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
     background: black;
+    // background-image: linear-gradient(
+    //   0deg,
+    //     hsl(257, 100%, 66%) 0%,
+    //     hsl(257, 75%, 58%) 8%,
+    //     hsl(256, 68%, 49%) 15%,
+    //     hsl(256deg 76% 41%) 22%,
+    //     hsl(257deg 100% 32%) 29%,
+    //     hsl(257deg 100% 29%) 36%,
+    //     hsl(257deg 100% 25%) 44%,
+    //     hsl(257deg 100% 22%) 51%,
+    //     hsl(235deg 88% 21%) 58%,
+    //     hsl(227deg 100% 16%) 65%,
+    //     hsl(223deg 100% 13%) 72%,
+    //     hsl(222deg 99% 10%) 79%,
+    //     hsl(222deg 96% 9%) 86%,
+    //     hsl(222deg 96% 8%) 93%,
+    //     hsl(222deg 100% 6%) 100%
+    // );
+
+    h1 {
+      color: @color-pink-light;
+
+      font-size: 180px;
+      font-family: @font-neon;
+      font-weight: 400;
+
+      text-transform: none;
+      white-space: nowrap;
+      
+      margin-top: -140px;
+
+      text-shadow: 2px 0px 4px @color-neon-pink, 
+        2px 0px 4px @color-neon-pink, 
+        3px 0px 4px @color-neon-pink, 
+        2px 0px 100px @color-neon-pink, 
+        2px 3px 100px @color-neon-pink,
+        2px 0px 15px,
+        5px 0px 100px, 
+        40px 0vw 100px  @color-neon-pink,
+        40px 0vw 200px @color-neon-pink;
+
+      .neon-letter {
+        &:nth-child(3) {
+          animation: neonFlicker 5s linear infinite;
+        }
+        &:nth-child(6) {
+          animation: neonFlicker 2s linear infinite;
+        }
+      }
+    }
+  }
+
+  p, ul {
+    font-family: @font-header-secondary;
+    color: @color-white;
+    text-align: center;
+    margin: 0 20px;
+
+    width: 660px;
+  }
+
+  li {
+    list-style-type: none;
+    &::before {
+      content: '✨';
+      margin-right: 8px;
+    }
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-family: @font-header-secondary;
+    font-weight: 200;
+    letter-spacing: 1px;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: @color-white;
+
+    span {
+      font-size: 14px;
+      margin: 0 8px;
+      color: @color-neon-pink-light;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    margin: 0 auto 20px;
+    width: 100%;
+
+    color: @color-neon-purple;
+
+    font-size: 60px;
+    text-transform: uppercase;
+
+    span {
+      color: @color-white;
+      font-size: 20px;  
+      margin: 4px 12px 0;
+    }
+  }
+  
+  h4 {
+    color: @color-white;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+    span {
+      color: @color-white;
+      color: @color-neon-purple;
+      font-size: 12px;  
+      margin: 0px 12px;
+    }
+  }
+
+  a,
+  a:visited,
+  a:active {
+    color: @color-neon-pink-light;
+    text-decoration: none;
+    transition: color .2s ease;
+  }
+  a:hover {
+    color: @color-neon-purple;
+  }
+
+  .about {
+    padding: @page-padding;
+
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .headshot {
+      width: 180px;
+      margin: 20px 0;
+
+      img {
+        width: 180px;
+        border-radius: 50%;
+        border: 4px solid @color-neon-pink-light;
+      }
+    }
+  }
+
+  .projects {
+    max-width: @page-max-width;
+    margin: 100px auto;
   }
 
   .product-shots {
     padding: 40px;
     display: grid;
     gap: 80px;
+
+    p {
+      font-size: 16px;
+      margin: 20px auto;
+    }
+  }
+
+  .contact { 
+    background: #000;
+    padding: 200px;
+
+    h3 {
+      color: @color-neon-purple;
+      span {
+        font-size: 32px;
+        margin-left: 18px;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 40px;
+
+      margin: 60px 0 40px 0;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        font-family: @font-header-secondary;
+        color: @color-white;
+
+        transition: color .2s ease;
+
+        svg {
+          width: 36px;
+          margin-bottom: 8px;
+          transition: transform .2s ease;
+        }
+
+        &:hover {
+          color: @color-neon-pink-light;
+
+          svg {
+            transform: translateY(-3px);
+          }
+        }
+      }
+
+      p {
+        white-space: nowrap;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@keyframes neonFlicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    //text-shadow: none;
+    opacity: .99;
+    
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
   }
 }

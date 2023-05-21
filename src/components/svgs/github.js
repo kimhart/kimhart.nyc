@@ -1,9 +1,9 @@
 import React from "react"
 
 const Github = (props) => {
-  const fill = props.fill || "#000";
+  const fill = props.fill || "#fff";
   return (
-    <svg width="25px" viewBox="0 0 25 24">
+    <svg width="25px" viewBox="0 0 25 24" alt="github-logo">
       <title>Github</title>
       <g id="D2:-Sun-Up-Sun-Down" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="github" transform="translate(-167.000000, -1219.000000)" fill={fill}>

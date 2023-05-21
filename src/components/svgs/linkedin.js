@@ -1,9 +1,9 @@
 import React from "react"
 
 const LinkedIn = (props) => {
-  const fill = props.fill || "#000";
+  const fill = props.fill || "#fff";
   return (
-    <svg width="24px" viewBox="0 0 24 24">
+    <svg width="24px" viewBox="0 0 24 24" alt="linkedin-logo">
       <title>Linkedin</title>
       <g id="D2:-Sun-Up-Sun-Down" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="Bio---Sun-Up" transform="translate(-218.000000, -1219.000000)" fill={fill} fillRule="nonzero">
