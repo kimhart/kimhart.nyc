@@ -37,17 +37,19 @@ const IndexPage = () => {
         </div>
 
         <div className="about">
-          <h3>Some Factoids</h3>
+          <h3>the deets</h3>
+          <div className="neon-line"/>
           <div className="headshot">
             <Image src="kim-headshot.png" alt="Headshot of Kim" />
           </div>
           <ul>
             <li>
-              Software engineer with 6+ years of experience building teams, enterprise products, and internal tools
+              Frontend engineer with 6+ years of experience building teams, enterprise products, and internal tools
             </li>
             <li>
               Specialist in <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90">design systems</a>, <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe">web component libraries</a> and accessible UI
             </li>
+            <li>Team lead with a knack for organizing cross-functional projects</li>
             <li>Creative thinker with a passion for art and design</li>
             <li>Former mentor & speaker for {" "}
               <a
@@ -69,15 +71,16 @@ const IndexPage = () => {
               </a>{" "}
             </li>
             <li>
-              Native Californian based in New York for the past 10 years
+              Californian-turned-New Yorker (for 10 years, it's legit!)
             </li>
             <li>Probably cuddling my <a href="https://www.instagram.com/spicymargbk/" target="_blank" rel="noopener nooreferrer">red golden retriever</a> right now</li>
           </ul>
         </div>
 
         <div className="projects">
-          <h3>Some pretty stuff</h3>
+          <h3>some pretty stuff</h3>
           <h2>
+            <span>[</span>
             react
             <span>&bull;</span> 
             typescript
@@ -87,7 +90,9 @@ const IndexPage = () => {
             stencil
             <span>&bull;</span>
             vite
+            <span>]</span>
           </h2>
+          <div className="neon-line"/>
           <div className="product-shots">
             <div>
               <Image src="product-shots/player-customization.png" alt="2 product shots of a video player customization suite that allows users to adjust colors, caption styles, menus and logos in the JW Player" />
@@ -120,6 +125,7 @@ const IndexPage = () => {
           <h3>
             see more <span>/</span> get in touch
           </h3>
+          <div className="neon-line"/>
           <div className="social-links">
             <a
               href="https://www.linkedin.com/in/kimhart1/"
