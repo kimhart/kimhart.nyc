@@ -8,23 +8,15 @@ module.exports = {
   pathPrefix: "/kimhart.nyc",
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-less`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-less`,
-    {
-      resolve: "gatsby-plugin-use-dark-mode",
-      options: {
-        classNameDark: "dark-mode",
-        classNameLight: "light-mode",
-        storageKey: "darkMode",
-        minify: true,
       },
     },
     {
@@ -39,13 +31,12 @@ module.exports = {
         icon: `src/images/favicon-32x32.png`,
       },
     },
-    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
         path: `${__dirname}/src/data`,
       },
-    },
+    }
   ],
 }

@@ -38,7 +38,6 @@ const IndexPage = () => {
 
         <div className="about">
           <h3>the deets</h3>
-          <div className="neon-line"/>
           <div className="headshot">
             <Image src="kim-headshot.png" alt="Headshot of Kim" />
           </div>
@@ -92,7 +91,6 @@ const IndexPage = () => {
             vite
             <span>]</span>
           </h2>
-          <div className="neon-line"/>
           <div className="product-shots">
             <div>
               <Image src="product-shots/player-customization.png" alt="2 product shots of a video player customization suite that allows users to adjust colors, caption styles, menus and logos in the JW Player" />
@@ -125,7 +123,6 @@ const IndexPage = () => {
           <h3>
             see more <span>/</span> get in touch
           </h3>
-          <div className="neon-line"/>
           <div className="social-links">
             <a
               href="https://www.linkedin.com/in/kimhart1/"
