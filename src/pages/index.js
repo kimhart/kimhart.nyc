@@ -37,18 +37,17 @@ const IndexPage = () => {
         </div>
 
         <div className="about">
-          <h3>the deets</h3>
+          <h3>deets</h3>
           <div className="headshot">
             <Image src="kim-headshot.png" alt="Headshot of Kim" />
           </div>
           <ul>
             <li>
-              Frontend engineer with 6+ years of experience building teams, enterprise products, and internal tools
+              Team lead with 6+ years of experience building enterprise products & internal tools
             </li>
             <li>
               Specialist in <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90">design systems</a>, <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe">web component libraries</a> and accessible UI
             </li>
-            <li>Team lead with a knack for organizing cross-functional projects</li>
             <li>Creative thinker with a passion for art and design</li>
             <li>Former mentor & speaker for {" "}
               <a
@@ -69,9 +68,6 @@ const IndexPage = () => {
                 CodeNation
               </a>{" "}
             </li>
-            <li>
-              Californian-turned-New Yorker (for 10 years, it's legit!)
-            </li>
             <li>Probably cuddling my <a href="https://www.instagram.com/spicymargbk/" target="_blank" rel="noopener nooreferrer">red golden retriever</a> right now</li>
           </ul>
         </div>
@@ -84,11 +80,15 @@ const IndexPage = () => {
             <span>&bull;</span> 
             typescript
             <span>&bull;</span>
-            scss
+            scss / css
             <span>&bull;</span>
             stencil
             <span>&bull;</span>
             vite
+            <span>&bull;</span>
+            jest
+            <span>&bull;</span>
+
             <span>]</span>
           </h2>
           <div className="product-shots">
