@@ -1,5 +1,5 @@
 body {
-  cursor: url('/images/planet.png'), auto;
+  // cursor: url('/images/planet.png'), auto;
 }
 
 .home {
@@ -8,41 +8,81 @@ body {
   background: @color-black;
 
   .hero {
-    height: 100vh;
+    padding: @page-padding @page-padding 160px ;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
+    height: 90vh;
     background: @color-black;
 
+    position: relative;
 
-    h1 {
-      color: @color-pink-light;
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-      font-size: 200px;
-      font-family: @font-neon-new;
-      
-      font-weight: 400;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 1;
 
-      text-transform: none;
-      white-space: nowrap;
-      
-      margin-top: -140px;
-
-      text-shadow: @pink-neon-shadow;
-
-      transition: text-shadow .2s ease, color .2 ease;
-
-      .neon-letter {
-        &:nth-child(3) {
-          animation: neonFlicker 5s linear infinite;
-        }
-        &:nth-child(6) {
-          animation: neonFlicker 2s linear infinite;
+      h1 {
+        color: @color-pink-light;
+  
+        font-size: 11vw;
+        font-family: @font-neon-new;
+        font-weight: 400;
+  
+        text-transform: none;
+        white-space: nowrap;
+              
+        text-shadow: @pink-neon-shadow;
+  
+        transition: color .2 ease;
+  
+        .neon-letter {
+          &:nth-child(3) {
+            animation: neonFlicker 5s linear infinite;
+          }
+          &:nth-child(6) {
+            animation: neonFlicker 2s linear infinite;
+          }
         }
       }
+    }
+
+    .leaves {
+      display: flex;
+      gap: -20px; 
+      
+      .leaf {
+        opacity: .8;
+        max-height: 400px;
+      }
+    }
+  }
+
+  button {
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    width: 100px;
+
+    padding: 4px 10px;
+
+    background-color: @color-neon-purple;
+    color: @color-white;
+
+    font-family: @font-header-secondary;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      background-color: @color-neon-pink-light;
+      border-color: @color-pink-light;
+      box-shadow: @pink-neon-button-shadow;
     }
   }
 
@@ -70,16 +110,14 @@ body {
     font-weight: 200;
     letter-spacing: 1px;
     white-space: nowrap;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     color: @color-white;
+    margin-top: -40px;
 
     span {
       font-size: 14px;
@@ -100,7 +138,7 @@ body {
 
     color: @color-neon-purple;
 
-    font-size: 40px;
+    font-size: 30px;
     text-transform: uppercase;
 
     span {
@@ -163,19 +201,21 @@ body {
   }
 
   .projects {
-    max-width: @page-max-width;
-    margin: 100px auto;
-    padding: @page-padding;
+    margin: 0 auto;
+    overflow-x: scroll;
+    background-color: #e6effc;
   }
 
   .product-shots {
-    padding: 40px;
-    display: grid;
-    gap: 80px;
+    display: flex;
+
+    > div {
+      min-width: 80vw;
+    }
 
     p {
       font-size: 16px;
-      margin: 20px auto;
+      // margin: 20px auto;
     }
   }
 
@@ -186,7 +226,7 @@ body {
     h3 {
       color: @color-neon-purple;
       span {
-        font-size: 32px;
+        font-size: 20px;
         margin-left: 18px;
       }
     }
