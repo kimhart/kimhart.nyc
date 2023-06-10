@@ -6,24 +6,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(to bottom right, #FF8E65, #FFECAC);
-
-  .dark-mode & {
-    background-image: linear-gradient(to bottom right, #A366FF, #30C0E2);
-  }
 
   &__404 {
-    color: white;
-    font-size: 240px;
-    margin: 40px 0;
-    font-weight: 900;
-    @media screen and (max-width: 500px) {
-      font-size: 180px;
-    }
-    @media screen and (max-width: 400px) {
-      font-size: 100px;
-      margin: 0;
-    }
+    // color: @color-neon-pink-light;
+
+    font-size: 12vw;
+    // font-family: @font-neon;
+    font-weight: 400;
+
+    text-transform: none;
+    white-space: nowrap;
+          
+    // text-shadow: @pink-neon-shadow;
+
+    transition: color .2 ease;
   }
 
   &__text {
