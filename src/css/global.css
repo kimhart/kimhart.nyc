@@ -1,0 +1,22 @@
+@import './reset.css';
+@import './variables.css';
+
+@font-face {
+  font-family: 'Fatlip';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url(/fonts/Fatlip.woff) format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&family=Inter:wght@200&family=League+Script&display=swap');
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: 100px;
+}
+ 
+h2 {
+  font-family: var(--font-regular);
+  font-weight: 300;
+}

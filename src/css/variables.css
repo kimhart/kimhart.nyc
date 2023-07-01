@@ -1,0 +1,26 @@
+:root {
+  /* Layout */
+  --page-padding: 60px;
+
+  /* Fonts */
+  --font-heading: 'Fatlip', Roboto, sans-serif;
+  --font-regular: 'Inter', -apple-system, Roboto, sans-serif;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #230903;
+  --color-beige: #F9E5D7;
+  --color-blue: #CFDFE1;
+  --color-sky: #CBE1DB;
+  --color-green: #3C685C;
+  --color-lime: #CBFF4D;
+  --color-peach: #F19C79;
+  --color-orange: #FF4E00;
+
+  --gradient-sky: linear-gradient(
+    0deg,
+    hsl(25deg 74% 91%) 0%,
+    hsl(77deg 25% 86%) 50%,
+    hsl(164deg 27% 84%) 100%
+  );
+}
