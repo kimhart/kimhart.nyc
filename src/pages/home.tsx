@@ -11,27 +11,24 @@ const mainStyles = {
 const heroStyles = {
   padding: 'var(--page-padding)',
   background: 'var(--color-beige)',
-  backgroundImage: 'var(--gradient-sky)',
+  // backgroundImage: 'var(--gradient-sky)',
   height: '100vh',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  flexDirection: 'column' as 'column'
+  // alignItems: 'center',
+  // justifyContent: 'center',
 }
 
 const headerStyles = {
-  color: 'var(--color-green)',
-  marginTop: '-20%',
-  textShadow: '-4px 4px 0 var(--color-white)',
+  color: 'var(--color-black)',
+  // textShadow: '-4px 4px 0 var(--color-white)',
   letterSpacing: 2,
-  webkitTextStroke: '2px black',
+  // webkitTextStroke: '2px black',
 }
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={mainStyles}>
       <section id="hero" style={heroStyles}>
-        <h1 style={headerStyles}>Kim Hart</h1>
+        <h1 style={headerStyles}>Kim<br/> Hart</h1>
         <h2>
           frontend engineer
           <span>&bull;</span> 
