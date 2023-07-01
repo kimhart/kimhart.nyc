@@ -6,7 +6,6 @@ import Image from "../components/image"
 import Github from "../components/svgs/github"
 import LinkedIn from "../components/svgs/linkedin"
 import Twitter from "../components/svgs/twitter"
-import Jungle from "../components/svgs/jungle"
 
 const IndexPage = () => {
 
@@ -36,9 +35,6 @@ const IndexPage = () => {
               <span>&bull;</span>
               brooklyn, ny
             </h2>
-          </div>
-          <div className="jungle">
-            <Jungle />
           </div>
         </div>
 
@@ -78,15 +74,15 @@ const IndexPage = () => {
         </div>
         <div className="projects">
           <div>
-            <Image src="product-shots/player-customization.png" alt="2 product shots of a video player customization suite that allows users to adjust colors, caption styles, menus and logos in the JW Player" />
-            <p>JWP video player customization suite</p>
-          </div>
-
-          <div>
             <Image src="product-shots/trimming-tool.png" alt="3 product shots of a media trimming tool featuring a video of a skateboarder in Venice Beach, an audio file of a podcast" />
             <p>Media trimming & clipping tool</p>
           </div>
 
+          <div>
+            <Image src="product-shots/player-customization.png" alt="2 product shots of a video player customization suite that allows users to adjust colors, caption styles, menus and logos in the JW Player" />
+            <p>JWP video player customization suite</p>
+          </div>
+          
           <div>
             <Image src="product-shots/ui-components.png" alt="Collage of screenshots of web components (form inputs, draggable lists, thumbnails, buttons, alerts, etc)" />
             <p>Design system + custom web component library</p>

@@ -8,66 +8,65 @@ body {
   background: @color-black;
 
   .hero {
-    padding: @page-padding @page-padding 160px ;
-
     height: 100vh;
-    background-color: @color-black;
+
+    // background-color: @color-black;
+   background-image: linear-gradient(
+    0deg,
+    hsl(25deg 74% 91%) 0%,
+    hsl(104deg 21% 87%) 50%,
+    hsl(187deg 23% 85%) 100%
+  );
+
     border-bottom: 5px solid @color-neon-purple;
 
     position: relative;
     overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .title {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
-      height: 80%;
+      margin-top: -80px;
 
       h1 {
-        color: @color-neon-pink-light;
+        // color: @color-neon-pink-light;
+        color: @color-green-dark;
+        text-shadow: -5px 0 0px white;
   
         font-size: 12vw;
-        font-family: @font-neon;
+        // font-family: @font-neon;
+        font-family: @font-fatlip;
         font-weight: 400;
   
         text-transform: none;
         white-space: nowrap;
-        margin-right: 40px;
+        margin-right: .5vw;
               
-        text-shadow: @pink-neon-shadow;
+        // text-shadow: @pink-neon-shadow;
   
         transition: color .2 ease;
   
-        .neon-letter {
-          &:nth-child(3) {
-            animation: neonFlicker 5s linear infinite;
-            @media (prefers-reduced-motion) {
-              animation: none;
-            }
-          }
-          &:nth-child(6) {
-            animation: neonFlicker 2s linear infinite;
-            @media (prefers-reduced-motion) {
-              animation: none;
-            }
-          }
-        }
+        // .neon-letter {
+        //   &:nth-child(3) {
+        //     animation: neonFlicker 5s linear infinite;
+        //     @media (prefers-reduced-motion) {
+        //       animation: none;
+        //     }
+        //   }
+        //   &:nth-child(6) {
+        //     animation: neonFlicker 2s linear infinite;
+        //     @media (prefers-reduced-motion) {
+        //       animation: none;
+        //     }
+        //   }
+        // }
       }
-    }
-
-    .jungle {
-      max-height: 400px;
-      position: absolute;
-      width: 102vw;
-      bottom: -100px;
-      left: 50%;
-      transform: translate(-50%);
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 
@@ -104,7 +103,7 @@ body {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 1vw;
     text-transform: uppercase;
     color: @color-white;
     margin-top: -40px;
