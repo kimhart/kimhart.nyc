@@ -1,21 +1,22 @@
 :root {
   /* Layout */
-  --page-padding: 60px;
+  --page-padding: 80px 120px;
 
   /* Fonts */
   --font-heading: 'Fatlip', Roboto, sans-serif;
-  --font-regular: 'Inter', -apple-system, Roboto, sans-serif;
+  --font-regular: 'Manrope', -apple-system, Roboto, sans-serif;
+  --font-script: 'League Script', sans-serif;
 
   /* Colors */
   --color-white: #fff;
-  --color-black: #230903;
-  --color-beige: #F9E5D7;
-  --color-blue: #CFDFE1;
-  --color-sky: #CBE1DB;
-  --color-green: #3C685C;
-  --color-lime: #CBFF4D;
-  --color-peach: #F19C79;
-  --color-orange: #FF4E00;
+  --color-black: #121224;
+  --color-beige: #feeadb;
+  --color-blue: #97D2FB;
+  --color-green: #88cd93;
+  --color-yellow: #F4E167;
+  --color-peach: #E88D67;
+  --color-orange: #FF7033;
+  --color-pink: #EC91D8;
 
   --gradient-sky: linear-gradient(
     0deg,
@@ -23,4 +24,8 @@
     hsl(77deg 25% 86%) 50%,
     hsl(164deg 27% 84%) 100%
   );
+
+  --wave-mask:
+    radial-gradient(128.83px at 50% calc(100% - 174.00px),#000 99%,#0000 101%) calc(50% - 120px) 0/240px 100%,
+    radial-gradient(128.83px at 50% calc(100% + 114.00px),#0000 99%,#000 101%) 50% calc(100% - 60px)/240px 100% repeat-x;
 }
