@@ -28,14 +28,15 @@ const IndexPage: React.FC<PageProps> = () => {
           <h3>The Basics</h3>
           <ul>
             <li>
-              <strong>Frontend team lead</strong> with 6+ years of experience building <a target="_blank" rel="noopener noreferrer" href="https://dashboard.jwplayer.com">enterprise products</a>
+              <strong>Frontend team lead based in Brooklyn, NY</strong>
             </li>
-            <li>React and Typescript engineer</li>
+            <li>6+ years of experience building <a target="_blank" rel="noopener noreferrer" href="https://dashboard.jwplayer.com">enterprise products</a> and internal tools</li>
             <li>
-              Specialist in <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90">design systems</a> and <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe">web component libraries</a>
+              Specialist in React, Typescript, CSS, <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90">design systems</a> and <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe">web component libraries</a>
             </li>
+            <li>Advocate for purposeful and enjoyable user experiences</li>
             <li>
-              Creative thinker with a journalism degree and a passion for art & design
+              Creative thinker with a journalism degree and love of art & design
             </li>
             <li>Former mentor & speaker for {" "}
               <a
@@ -56,7 +57,8 @@ const IndexPage: React.FC<PageProps> = () => {
                 CodeNation
               </a>{" "}
             </li>
-            <li>Probably hanging out with my <a href="https://www.instagram.com/spicymargbk/" target="_blank" rel="noopener nooreferrer">red golden retriever</a> right now</li>
+            <li>Roots in the Bay Area and San Diego (though NY has been home for 10 years)</li>
+            <li>Big fan of sci-fi, traveling, music festivals, and my <a href="https://www.instagram.com/spicymargbk/" target="_blank" rel="noopener nooreferrer">red golden retriever</a></li>
           </ul>
         </div>
       </section>
@@ -73,38 +75,38 @@ const IndexPage: React.FC<PageProps> = () => {
               src="../images/product-shots/trimming-tool.png" 
               alt="Product shots of JW Dashboard in which a user is trimming a skate video and a podcast audio"
               />
-            <p>Media trimming and clipping tool</p>
+            <h5>Media trimming and clipping tool — JW Player dashboard</h5>
+            <p>Adjust the length of media down to the millisecond with a live playback preview</p>
           </div>
           <div className="project">
             <StaticImage 
               src="../images/product-shots/ui-components.png" 
               alt="Examples of components like inputs, buttons, draggable episode lists, and alerts"
               />
-            <p>Custom web component library</p>
+            <h5>Web component library built with Stencil & React</h5>
+            <p>Framework-agnostic building blocks for JW Player's custom design system</p>
           </div>
           <div className="project">
             <StaticImage 
               src="../images/product-shots/player-customization.png" 
               alt="Product shots of JW Dashboard in which user is editing logos and colors used in JW Player"
               />
-            <p>Video player branding & customization suite</p>
+            <h5>Video player branding suite — JW Player dashboard</h5>
+            <p>Add logos, stylize captions, modify colors, customize controls & menus for individual players</p>
           </div>
           <div className="project">
             <StaticImage 
               src="../images/product-shots/scout.png" 
               alt="Scout highlighting elements with test IDs in the browser"
               />
-            <p>Scout: Chrome extension for fast & easy QA testing</p>
-          </div>
-          <div className="project">
-            <StaticImage 
-              src="../images/product-shots/jw-music.png" 
-              alt="Custom music app powered by Spotify"
-              />
-            <p>Custom music app powered by Spotify</p>
+            <h5>Scout Chrome extension for fast QA</h5>
+            <p>Quickly identify testable elements and their targetable IDs on any web page</p>
           </div>
         </div>
       </section>
+      <footer>
+         <a href="https://linkedin.com/in/kimhart1" target="_blank" rel="noopener nooreferrer"><h2>see more / say hi</h2></a>
+      </footer>
     </main>
   )
 }
