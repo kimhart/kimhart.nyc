@@ -34,7 +34,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <li>
               Specialist in React, Typescript, CSS, <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90">design systems</a> and <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe">web component libraries</a>
             </li>
-            <li>Advocate for purposeful and enjoyable user experiences</li>
+            <li>Advocate for purposeful and accessible user experiences</li>
             <li>
               Creative thinker with a journalism degree and love of art & design
             </li>
