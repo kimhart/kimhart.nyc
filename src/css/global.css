@@ -209,3 +209,76 @@ footer h2 {
   max-width: fit-content;
   margin: 60px auto;
 }
+
+@media screen and (max-width: 1150px) {
+  h1 {
+    font-size: 40px;
+  }
+  h1 > div {
+    font-size: 150px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 28px; 
+  }
+  h3 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  li, ul {
+    font-size: 16px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 30px;
+  }
+  h1 > div {
+    font-size: 100px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px; 
+    text-align: center;
+  }
+  h2::before {
+    width: 100%;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 24px;
+    padding: 40px 0;
+    position: relative;
+    margin: 0 auto;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  li, ul {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
