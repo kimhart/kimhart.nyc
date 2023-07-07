@@ -12,7 +12,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <div>Kim Hart</div>
         </h1>
         <h2>
-          Frontend Engineer + Design Technologist
+          Frontend Engineer / Design Technologist
         </h2>
       </section>
 
@@ -30,14 +30,12 @@ const IndexPage: React.FC<PageProps> = () => {
             <li>
               <strong>Frontend team lead based in Brooklyn, NY</strong>
             </li>
+            <li>Currently driving media experiences & core libraries @ <a href="https://jwplayer.com/"target="_blank" rel="noopener noreferrer">JW Player</a></li>
             <li>6+ years of experience building <a target="_blank" rel="noopener noreferrer" href="https://dashboard.jwplayer.com">enterprise products</a> and internal tools</li>
             <li>
-              Specialist in React, Typescript, CSS, <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90">design systems</a> and <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe">web component libraries</a>
+              Specialist in React, Typescript, CSS, <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90">design systems</a> and <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe">UI component libraries</a>
             </li>
-            <li>Advocate for purposeful and accessible user experiences</li>
-            <li>
-              Creative thinker with a journalism degree and love of art & design
-            </li>
+            <li>Detail-oriented advocate for purposeful and accessible design</li>
             <li>Former mentor & speaker for {" "}
               <a
                 href="https://www.builtbygirls.com/about-wave"
@@ -57,6 +55,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 CodeNation
               </a>{" "}
             </li>
+            <li>No CS degree here (the horror!) I have a BA in journalism and switched careers. Ask me about it!</li>
             <li>Roots in the Bay Area and San Diego (though NY has been home for 10 years)</li>
             <li>Big fan of sci-fi, traveling, music festivals, and my <a href="https://www.instagram.com/spicymargbk/" target="_blank" rel="noopener nooreferrer">red golden retriever</a></li>
           </ul>
@@ -64,7 +63,7 @@ const IndexPage: React.FC<PageProps> = () => {
       </section>
 
       <div className="contact">
-        <a href="https://linkedin.com/in/kimhart1" target="_blank" rel="noopener nooreferrer"><h4>get in touch <Plane/></h4></a>
+        <a href="https://linkedin.com/in/kimhart1" target="_blank" rel="noopener nooreferrer">get in touch <Plane/></a>
       </div>
 
       <section className="work">
@@ -72,10 +71,18 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className="projects">
           <div className="project">
             <StaticImage 
+              src="../images/product-shots/media.png" 
+              alt="Product shots of JWP dashboard media page and tracks editing tool"
+              />
+            <h4>Media management & tracks editing tool</h4>
+            <p>Manage metadata, thumbnails, publishing schedules, audio, captions and chapter tracks for uploaded content</p>
+          </div>
+          <div className="project">
+            <StaticImage 
               src="../images/product-shots/trimming-tool.png" 
               alt="Product shots of JW Dashboard in which a user is trimming a skate video and a podcast audio"
               />
-            <h5>Media trimming and clipping tool — JW Player dashboard</h5>
+            <h4>Media trimming and clipping tool</h4>
             <p>Adjust the length of media down to the millisecond with a live playback preview</p>
           </div>
           <div className="project">
@@ -83,29 +90,45 @@ const IndexPage: React.FC<PageProps> = () => {
               src="../images/product-shots/ui-components.png" 
               alt="Examples of components like inputs, buttons, draggable episode lists, and alerts"
               />
-            <h5>Web component library built with Stencil & React</h5>
-            <p>Framework-agnostic building blocks for JW Player's custom design system</p>
+            <h4>Web component library & docs</h4>
+            <p>Framework-agnostic building blocks for JW Player's custom design system, built with Stencil & React</p>
           </div>
           <div className="project">
             <StaticImage 
               src="../images/product-shots/player-customization.png" 
               alt="Product shots of JW Dashboard in which user is editing logos and colors used in JW Player"
               />
-            <h5>Video player branding suite — JW Player dashboard</h5>
+            <h4>Video player branding suite</h4>
             <p>Add logos, stylize captions, modify colors, customize controls & menus for individual players</p>
+          </div>
+          <div className="project">
+            <StaticImage 
+              src="../images/product-shots/analytics.png" 
+              alt="Analytics Overview UI showcasing graphs and ranked lists for media content"
+              />
+            <h4>Media analytics & trends overview</h4>
+            <p>Compare plays, completes, and ad impressions over time across top locations & devices</p>
           </div>
           <div className="project">
             <StaticImage 
               src="../images/product-shots/scout.png" 
               alt="Scout highlighting elements with test IDs in the browser"
               />
-            <h5>Scout Chrome extension for fast QA</h5>
+            <h4>Scout Chrome extension for fast QA</h4>
             <p>Quickly identify testable elements and their targetable IDs on any web page</p>
+          </div>
+          <div className="project">
+            <StaticImage 
+              src="../images/product-shots/music.png" 
+              alt="Custom music player UI showing 'currently playing' and playlist options"
+              />
+            <h4>Custom music app powered by Spotify</h4>
+            <p>Mobile/tablet-friendly UI for controling music across shared office space</p>
           </div>
         </div>
       </section>
       <footer>
-         <a href="https://linkedin.com/in/kimhart1" target="_blank" rel="noopener nooreferrer"><h2>see more / say hi</h2></a>
+         <a href="https://linkedin.com/in/kimhart1" target="_blank" rel="noopener nooreferrer"><h2>Learn More / Say Hi</h2></a>
       </footer>
     </main>
   )
