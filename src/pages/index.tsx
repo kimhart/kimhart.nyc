@@ -17,12 +17,13 @@ const IndexPage: React.FC<PageProps> = () => {
       </section>
 
       <section className="about">
-        <div className="headshot">
-          <StaticImage 
-            src="../images/misc/kim-headshot.png" 
-            alt="Headshot of Kim"
-            width={200}
-          />
+        <div className="border">
+          <div className="headshot">
+            <StaticImage 
+              src="../images/misc/kim_margo.jpg" 
+              alt="Headshot of Kim"
+            />
+          </div>
         </div>
         <div className="bio">
           <h3>The Basics</h3>
@@ -35,7 +36,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <li>
               Specialist in React, Typescript, CSS, <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90">design systems</a> and <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe">UI component libraries</a>
             </li>
-            <li>Detail-oriented advocate for purposeful and accessible design</li>
+            <li>Detail-oriented advocate for accessible design</li>
             <li>Former mentor & speaker for {" "}
               <a
                 href="https://www.builtbygirls.com/about-wave"
@@ -57,7 +58,7 @@ const IndexPage: React.FC<PageProps> = () => {
             </li>
             <li>No CS degree here (the horror!) I have a BA in journalism and switched careers. Ask me about it!</li>
             <li>Roots in the Bay Area and San Diego (though NY has been home for 10 years)</li>
-            <li>Big fan of sci-fi, traveling, music festivals, and my <a href="https://www.instagram.com/spicymargbk/" target="_blank" rel="noopener nooreferrer">red golden retriever</a></li>
+            <li>Big fan of sci-fi, traveling, hanging outdoors, music festivals, and my <a href="https://www.instagram.com/spicymargbk/" target="_blank" rel="noopener nooreferrer">golden retriever</a></li>
           </ul>
         </div>
       </section>
@@ -67,15 +68,15 @@ const IndexPage: React.FC<PageProps> = () => {
       </div>
 
       <section className="work">
-        <h3>Some Pretty Stuff</h3>
+        <h3>Pretty Things I've Built</h3>
         <div className="projects">
           <div className="project">
             <StaticImage 
               src="../images/product-shots/media.png" 
               alt="Product shots of JWP dashboard media page and tracks editing tool"
               />
-            <h4>Media management & tracks editing tool</h4>
-            <p>Manage metadata, thumbnails, publishing schedules, audio, captions and chapter tracks for uploaded content</p>
+            <h4>Media management & track editing</h4>
+            <p>Manage metadata, thumbnails, publishing schedules, audio, captions and chapter tracks for hosted content</p>
           </div>
           <div className="project">
             <StaticImage 
@@ -99,7 +100,7 @@ const IndexPage: React.FC<PageProps> = () => {
               alt="Product shots of JW Dashboard in which user is editing logos and colors used in JW Player"
               />
             <h4>Video player branding suite</h4>
-            <p>Add logos, stylize captions, modify colors, customize controls & menus for individual players</p>
+            <p>Add logos, stylize captions, modify colors, customize controls & menus for individual web players</p>
           </div>
           <div className="project">
             <StaticImage 
