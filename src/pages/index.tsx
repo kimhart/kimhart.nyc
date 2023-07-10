@@ -20,7 +20,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className="headshot-wrap">
           <div className="headshot">
             <StaticImage 
-              src="../images/misc/kim_margo.jpg" 
+              src="../images/misc/kim-margo.jpg" 
               alt="Headshot of Kim"
             />
           </div>
