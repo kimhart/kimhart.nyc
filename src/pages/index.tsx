@@ -17,7 +17,7 @@ const IndexPage: React.FC<PageProps> = () => {
       </section>
 
       <section className="about">
-        <div className="border">
+        <div className="headshot-wrap">
           <div className="headshot">
             <StaticImage 
               src="../images/misc/kim_margo.jpg" 

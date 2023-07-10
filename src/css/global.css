@@ -163,7 +163,7 @@ a:hover {
   gap: 40px;
 }
 
-.border {
+.headshot-wrap {
   background-color: var(--color-yellow);
   display: flex;
   align-items: center;
@@ -173,6 +173,7 @@ a:hover {
 }
 
 .headshot > div {
+  /* Gatsby image */
   border-radius: 50%;
   width: 300px;
   height: 300px;
@@ -234,10 +235,6 @@ footer h2 {
   .hero {
     padding: 40px 20px;
   }
-  .contact {
-    justify-content: center;
-    padding: 40px;
-  }
   .contact a {
     font-size: 32px;
   }
@@ -280,6 +277,10 @@ footer h2 {
   .hero h2::before {
     height: 1em;
   }
+   .headshot > div {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -305,6 +306,7 @@ footer h2 {
   }
   .contact {
     padding: 0 20px;
+    margin: 0;
   }
   .contact a {
     font-size: 24px;
@@ -323,6 +325,7 @@ footer h2 {
   }
   .headshot > div {
     width: 150px;
+    height: 150px;
   }
 }
 
