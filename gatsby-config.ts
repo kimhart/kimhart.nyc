@@ -5,7 +5,7 @@ const config: GatsbyConfig = {
     title: "Kim Hart | Frontend Engineer",
     description: "Creative dev & design technologist based in Brooklyn, NY",
     twitterUsername: "@kimhart",
-    image: "/preview-image.png",
+    image: "/images/preview-image.png",
     siteUrl: "https://kimhart.nyc",
   },
   graphqlTypegen: true,

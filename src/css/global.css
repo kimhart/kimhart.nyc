@@ -216,6 +216,20 @@ a:hover {
   border-radius: 20px;
 }
 
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+  height: 100vh;
+  gap: 40px;
+}
+
+.not-found a {
+  font-size: 22px;
+}
+
 footer {
   background: var(--color-beige);
   height: 300px;
