@@ -21,6 +21,12 @@ const config: GatsbyConfig = {
      __key: "images"
     },
     {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en-US'
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `kim-hart`,
