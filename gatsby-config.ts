@@ -32,8 +32,6 @@ const config: GatsbyConfig = {
         name: `kim-hart`,
         short_name: `kimhart`,
         start_url: `/`,
-        background_color: `#FFFFFF`,
-        theme_color: `#FFFFFF`,
         display: `minimal-ui`,
         icon: `src/images/favicon-32x32.png`,
       },
