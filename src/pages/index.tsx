@@ -35,7 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <li>Currently driving media experiences & core libraries @ <a href="https://jwplayer.com/"target="_blank" rel="noopener noreferrer">JW Player</a></li>
             <li>6+ years of experience building <a target="_blank" rel="noopener noreferrer" href="https://dashboard.jwplayer.com">enterprise products</a> and internal tools</li>
             <li>
-              Specialist in React, Typescript, CSS, <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90">design systems</a> and <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe">UI component libraries</a>
+              Specialist in React, TypeScript, CSS, <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90">design systems</a> and <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe">web components</a>
             </li>
             <li>Detail-oriented advocate for accessible design</li>
             <li>Former mentor & speaker for {" "}
@@ -57,9 +57,9 @@ const IndexPage: React.FC<PageProps> = () => {
                 CodeNation
               </a>{" "}
             </li>
-            <li>No CS degree here (the horror!) I have a BA in journalism and switched careers. Ask me about it!</li>
-            <li>Roots in the Bay Area and San Diego (though NY has been home for 10 years)</li>
-            <li>Big fan of sci-fi, traveling, hanging outdoors, music festivals, and my <a href="https://www.instagram.com/spicymargbk/" target="_blank" rel="noopener nooreferrer">golden retriever</a></li>
+            <li>No CS degree here — the horror! I have a BA in journalism and switched careers. Ask me about it!</li>
+            <li>Roots in the Bay Area and San Diego (though NYC has been home for 10 years)</li>
+            <li>Big fan of sci-fi, traveling, mountains, music festivals, and my <a href="https://www.instagram.com/spicymargbk/" target="_blank" rel="noopener nooreferrer">golden retriever</a></li>
           </ul>
         </div>
       </section>
@@ -117,7 +117,7 @@ const IndexPage: React.FC<PageProps> = () => {
               alt="Scout highlighting elements with test IDs in the browser"
               />
             <h4>Scout Chrome extension for fast QA</h4>
-            <p>Quickly identify testable elements and their targetable IDs on any web page</p>
+            <p>Quickly identify all testable elements and their targetable IDs on a web page</p>
           </div>
           <div className="project">
             <StaticImage 
@@ -125,7 +125,7 @@ const IndexPage: React.FC<PageProps> = () => {
               alt="Custom music player UI showing 'currently playing' and playlist options"
               />
             <h4>Custom music app powered by Spotify</h4>
-            <p>Mobile/tablet-friendly UI for controling music across shared office space</p>
+            <p>Mobile-friendly UI for controlling music across a shared office space</p>
           </div>
         </div>
       </section>
