@@ -23,7 +23,7 @@ export const SEO = ({ title, description, pathname, children } : { title?: strin
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:creator" content={seo.twitterUsername} />
-      <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>" />
+      <link rel="icon" href="/images/favicon.ico" />
       {children}
     </>
   )
