@@ -29,12 +29,9 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `kim-hart`,
-        short_name: `kimhart`,
+        name: `kimhart.nyc`,
+        short_name: `kimhart.nyc`,
         start_url: `/`,
-        background_color: `#FFFFFF`,
-        theme_color: `#FFFFFF`,
-        display: `minimal-ui`,
         icon: `src/images/favicon-32x32.png`,
       },
     },
