@@ -10,20 +10,10 @@
   /* Colors */
   --color-white: #fff;
   --color-black: #121224;
-  --color-beige: #feeadb;
-  --color-blue: #97D2FB;
+  --color-beige: #fff3e9;
   --color-green: #88cd93;
   --color-yellow: #F4E167;
-  --color-peach: #E88D67;
-  --color-orange: #FF7033;
   --color-pink: #EC91D8;
-
-  --gradient-sky: linear-gradient(
-    0deg,
-    hsl(25deg 74% 91%) 0%,
-    hsl(77deg 25% 86%) 50%,
-    hsl(164deg 27% 84%) 100%
-  );
 
   --wave-mask:
     radial-gradient(128.83px at 50% calc(100% - 174.00px),#000 99%,#0000 101%) calc(50% - 120px) 0/240px 100%,
