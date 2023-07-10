@@ -2,6 +2,7 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { Plane } from "../components/svg/plane"
+import { SEO } from "../components/seo";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -21,7 +22,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <div className="headshot">
             <StaticImage 
               src="../images/misc/kim-margo.jpg" 
-              alt="Headshot of Kim"
+              alt="Headshot of Kim & her golden retriever, Margo"
             />
           </div>
         </div>
@@ -137,4 +138,4 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Kim Hart | Frontend Engineer</title>
+export const Head: HeadFC = () => <SEO />
