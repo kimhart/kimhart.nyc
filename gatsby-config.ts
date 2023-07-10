@@ -3,9 +3,9 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: "Kim Hart | Frontend Engineer",
-    description: "Creative software engineer & design technologist based in Brooklyn, NY",
+    description: "Creative dev & design technologist based in Brooklyn, NY",
     twitterUsername: "@kimhart",
-    image: "src/images/misc/preview-image.png",
+    image: "/preview-image.png",
     siteUrl: "https://kimhart.nyc",
   },
   graphqlTypegen: true,
