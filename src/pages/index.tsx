@@ -12,123 +12,83 @@ const IndexPage: React.FC<PageProps> = () => {
           hey there, i'm
           <div>Kim Hart</div>
         </h1>
-        <h2>
-          Frontend Engineer / Design Technologist
-        </h2>
+        <a href="https://linkedin.com/in/kimhart1" target="_blank" rel="noopener nooreferrer">
+          <h2>
+            Frontend Engineer | Brooklyn, NY
+          </h2>
+        </a>
       </section>
 
       <section className="about">
-        <div className="headshot-wrap">
-          <div className="headshot">
-            <StaticImage 
-              src="../images/kim/kim-margo.jpg" 
-              alt="Kim & her golden retriever, Margo"
-            />
-          </div>
-        </div>
+        <h3>The Basics</h3>
         <div className="bio">
-          <h3>The Basics</h3>
           <ul>
-            <li>
-              <strong>Frontend team lead based in Brooklyn, NY</strong>
-            </li>
-            <li>Currently driving media experiences & core libraries @ <a href="https://jwplayer.com/"target="_blank" rel="noopener noreferrer">JW Player</a></li>
-            <li>6+ years of experience building <a target="_blank" rel="noopener noreferrer" href="https://dashboard.jwplayer.com">enterprise products</a> and internal tools</li>
-            <li>
-              Specialist in React, TypeScript, CSS, <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-i-a805d81bd90">design systems</a> and <a target="_blank" rel="noopener noreferrer" href="https://medium.com/jw-player-engineering/a-real-life-roadmap-for-building-a-design-system-pt-ii-c4c2490875fe">web components</a>
-            </li>
-            <li>Detail-oriented advocate for accessible design</li>
-            <li>Former mentor & speaker for {" "}
-              <a
-                href="https://www.builtbygirls.com/about-wave"
-                target="_blank"
-              >
-                BuiltByGirls
-              </a>
-              ,{" "}
-              <a
-                href="https://medium.com/jw-player-engineering/advice-for-getting-a-career-in-engineering-8bdb653b3837"
-                target="_blank"
-              >
-                Uncubed
-              </a>{" "}
-              and{" "}
-              <a href="https://codenation.org/" target="_blank">
-                CodeNation
-              </a>{" "}
-            </li>
-            <li>No CS degree here — the horror! I have a BA in journalism and switched careers. Ask me about it!</li>
-            <li>Roots in the Bay Area and San Diego (though NYC has been home for 10 years)</li>
-            <li>Big fan of sci-fi, traveling, mountains, music festivals, and my <a href="https://www.instagram.com/spicymargbk/" target="_blank" rel="noopener nooreferrer">golden retriever</a></li>
+            <li><strong>Team lead</strong> with 7+ years of experience building <a target="_blank" rel="noopener noreferrer" href="https://dashboard.jwplayer.com">enterprise products</a> and design systems</li>
+            <li>Currently owning media and live-streaming workflows @ <a href="https://jwplayer.com/"target="_blank" rel="noopener noreferrer">JW Player</a></li>
+            <li>Former mentor & speaker for BuiltByGirls, Uncubed, and CodeNation</li>
           </ul>
         </div>
       </section>
-
-      <div className="contact">
-        <a href="https://linkedin.com/in/kimhart1" target="_blank" rel="noopener nooreferrer">get in touch <Plane/></a>
-      </div>
+      <section className="skills">
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>JavaScript</span>
+        <span>CSS</span>
+        <span>HTML5</span>
+        <span>a11y</span>
+        <span>Stencil.js</span>
+        <span>Storybook</span>
+        <span>Git</span>
+        <span>Jest</span>
+        <span>Vite</span>
+        <span>Figma</span>
+        <span>Docker</span>
+        <span>Jira</span>
+        <span>Buildkite</span>
+        <span>Jenkins</span>
+      </section>
 
       <section className="work">
-        <h3>Pretty Things I've Built</h3>
+        <h3>Recent Work</h3>
         <div className="projects">
           <div className="project">
+            <h4>Advanced Media Management & Editing Tools</h4>
+            <p>Enable customers to monetize content and grow audiences with highly customizable video delivery</p>
             <StaticImage 
               src="../images/product-shots/media.png" 
               alt="Product shots of JWP dashboard media page and tracks editing tool"
-              />
-            <h4>Media management & track editing</h4>
-            <p>Manage metadata, thumbnails, publishing schedules, audio, captions and chapter tracks for hosted content</p>
+            />
           </div>
           <div className="project">
             <StaticImage 
               src="../images/product-shots/trimming-tool.png" 
               alt="Product shots of JW Dashboard in which a user is trimming a skate video and a podcast audio"
-              />
-            <h4>Media trimming and clipping tool</h4>
-            <p>Adjust the length of media down to the millisecond with a live playback preview</p>
-          </div>
-          <div className="project">
-            <StaticImage 
-              src="../images/product-shots/ui-components.png" 
-              alt="Examples of components like inputs, buttons, draggable episode lists, and alerts"
-              />
-            <h4>Web component library & docs</h4>
-            <p>Framework-agnostic building blocks for JW Player's custom design system, built with Stencil & React</p>
+            />
           </div>
           <div className="project">
             <StaticImage 
               src="../images/product-shots/player-customization.png" 
               alt="Product shots of JW Dashboard in which user is editing logos and colors used in JW Player"
               />
-            <h4>Video player branding suite</h4>
-            <p>Add logos, stylize captions, modify colors, customize controls & menus for individual web players</p>
           </div>
           <div className="project">
             <StaticImage 
               src="../images/product-shots/analytics.png" 
               alt="Analytics Overview UI showcasing graphs and ranked lists for media content"
               />
-            <h4>Media analytics & trends overview</h4>
-            <p>Compare plays, completes, and ad impressions over time across top locations & devices</p>
           </div>
           <div className="project">
+            <h4>JWP Design System</h4>
+            <p>Web component library with over 70 unique components, supporting lean UI development for frontend teams</p>
             <StaticImage 
-              src="../images/product-shots/scout.png" 
-              alt="Scout highlighting elements with test IDs in the browser"
+              src="../images/product-shots/ui-components.png" 
+              alt="Examples of components like inputs, buttons, draggable episode lists, and alerts"
               />
-            <h4>Scout Chrome extension for fast QA</h4>
-            <p>Quickly identify all testable elements and their targetable IDs on a web page</p>
           </div>
-          <div className="project">
-            <StaticImage 
-              src="../images/product-shots/music.png" 
-              alt="Custom music player UI showing 'currently playing' and playlist options"
-              />
-            <h4>Custom music app powered by Spotify</h4>
-            <p>Mobile-friendly UI for controlling music across a shared office space</p>
-          </div>
+
         </div>
       </section>
+
       <footer>
          <a href="https://linkedin.com/in/kimhart1" target="_blank" rel="noopener nooreferrer"><h2>Learn More / Say Hi</h2></a>
       </footer>

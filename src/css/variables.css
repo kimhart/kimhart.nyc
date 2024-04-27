@@ -9,11 +9,13 @@
 
   /* Colors */
   --color-white: #fff;
-  --color-black: #121224;
-  --color-beige: #fff3e9;
-  --color-green: #88cd93;
-  --color-yellow: #F4E167;
-  --color-pink: #EC91D8;
+  --color-black: #15152b;
+  --color-lightest-aqua: #eaffff;
+  --color-purple: #E2AFFF;
+  --color-periwinkle: #c0c1ff;
+  --color-aqua: #c2f2f3;
+
+  --bg-gradient: linear-gradient(160deg, var(--color-lightest-aqua), var(--color-periwinkle));
 
   --wave-mask:
     radial-gradient(128.83px at 50% calc(100% - 174.00px),#000 99%,#0000 101%) calc(50% - 120px) 0/240px 100%,
