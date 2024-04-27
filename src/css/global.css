@@ -147,7 +147,7 @@ a:hover {
 }
 
 .hero, 
-.footer {
+footer {
   background: var(--bg-gradient);
 }
 
@@ -250,7 +250,6 @@ a:hover {
 }
 
 footer {
-  background: var(--color-beige);
   height: 300px;
   display: flex;
   align-items: center;
