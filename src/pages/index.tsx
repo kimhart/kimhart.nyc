@@ -1,7 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { Plane } from "../components/svg/plane"
 import { SEO } from "../components/seo";
 
 const IndexPage: React.FC<PageProps> = () => {

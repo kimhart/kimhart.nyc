@@ -5,7 +5,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
   return (
     <main>
       <section className="not-found">
-        <h1><div>Not Found</div></h1>
+        <h1><div>404</div></h1>
         <Link to="/">Get me outta here 😎</Link>.
       </section>
     </main>

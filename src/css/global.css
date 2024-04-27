@@ -243,10 +243,11 @@ footer {
   margin-top: 5%;
   height: 100vh;
   gap: 40px;
+  background: var(--bg-gradient);
 }
 
 .not-found a {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 footer {
