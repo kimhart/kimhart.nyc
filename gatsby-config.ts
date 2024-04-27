@@ -2,8 +2,8 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: "Kim Hart | Frontend Engineer",
-    description: "Creative dev & design technologist based in Brooklyn, NY",
+    title: "Kim Hart",
+    description: "Creative lead frontend engineer based in Brooklyn, NY",
     twitterUsername: "@kimhart",
     image: "/images/preview-image.png",
     siteUrl: "https://kimhart.nyc",
